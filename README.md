@@ -60,3 +60,5 @@ The homepage renders a regular dodecahedron from golden-ratio coordinates, with 
 ## Favicon
 
 The favicon uses the transparent cutout in `public/assets/favicon-source.png`, prepared as a centered `favicon-master.png` plus 16/32/48px PNGs and `public/favicon.ico`. Background extraction used the built-in image generation tool; the exact prompt and preparation notes are in `docs/favicon-prompt.txt`. PNG and ICO references share the build asset version so browsers request the updated transparent version.
+
+Header/footer marks use the transparent cutout with a small horizontal optical correction inside square slots. This removes the old crop and balances the slightly taller source silhouette without changing the source artwork.

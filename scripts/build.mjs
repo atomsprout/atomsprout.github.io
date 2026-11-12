@@ -15,7 +15,7 @@ fs.writeFileSync(path.join(out,'assets/hero-math.js'),fs.readFileSync('public/as
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const external = 'target="_blank" rel="noopener noreferrer"';
 const arrow = '<span aria-hidden="true">↗</span>';
-const logo = '<span class="brand-image"><img class="light-image" src="/assets/brand-light.png" width="56" height="56" alt=""><img class="dark-image" src="/assets/brand-dark.png" width="56" height="56" alt=""></span>';
+const logo = `<span class="brand-image"><img src="/assets/favicon-master.png?v=${assetVersion}" width="48" height="48" alt=""></span>`;
 const routes = [];
 function write(route, html, index = true) {
   const file = route.endsWith('.html') ? route.slice(1) : path.join(route.slice(1), 'index.html');
