@@ -42,6 +42,12 @@ for (const slug of fs.readdirSync('software-sites')) {
   }
   if (!fs.existsSync(`dist/${slug}/support/index.html`)) write(`${slug}/support`,page(`${slug}/support`,`${slug} support`,'<p>Email <a href="mailto:atomsprout@gmail.com">atomsprout@gmail.com</a>.</p>'));
 }
+fs.cpSync('liney-site/build', 'dist/liney', {recursive: true});
+// Docusaurus adds a trailing slash to its HTML 404 URL; keep this file out of search.
+const liney404 = 'dist/liney/404.html';
+fs.writeFileSync(liney404, fs.readFileSync(liney404, 'utf8')
+  .replaceAll('/liney/404.html/', '/liney/404.html')
+  .replace('</head>', '<meta name="robots" content="noindex"></head>'));
 write('x-article-export-pdf/privacy',page('x-article-export-pdf/privacy','X Article Export privacy',fs.readFileSync('content/x-article-export-pdf-privacy.html','utf8')));
 const games = ['wedge-storm-chaser','aether-barrage-omega','fivefold-front'];
 for (const slug of games) fs.cpSync(`game-site/out/${slug}`,`dist/${slug}`,{recursive:true});
