@@ -1,0 +1,50 @@
+[
+  {
+    "heading": "Overview",
+    "body": "Effective November 7, 2026. GrapeCompare compares files privately on your Mac. Your files and their contents never leave your device. The only information exchanged over the network is anonymous purchase status for GrapeCompare Pro."
+  },
+  {
+    "heading": "Data collection",
+    "body": "GrapeCompare does not collect personal information, usage analytics, diagnostics, advertising identifiers or tracking data, and it does not require an account. To unlock GrapeCompare Pro, the app checks App Store purchase history through RevenueCat, our in-app purchase provider, using a random anonymous identifier. Purchase history is not linked to your identity and is never used for tracking or advertising."
+  },
+  {
+    "heading": "Files and folders",
+    "body": "App Sandbox limits GrapeCompare to files and folders you explicitly select. They are read and compared locally. Their contents and metadata are not uploaded to the developer or any third party."
+  },
+  {
+    "heading": "Data stored on your Mac",
+    "body": "GrapeCompare stores app preferences, security-scoped bookmarks for comparisons you choose to keep, recent comparison names, Pro trial counts and transactional operation journals inside its sandbox container. This data is used only to provide app features and is not transmitted off the device."
+  },
+  {
+    "heading": "Demo data",
+    "body": "The optional demo files and folders are generated locally by the app and stay on your Mac. Loading demo data does not make a network request."
+  },
+  {
+    "heading": "Third-party services",
+    "list": [
+      "RevenueCat: verifies in-app purchases using an anonymous identifier and App Store transaction data. See RevenueCat's privacy policy at https://www.revenuecat.com/privacy.",
+      "Apple: processes payments through the App Store.",
+      "Apple Intelligence: AI change summaries run on your Mac. Diff content is never sent to the developer or a cloud service."
+    ]
+  },
+  {
+    "heading": "No tracking",
+    "body": "GrapeCompare contains no analytics, advertising, social or tracking SDKs."
+  },
+  {
+    "heading": "Data retention and deletion",
+    "body": "The developer stores no file data. RevenueCat keeps anonymous purchase records so purchases can be restored; contact us to request their deletion. You can clear recent comparisons and operation history in the app. Uninstalling GrapeCompare and removing its sandbox container deletes its remaining local data."
+  },
+  {
+    "heading": "Children",
+    "body": "GrapeCompare does not knowingly collect personal data from children."
+  },
+  {
+    "heading": "Changes",
+    "body": "If the app's data practices change, this policy will be updated before the change is released."
+  },
+  {
+    "heading": "Contact",
+    "body": "Questions about this policy: xnuapp@gmail.com. Please do not include confidential comparison content."
+  }
+]

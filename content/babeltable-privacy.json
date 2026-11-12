@@ -1,0 +1,44 @@
+[
+  {
+    "heading": "On-device speech and translation",
+    "body": "BabelTable uses Apple's on-device speech recognition and Translation frameworks. Conversation audio and text are not sent to a developer server or a cloud translation provider. There is no account, API key, advertising SDK, analytics, tracking, or remote text refinement. Make sure everyone agrees before using the microphone."
+  },
+  {
+    "heading": "Microphone audio",
+    "body": "Microphone audio is processed in memory and is not saved as recordings. Capture stops when you stop the conversation, background the app, or an interruption pauses the session. Speech during a pause is not recorded."
+  },
+  {
+    "heading": "Language models and Apple services",
+    "body": "An internet connection is required to download speech and translation models before first use, and when preparing a different pair or replacing removed models. Apple manages these downloads, and the app does not fall back to a cloud translation service. Apple's frameworks may collect API usage and performance metrics, including app identity and language information; Apple states these metrics exclude original and translated content. Apple's services are governed by Apple's privacy policy."
+  },
+  {
+    "heading": "Local history and sharing",
+    "body": "Transcripts and translations are saved in local app storage, and you can delete them in History. Device backups may include this storage depending on your system settings. The developer does not receive these archives. Sharing uses the system share sheet only when you request it; the destination you choose controls the shared copy."
+  },
+  {
+    "heading": "Read-aloud, phrasebook, PDF export, and summaries",
+    "body": "Translations you choose to hear are read aloud with voices installed on your device, and the microphone pauses while they play so the phone does not transcribe itself. Phrases you save in the phrasebook are stored only on your device and translated with installed models. Bilingual PDF exports are created on your device and leave it only when you share them. Conversation summaries (BabelTable Pro) are created on your device by Apple Intelligence; the transcript is not sent to the developer or to a server. A summary is saved with its conversation in History and is deleted with it."
+  },
+  {
+    "heading": "Diagnostics and usage",
+    "body": "Conversation duration and a bounded diagnostic log are stored only on your device. Diagnostics do not intentionally include conversation text or audio. You can inspect, clear, or share diagnostics in Settings. The free daily translation allowance is counted on your device from time only. There is no remote usage reporting."
+  },
+  {
+    "heading": "Permissions",
+    "list": [
+      "Microphone: captures speech for live transcription and translation on your device."
+    ]
+  },
+  {
+    "heading": "Purchases",
+    "body": "Starting with version 1.1, translation is free for 2 hours a day, and BabelTable Pro, an optional subscription or one-time purchase, removes the daily limit. Purchases are processed by Apple and recorded by RevenueCat, Inc., a purchase-management service, so the app can confirm your Pro status and restore it on your devices. RevenueCat receives a random anonymous app user ID, your purchase and subscription records, the app version, basic device information such as the operating system version and App Store storefront, and the IP address that any web request carries. RevenueCat does not receive your name, email, conversations, audio, transcripts, translations, language choices, or usage time. This information is not used for advertising or tracking. Pro status is cached on your device so it keeps working offline. RevenueCat processes this information under its own privacy policy at https://www.revenuecat.com/privacy/ . Payment details are handled only by Apple."
+  },
+  {
+    "heading": "Early supporters",
+    "body": "People who installed version 1.0 before the daily limit existed keep unlimited translation without a purchase. The app checks this on the device using Apple's signed app transaction; nothing is sent to the developer."
+  },
+  {
+    "heading": "Contact",
+    "body": "Questions about this policy: xnuapp@gmail.com. Please do not include private conversations or other sensitive information."
+  }
+]

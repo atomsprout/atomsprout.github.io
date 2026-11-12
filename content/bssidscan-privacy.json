@@ -1,0 +1,18 @@
+[
+  {
+    "heading": "Wi-Fi observations",
+    "body": "BSSIDScan records Wi-Fi events and network identifiers that iOS makes available to the app. These records are stored in an encrypted database on your device. The developer does not receive your Wi-Fi history."
+  },
+  {
+    "heading": "Analytics and advertising",
+    "body": "The app has no advertising or in-app analytics SDK and does not send usage data or crash reports to a developer-operated service. Apple may handle device diagnostics according to your Apple settings."
+  },
+  {
+    "heading": "Export",
+    "body": "You choose when to export observations as JSON or Markdown and where to save or share them. Network identifiers in exported files may be sensitive; review a file before sharing it."
+  },
+  {
+    "heading": "Contact",
+    "body": "If you email us for support, we receive your message and email address so we can reply. For privacy questions, email xnuapp@gmail.com. This policy was updated September 27, 2026."
+  }
+]
