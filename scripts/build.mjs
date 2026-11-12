@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const products = JSON.parse(fs.readFileSync('data/products.json', 'utf8'));
-const origin = (process.env.SITE_URL || 'https://atomsprout.github.io').replace(/\/$/, '');
+const origin = (process.env.SITE_URL || 'https://atomsprout.com').replace(/^http:/, 'https:').replace(/\/$/, '');
 const out = 'dist';
 fs.rmSync(out, { recursive: true, force: true });
 fs.mkdirSync(out, { recursive: true });

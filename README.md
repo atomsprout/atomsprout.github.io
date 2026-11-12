@@ -2,7 +2,7 @@
 
 Company website for AtomSprout. Publicly released apps and games live here; Everett’s writing and open-source explorations stay at [xnu.app](https://xnu.app).
 
-- Website: https://atomsprout.github.io
+- Website: https://atomsprout.com
 - Source: https://github.com/atomsprout/atomsprout.github.io
 - Runtime: Node.js 22 or newer. No third-party runtime or build dependencies.
 
@@ -29,15 +29,19 @@ The public catalog includes 11 confirmed releases. Unreleased products and compa
 
 ## Domains
 
-The initial live domain is `atomsprout.github.io`. Neither `atomsprout.com` nor `aspt.dev` resolved during setup, so no unverified custom domain is attached to Pages.
+The primary domain is `https://atomsprout.com`. GitHub Pages is configured with this custom domain. Cloudflare DNS uses DNS-only records (no proxy) so GitHub can validate DNS and issue its certificate directly:
 
-To connect the primary domain after registration:
+| Type | Name | Content |
+| --- | --- | --- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | atomsprout.github.io |
 
-1. Set `www.atomsprout.com` to a CNAME of `atomsprout.github.io`.
-2. Set the apex `atomsprout.com` to GitHub Pages’ current documented A/AAAA records, or the DNS provider’s supported ALIAS/flattened CNAME to `atomsprout.github.io`. Follow [GitHub’s current custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
-3. Set `atomsprout.com` as the repository’s Pages custom domain and enable HTTPS after DNS and certificate checks pass.
-4. Run the workflow again to regenerate canonical URLs and the sitemap using the custom domain.
-5. Configure `aspt.dev` as an HTTPS redirect to `https://atomsprout.com` at the registrar or DNS/redirect provider. A DNS CNAME alone does not create an HTTP redirect. Preserve paths and query strings.
+TTL is Auto. GitHub Pages handles the `www` → apex redirect and HTTPS enforcement after certificate issuance. The tracked `public/CNAME` records the intended domain; the repository Pages setting controls the Actions deployment domain. Canonical links and the sitemap always use HTTPS.
+
+`aspt.dev` is deferred at the owner’s request. No DNS or redirect changes have been made for that domain. When it is connected later, configure an HTTPS redirect that preserves paths and query strings.
 
 ## Migration
 
