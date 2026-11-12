@@ -1,0 +1,70 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Preset stack for Liney</title>
+  <desc id="desc">A layered diagram showing agent presets, SSH presets, remote targets, and workspace workflows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="88" y1="76" x2="1114" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111823"/>
+      <stop offset="1" stop-color="#0A0F17"/>
+    </linearGradient>
+    <linearGradient id="layerA" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1F6EEA"/>
+      <stop offset="1" stop-color="#4CB5FF"/>
+    </linearGradient>
+    <linearGradient id="layerB" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#189A74"/>
+      <stop offset="1" stop-color="#6AE0B6"/>
+    </linearGradient>
+    <linearGradient id="layerC" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#8C5DFF"/>
+      <stop offset="1" stop-color="#C48EFF"/>
+    </linearGradient>
+    <linearGradient id="layerD" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F08C2B"/>
+      <stop offset="1" stop-color="#FFBC70"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#02050A" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="720" rx="36" fill="url(#bg)"/>
+  <circle cx="1022" cy="126" r="118" fill="#16304F" fill-opacity="0.32"/>
+  <circle cx="180" cy="592" r="138" fill="#153D33" fill-opacity="0.28"/>
+
+  <text x="84" y="104" fill="#EFF4FC" font-family="ui-sans-serif, system-ui, sans-serif" font-size="34" font-weight="700">Reusable launch setup in Liney</text>
+  <text x="84" y="144" fill="#9EACC5" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20">Choose the smallest layer that solves the problem.</text>
+
+  <rect x="84" y="192" width="480" height="116" rx="26" fill="url(#layerA)" filter="url(#shadow)"/>
+  <text x="120" y="242" fill="#F7FBFF" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28" font-weight="700">1. Agent preset</text>
+  <text x="120" y="278" fill="#E8F3FF" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">What local AI CLI should launch, with which args and env.</text>
+
+  <rect x="120" y="332" width="520" height="116" rx="26" fill="url(#layerB)" filter="url(#shadow)"/>
+  <text x="156" y="382" fill="#F7FFFC" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28" font-weight="700">2. SSH preset</text>
+  <text x="156" y="418" fill="#E7FFF7" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">What remote command or connection fields should preload the SSH sheet.</text>
+
+  <rect x="156" y="472" width="560" height="116" rx="26" fill="url(#layerC)" filter="url(#shadow)"/>
+  <text x="192" y="522" fill="#FBF8FF" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28" font-weight="700">3. Remote target</text>
+  <text x="192" y="558" fill="#F1E9FF" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">Which machine belongs to the workspace, optionally linked to presets.</text>
+
+  <rect x="192" y="612" width="600" height="76" rx="22" fill="url(#layerD)" filter="url(#shadow)"/>
+  <text x="226" y="660" fill="#FFF9F2" font-family="ui-sans-serif, system-ui, sans-serif" font-size="26" font-weight="700">4. Workspace workflow: combine shells, scripts, and agent launch into one playbook</text>
+
+  <path d="M590 250H1038" stroke="#345479" stroke-width="4" stroke-dasharray="8 10"/>
+  <path d="M666 390H1038" stroke="#345479" stroke-width="4" stroke-dasharray="8 10"/>
+  <path d="M742 530H1038" stroke="#345479" stroke-width="4" stroke-dasharray="8 10"/>
+
+  <rect x="838" y="216" width="284" height="132" rx="26" fill="#121A28" stroke="#2B3E5E"/>
+  <text x="872" y="264" fill="#EEF5FF" font-family="ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="700">Use when</text>
+  <text x="872" y="298" fill="#AAB6CB" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">you keep retyping</text>
+  <text x="872" y="322" fill="#AAB6CB" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">the same launch command</text>
+
+  <rect x="838" y="368" width="284" height="132" rx="26" fill="#121A28" stroke="#2B3E5E"/>
+  <text x="872" y="416" fill="#EEF5FF" font-family="ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="700">Use when</text>
+  <text x="872" y="450" fill="#AAB6CB" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">the command matters</text>
+  <text x="872" y="474" fill="#AAB6CB" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">more than the host</text>
+
+  <rect x="838" y="520" width="284" height="132" rx="26" fill="#121A28" stroke="#2B3E5E"/>
+  <text x="872" y="568" fill="#EEF5FF" font-family="ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="700">Use when</text>
+  <text x="872" y="602" fill="#AAB6CB" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">the machine belongs</text>
+  <text x="872" y="626" fill="#AAB6CB" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">to the repository</text>
+</svg>

@@ -73,3 +73,7 @@ Software pages are maintained here. `software-sites/` contains the relocated sta
 The personal blog and RSS remain on xnu.app. rea.tools, microclaw.org, liney.dev and e7lang.github.io retain their domains. Source repositories, App Store URLs, Homebrew identities and application storage identifiers remain service-specific.
 
 Old website publishers generate redirects only after the new destination has been deployed. The former game website no longer supplies assets or content and can be retired separately when the owner is ready.
+
+## Liney product website
+
+`liney-site/` contains the Docusaurus source imported from `everettjf/web-liney` at `6a096c5333ce67f09b3f9799e4c4d73481433e7e`. Its landing page and documentation are published at `https://atomsprout.com/liney/`. Docusaurus builds assets and client-side routes with `/liney/` as the base URL. Run `npm ci --prefix liney-site` before building. Existing product-specific support and privacy pages are retained.

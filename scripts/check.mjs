@@ -5,7 +5,7 @@ const files=fs.readdirSync(root,{recursive:true}).filter(f=>f.endsWith('.html'))
 const failures=[];
 for(const f of files){
   const html=fs.readFileSync(path.join(root,f),'utf8');
-  if(!/<title>.+<\/title>/.test(html))failures.push(`${f}: missing title`);
+  if(!/<title\b[^>]*>.+<\/title>/.test(html))failures.push(`${f}: missing title`);
   if(/\{%|\{\{/.test(html))failures.push(`${f}: unrendered template`);
   if (/(?:xnuapp@gmail\.com|everettjf@live\.com)/.test(html)) failures.push(`${f}: legacy public email`);
   for(const match of html.matchAll(/(?:href|src|poster)="([^"]+)"/g)){

@@ -19,6 +19,7 @@ jobs:
       - uses: actions/configure-pages@v5
         id: pages
       - run: npm ci --prefix game-site
+      - run: npm ci --prefix liney-site
       - run: npm run build && npm run check
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url }}

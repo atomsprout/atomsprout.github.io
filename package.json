@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs && npm --prefix game-site run build:pages && node scripts/build-software.mjs",
+    "build": "node scripts/build.mjs && npm --prefix game-site run build:pages && npm --prefix liney-site run build && node scripts/build-software.mjs",
     "check": "node scripts/check.mjs",
     "dev": "npm run build && node scripts/serve.mjs"
   },
