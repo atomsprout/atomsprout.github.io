@@ -13,20 +13,15 @@ toggle.addEventListener('click', () => {
 });
 media.addEventListener('change', updateThemeLabel);
 updateThemeLabel();
-const cards = [...document.querySelectorAll('[data-category]')];
-document.querySelectorAll('[data-filter]').forEach(button => {
-  button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
-    document.querySelectorAll('[data-filter]').forEach(b => {
-      b.classList.toggle('active', b === button);
-      b.setAttribute('aria-pressed', String(b === button));
-    });
-    cards.forEach(card => {
-      card.hidden = filter !== 'All' && (filter === 'Productivity'
-        ? ['Developer tools', 'Games'].includes(card.dataset.category)
-        : card.dataset.category !== filter);
-    });
-    const count = cards.filter(card => !card.hidden).length;
-    document.querySelector('.result-count').textContent = `${count} ${count === 1 ? 'product' : 'products'}`;
+document.querySelectorAll('[data-copy]').forEach(button => {
+  button.addEventListener('click', async () => {
+    const status = button.closest('.install-block').querySelector('.copy-status');
+    try {
+      await navigator.clipboard.writeText(button.dataset.copy);
+      status.textContent = 'Install command copied.';
+      button.textContent = 'Copied';
+    } catch {
+      status.textContent = 'Select the command above and copy it to your terminal.';
+    }
   });
 });
