@@ -1,0 +1,44 @@
+<h2>Privacy Policy</h2>
+<p><strong>X Article Export</strong> is designed to be private by default.</p>
+<h2>What it does</h2>
+<ul>
+<li>Runs entirely in your browser.</li>
+<li>Reads the content of the X (Twitter) article or tweet you are currently viewing, only when you click the extension and ask it to export.</li>
+<li>Builds a PDF (via your browser&#39;s print dialog) or a Markdown file from that content.</li>
+</ul>
+<h2>What it does <strong>not</strong> do</h2>
+<ul>
+<li>It does <strong>not</strong> send article content to any server operated by this project. There is no backend.</li>
+<li>It does <strong>not</strong> include any analytics, tracking, telemetry, or advertising.</li>
+<li>It does <strong>not</strong> read credentials, cookies, DMs, or pages outside the tab where you invoke it.</li>
+<li>It injects its content script only after you click the extension. It does not collect data passively.</li>
+</ul>
+<h2>Network requests</h2>
+<p>Export-related network activity is:</p>
+<ol>
+<li><strong>Article images</strong> — loaded from X&#39;s own media CDN (<code>pbs.twimg.com</code>) so they appear in your export. These are the same images the page already loaded.</li>
+<li><strong>KaTeX styling</strong> — the stylesheet and fonts are packaged with the extension, so formula rendering needs no third-party request.</li>
+</ol>
+<p>The extension also opens its website once after installation; links in the popup open only when you click them.</p>
+<h2>Permissions</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Why it&#39;s needed</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>activeTab</code> / <code>scripting</code></td>
+<td>Read the X tab only after you click the extension.</td>
+</tr>
+<tr>
+<td><code>storage</code></td>
+<td>Remember your style/page-size preferences and pass the rendered document to the print page.</td>
+</tr>
+</tbody></table>
+<h2>Storage</h2>
+<p>Your preferences (style, page size, source-link toggle) are stored in <code>chrome.storage.sync</code>, which may sync through your browser account. The document being exported is held in temporary <code>chrome.storage.session</code> and removed right after its print page renders it.</p>
+<h2>Questions</h2>
+<p>Open an issue at <a href="https://github.com/everettjf/x-article-export-pdf/issues">https://github.com/everettjf/x-article-export-pdf/issues</a>.</p>
+<p><em>Last updated: 2026-09-24</em></p>

@@ -42,6 +42,7 @@ for (const slug of fs.readdirSync('software-sites')) {
   }
   if (!fs.existsSync(`dist/${slug}/support/index.html`)) write(`${slug}/support`,page(`${slug}/support`,`${slug} support`,'<p>Email <a href="mailto:atomsprout@gmail.com">atomsprout@gmail.com</a>.</p>'));
 }
+write('x-article-export-pdf/privacy',page('x-article-export-pdf/privacy','X Article Export privacy',fs.readFileSync('content/x-article-export-pdf-privacy.html','utf8')));
 const games = ['wedge-storm-chaser','aether-barrage-omega','fivefold-front'];
 for (const slug of games) fs.cpSync(`game-site/out/${slug}`,`dist/${slug}`,{recursive:true});
 for (const dir of ['_next','games','fonts']) fs.cpSync(`game-site/out/${dir}`,`dist/${dir}`,{recursive:true});

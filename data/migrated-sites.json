@@ -68,5 +68,30 @@
     "slug": "scriptwidget",
     "source": "products/appstore/scriptwidget/site",
     "commit": "0d504c27f8050fa678601755d9a2bccffd56fb27"
+  },
+  {
+    "slug": "ios-atlas",
+    "source": "sec/jailbreak/ios-atlas",
+    "commit": "e1039a748eed6eea412e44f7f0b8be885c050138"
+  },
+  {
+    "slug": "appletrace",
+    "source": "products/jailbreak/appletrace/Tutorial",
+    "commit": "4897518b2c65a28f6f7c2e3bf08f85db28537db2"
+  },
+  {
+    "slug": "ezjev",
+    "source": "github/ezjev/site",
+    "commit": "8b3d88957c0795bea160c8fbc9c6d2a54b051136"
+  },
+  {
+    "slug": "crab-stick",
+    "source": "github/muse/crab-stick/web",
+    "commit": "d17f7592f063f79f088236c5655d004d41048cad"
+  },
+  {
+    "slug": "ipatool-rs",
+    "source": "sec/ipatool-rs/web",
+    "commit": "f23e2fa2a7d2f5f408b0d803c20f8cf7b27cd7b5"
   }
 ]

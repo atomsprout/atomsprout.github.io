@@ -1,0 +1,102 @@
+{
+  "status": "prepared_for_next_store_update",
+  "public_email": "atomsprout@gmail.com",
+  "copyright": "2026 AtomSprout",
+  "note": "Prepared field values; no App Store Connect or Chrome Web Store changes or app submissions have been made by this migration. Historical reviewer and tester account records are retained.",
+  "app_store": [
+    {
+      "name": "GrapeCompare",
+      "app_id": 6796778424,
+      "marketing_url": "https://atomsprout.com/grapecompare/",
+      "support_url": "https://atomsprout.com/grapecompare/support/",
+      "privacy_url": "https://atomsprout.com/grapecompare/privacy/"
+    },
+    {
+      "name": "Folucent",
+      "app_id": 6818737993,
+      "marketing_url": "https://atomsprout.com/folucent/",
+      "support_url": "https://atomsprout.com/folucent/support/",
+      "privacy_url": "https://atomsprout.com/folucent/privacy/"
+    },
+    {
+      "name": "ScriptWidget",
+      "app_id": 1555600758,
+      "marketing_url": "https://atomsprout.com/scriptwidget/",
+      "support_url": "https://atomsprout.com/scriptwidget/support/",
+      "privacy_url": "https://atomsprout.com/scriptwidget/privacy/"
+    },
+    {
+      "name": "Remoboard",
+      "app_id": 1474458879,
+      "marketing_url": "https://atomsprout.com/remoboard/",
+      "support_url": "https://atomsprout.com/remoboard/support/",
+      "privacy_url": "https://atomsprout.com/remoboard/privacy/"
+    },
+    {
+      "name": "BSSID SCAN",
+      "app_id": 1442586100,
+      "marketing_url": "https://atomsprout.com/bssidscan/",
+      "support_url": "https://atomsprout.com/bssidscan/support/",
+      "privacy_url": "https://atomsprout.com/bssidscan/privacy/"
+    },
+    {
+      "name": "Dayvella",
+      "app_id": 6753280745,
+      "marketing_url": "https://atomsprout.com/dayvella/",
+      "support_url": "https://atomsprout.com/dayvella/support/",
+      "privacy_url": "https://atomsprout.com/dayvella/privacy/"
+    },
+    {
+      "name": "BabelTable",
+      "app_id": 6807469213,
+      "marketing_url": "https://atomsprout.com/babeltable/",
+      "support_url": "https://atomsprout.com/babeltable/support/",
+      "privacy_url": "https://atomsprout.com/babeltable/privacy/"
+    },
+    {
+      "name": "SixUp",
+      "app_id": 6830260416,
+      "marketing_url": "https://atomsprout.com/sixup/",
+      "support_url": "https://atomsprout.com/sixup/support/",
+      "privacy_url": "https://atomsprout.com/sixup/privacy/"
+    },
+    {
+      "name": "Palmino",
+      "app_id": 6816719602,
+      "marketing_url": "https://atomsprout.com/palmino/",
+      "support_url": "https://atomsprout.com/palmino/support/",
+      "privacy_url": "https://atomsprout.com/palmino/privacy/"
+    },
+    {
+      "name": "Foxwick",
+      "app_id": 6828063453,
+      "marketing_url": "https://atomsprout.com/foxwick/",
+      "support_url": "https://atomsprout.com/foxwick/support/",
+      "privacy_url": "https://atomsprout.com/foxwick/privacy/"
+    },
+    {
+      "name": "EditSmith",
+      "app_id": 6804507667,
+      "marketing_url": "https://atomsprout.com/editsmith/",
+      "support_url": "https://atomsprout.com/editsmith/support/",
+      "privacy_url": "https://atomsprout.com/editsmith/privacy/"
+    }
+  ],
+  "chrome_web_store": [
+    {
+      "name": "TabCarry",
+      "homepage": "https://atomsprout.com/tabcarry/",
+      "privacy_url": "https://atomsprout.com/tabcarry/privacy/"
+    },
+    {
+      "name": "NotBadBookmark",
+      "homepage": "https://atomsprout.com/notbadbookmark/",
+      "privacy_url": "https://atomsprout.com/notbadbookmark/privacy/"
+    },
+    {
+      "name": "X Article Export",
+      "homepage": "https://atomsprout.com/x-article-export-pdf/",
+      "privacy_url": "https://atomsprout.com/x-article-export-pdf/privacy/"
+    }
+  ]
+}
