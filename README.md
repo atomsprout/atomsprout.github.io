@@ -62,3 +62,14 @@ The homepage renders a regular dodecahedron from golden-ratio coordinates, with 
 The favicon uses the transparent cutout in `public/assets/favicon-source.png`, prepared as a centered `favicon-master.png` plus 16/32/48px PNGs and `public/favicon.ico`. Background extraction used the built-in image generation tool; the exact prompt and preparation notes are in `docs/favicon-prompt.txt`. PNG and ICO references share the build asset version so browsers request the updated transparent version.
 
 Header/footer marks use the transparent cutout with a small horizontal optical correction inside square slots. This removes the old crop and balances the slightly taller source silhouette without changing the source artwork.
+
+
+## Public identity migration (2026-11-12)
+
+Software pages are maintained here. `software-sites/` contains the relocated static websites, including the privacy-reviewed iOS Atlas public data export. `game-site/` contains the former game website's authored Next source and media. Its development/archive pages are not part of the released-product catalog and are marked noindex. Update these sources rather than the retired websites.
+
+`npm ci --prefix game-site` installs the game builder; `npm run build` builds both sites and merges the software routes. `npm run check` checks the complete export. The only public support email is `atomsprout@gmail.com`; product-specific privacy promises and effective dates are preserved. Contact addresses are authored directly, with no post-build email substitution.
+
+The personal blog and RSS remain on xnu.app. rea.tools, microclaw.org, liney.dev and e7lang.github.io retain their domains. Source repositories, App Store URLs, Homebrew identities and application storage identifiers remain service-specific.
+
+Old website publishers generate redirects only after the new destination has been deployed. The former game website no longer supplies assets or content and can be retired separately when the owner is ready.

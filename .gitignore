@@ -3,3 +3,7 @@ dist/
 node_modules/
 
 verification/
+
+game-site/.next/
+game-site/out/
+game-site/node_modules

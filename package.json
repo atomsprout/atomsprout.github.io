@@ -3,9 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs && node scripts/render-contact.mjs",
+    "build": "node scripts/build.mjs && npm --prefix game-site run build:pages && node scripts/build-software.mjs",
     "check": "node scripts/check.mjs",
     "dev": "npm run build && node scripts/serve.mjs"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  }
 }

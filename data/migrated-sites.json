@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "riftvm",
+    "source": "products/org/riftvm/riftvm.github.io",
+    "commit": "a0c869601ff3a31509720acb936daa4f3f1a7df2"
+  },
+  {
+    "slug": "chatcomputer",
+    "source": "products/org/chatcomputer/chatcomputer.github.io",
+    "commit": "1eafd1cf34a6821823c5135f2f86e47a70a38b27"
+  },
+  {
+    "slug": "hexlora",
+    "source": "products/brew/hexlora/docs",
+    "commit": "722f81b3563089689adac8da00ac4379f0b9085a"
+  },
+  {
+    "slug": "typetide",
+    "source": "products/brew/typetide/docs",
+    "commit": "bb1a070b66df58f67117b39fd6161781aab2a20a"
+  },
+  {
+    "slug": "launchdeck",
+    "source": "products/brew/launchdeck/site",
+    "commit": "6fefdb66c3c460ade282ea95d683ffb86f59a07e"
+  },
+  {
+    "slug": "machoexplorer",
+    "source": "products/brew/machoexplorer/site",
+    "commit": "cd612d774369475efeb437377d91502c2b9602a5"
+  },
+  {
+    "slug": "xcodefit",
+    "source": "products/brew/xcodefit/web",
+    "commit": "19420d38a86bdf1bc78dfd535927dfe78114f52f"
+  },
+  {
+    "slug": "tabcarry",
+    "source": "products/chrome-extension/tabcarry/docs/site",
+    "commit": "79d8a44e00ee423d36a0e76539d2b1eea7a65ffb"
+  },
+  {
+    "slug": "notbadbookmark",
+    "source": "products/chrome-extension/notbadbookmark/docs",
+    "commit": "f9e561ca1ff4a90cd922b73800cef536bb69fb9d"
+  },
+  {
+    "slug": "x-article-export-pdf",
+    "source": "products/chrome-extension/x-article-export-pdf/docs",
+    "commit": "f9a54e6be2ef265246273d01bcb68012e9fae9a6"
+  },
+  {
+    "slug": "beanbao",
+    "source": "sec/beanbao/web",
+    "commit": "31ad1d3520d03e714609954fb298862d80e3a21d"
+  },
+  {
+    "slug": "copyapp",
+    "source": "sec/jailbreak/copyapp/web",
+    "commit": "69838a5f74676e7128aa7b2566cc7c68e986efea"
+  },
+  {
+    "slug": "pixel6ios",
+    "source": "sec/pixel6ios/web",
+    "commit": "a461b34d16f97e721a9685e62d6ade000198187b"
+  },
+  {
+    "slug": "scriptwidget",
+    "source": "products/appstore/scriptwidget/site",
+    "commit": "0d504c27f8050fa678601755d9a2bccffd56fb27"
+  }
+]

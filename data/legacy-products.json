@@ -1,0 +1,280 @@
+{
+  "titled": {
+    "name": "Titled",
+    "platform": "iOS · iPadOS",
+    "icon": "file-text",
+    "tagline": "Save web pages as PDFs with titles you can recognize later.",
+    "description": "Preview a web page, create a PDF, and keep its filename and internal title in sync. Titled includes a searchable library and a Safari share extension.",
+    "links": [
+      {
+        "label": "Get help",
+        "href": "/titled/support/",
+        "primary": true
+      }
+    ],
+    "features": [
+      {
+        "title": "Meaningful names",
+        "body": "Extract page titles and keep PDF filenames and internal titles aligned, including after renaming."
+      },
+      {
+        "title": "Review before saving",
+        "body": "Check the page preview before creating a PDF; some sites limit printing or need a login."
+      },
+      {
+        "title": "Saved library",
+        "body": "Search, sort, read, rename, and delete PDFs stored locally or in your iCloud documents."
+      },
+      {
+        "title": "Share extension",
+        "body": "Create a PDF from a web URL shared through the system share sheet."
+      }
+    ],
+    "privacy": true,
+    "privacy_sections": [
+      {
+        "heading": "Documents and settings",
+        "body": "Titled converts web pages on your device. PDFs remain in the app's local storage, shared App Group storage, or your own iCloud document storage. Settings and reading positions are stored on your device. iCloud storage and synchronization are provided by Apple under your Apple account."
+      },
+      {
+        "heading": "Website connections",
+        "body": "Loading a page connects directly to that website and its resources. The website may receive your IP address, use cookies, or require a login. Its privacy policy applies. Titled does not bypass website access restrictions. Deleting a PDF does not delete website cookies."
+      },
+      {
+        "heading": "Sharing",
+        "body": "You choose which PDF to share and where. Generated PDFs include the source web address in their metadata; the address may contain query parameters and travels with exported copies. Review it before sharing."
+      },
+      {
+        "heading": "Analytics and advertising",
+        "body": "Titled contains no advertising or analytics SDKs. The developer does not operate a content-upload service for PDF conversion."
+      },
+      {
+        "heading": "Contact",
+        "body": "For privacy questions, email atomsprout@gmail.com. This policy was updated September 22, 2026."
+      }
+    ]
+  },
+  "jsoncompare": {
+    "name": "JSON Compare",
+    "platform": "macOS",
+    "icon": "diff",
+    "tagline": "A simple, native JSON diff tool for macOS.",
+    "description": "Paste two JSON documents into the panes and compare a deterministic, sorted representation side by side. Everything runs locally in a native SwiftUI app, so private payloads never leave your Mac.",
+    "install": "brew install --cask everettjf/tap/jsoncompare",
+    "links": [
+      {
+        "label": "Install with Homebrew",
+        "href": "https://github.com/everettjf/jsoncompare#install",
+        "primary": true
+      },
+      {
+        "label": "View source on GitHub",
+        "href": "https://github.com/everettjf/jsoncompare"
+      }
+    ],
+    "features": [
+      {
+        "title": "Side-by-side diff",
+        "body": "Added and removed lines stay aligned in two readable panes."
+      },
+      {
+        "title": "Order-insensitive",
+        "body": "Object keys are sorted before comparison so key order does not create noise."
+      },
+      {
+        "title": "Format & validate",
+        "body": "JSON is parsed and pretty-printed, with clear errors for invalid input."
+      },
+      {
+        "title": "Keyboard friendly",
+        "body": "Compare, edit, clear, and navigate with native controls and shortcuts."
+      },
+      {
+        "title": "Native performance",
+        "body": "Built in SwiftUI. Opens instantly, idles cheaply."
+      },
+      {
+        "title": "No cloud",
+        "body": "Your payloads never leave the app. No telemetry."
+      }
+    ],
+    "privacy": true,
+    "privacy_sections": [
+      {
+        "heading": "Introduction",
+        "body": "JSON Compare respects your privacy. This document describes what data, if any, the app collects and how it is used."
+      },
+      {
+        "heading": "Information we collect",
+        "list": [
+          "Anonymous usage data and crash reports."
+        ]
+      },
+      {
+        "heading": "How we use information",
+        "list": [
+          "To keep the app working and fix bugs.",
+          "To respond to questions you send to us directly."
+        ]
+      },
+      {
+        "heading": "Data security",
+        "body": "Where data is transmitted off-device, it is sent over TLS and not shared with third parties for marketing."
+      },
+      {
+        "heading": "Data retention",
+        "body": "We keep only what is needed to provide the service. You can request deletion at any time."
+      },
+      {
+        "heading": "Contact",
+        "body": "Questions? Email atomsprout@gmail.com."
+      }
+    ]
+  },
+  "notbadbookmark": {
+    "name": "NotbadBookmark",
+    "platform": "Chrome extension",
+    "icon": "bookmark",
+    "tagline": "A modern replacement for Chrome's default bookmark manager.",
+    "description": "If you save a lot of links, the built-in manager is painful. NotbadBookmark is a clean, fast extension with real search, drag-and-drop folders, and light and dark themes. It uses Chrome's own bookmark store, so your existing bookmarks and browser sync remain available.",
+    "links": [
+      {
+        "label": "Add to Chrome",
+        "href": "https://chromewebstore.google.com/detail/notbadbookmark/mablekconlhfomebomdjbohbjmgceana",
+        "primary": true
+      }
+    ],
+    "features": [
+      {
+        "title": "Real search",
+        "body": "Live filtering across titles and URLs, instant results."
+      },
+      {
+        "title": "Folder DnD",
+        "body": "Drag bookmarks into folders, drag folders into folders."
+      },
+      {
+        "title": "Chrome bookmarks",
+        "body": "Manage your existing bookmarks without migrating to a separate service."
+      },
+      {
+        "title": "Keyboard navigation",
+        "body": "Arrow keys, enter, escape — get around without a mouse."
+      },
+      {
+        "title": "Light + dark",
+        "body": "Follows your system theme."
+      },
+      {
+        "title": "No new account",
+        "body": "Sits on top of Chrome's own bookmark store. Sync still works."
+      }
+    ],
+    "privacy": true
+  },
+  "voicedraft": {
+    "name": "VoiceDraft",
+    "platform": "iOS · iPadOS",
+    "icon": "mic",
+    "tagline": "Turn a recording into something you can edit and share.",
+    "description": "Record an idea or import audio, then choose an editable action: summarize it, research the topic with sources, prepare to act, or use your own prompt. Every result is an editable Markdown document.",
+    "links": [
+      {
+        "label": "Get help",
+        "href": "/voicedraft/support/",
+        "primary": true
+      }
+    ],
+    "features": [
+      {
+        "title": "Record or import",
+        "body": "Keep the source audio and a timestamped transcript so you can return to what you said."
+      },
+      {
+        "title": "Editable actions",
+        "body": "Choose from three built-in prompts or create your own. Each action produces one Markdown draft you can preview and edit."
+      },
+      {
+        "title": "Apple-first processing",
+        "body": "Use on-device speech recognition and generation; eligible longer tasks may use Apple Private Cloud Compute."
+      },
+      {
+        "title": "Optional providers",
+        "body": "Configure an external model provider yourself. Sending original audio requires separate destination-specific consent."
+      },
+      {
+        "title": "Copy or share",
+        "body": "Copy the Markdown or share a .md file. Keep the original recording and transcript for reference."
+      }
+    ],
+    "privacy": true,
+    "privacy_sections": [
+      {
+        "heading": "Recordings and local data",
+        "body": "Recordings and exported Markdown files are kept in your VoiceDraft folder in iCloud Drive when available, or locally on your device when iCloud Drive is unavailable. Transcripts, generated outputs, settings, and prompts are stored locally. iCloud Drive sync is provided by Apple under your Apple Account; the developer cannot read your iCloud Drive."
+      },
+      {
+        "heading": "Apple processing",
+        "body": "Default speech transcription runs on device. Short generation uses Apple’s on-device model. Eligible longer or more complex generation may use Apple Private Cloud Compute. Availability and processing by Apple follow its applicable terms."
+      },
+      {
+        "heading": "Optional external providers",
+        "body": "External generation and audio transcription are separate choices and are off by default. Generation can send transcripts, timestamped source segments, and selected prompt instructions to the provider you configure. Original audio is sent only after destination-specific consent. The Research action sends the transcript and selected prompt, but not the audio, to a configured web-search provider after a separate confirmation. Provider retention and account practices are governed by that provider."
+      },
+      {
+        "heading": "Keys, sharing, and deletion",
+        "body": "External-provider keys are stored in Apple Keychain. You choose when to share exported files. You can delete recordings, outputs, keys, and local app data in Settings; exported copies and provider-held copies must be managed separately."
+      },
+      {
+        "heading": "Analytics and contact",
+        "body": "VoiceDraft has no advertising or analytics SDK and does not operate a server for your content. If you email support, we receive the information you choose to send so we can reply. Contact atomsprout@gmail.com. Updated September 30, 2026."
+      }
+    ]
+  },
+  "launchdeck": {
+    "name": "LaunchDeck",
+    "platform": "macOS 26+",
+    "icon": "zap",
+    "tagline": "Apps, files, and actions at your fingertips.",
+    "description": "A keyboard-first macOS launcher for apps, files, and reusable workflows. Optional on-device intent search uses Apple Intelligence on supported hardware. Distributed through Homebrew and GitHub Releases.",
+    "links": [
+      {
+        "label": "Download from GitHub Releases",
+        "href": "https://github.com/everettjf/launchdeck/releases/latest",
+        "primary": true
+      },
+      {
+        "label": "View source on GitHub",
+        "href": "https://github.com/everettjf/launchdeck"
+      }
+    ],
+    "features": [
+      {
+        "title": "Instant launch",
+        "body": "Open any installed application with a global shortcut and a few keystrokes."
+      },
+      {
+        "title": "Fuzzy search",
+        "body": "Match by name, category, or aliases — typos and abbreviations are fine."
+      },
+      {
+        "title": "Optional intent search",
+        "body": "Describe what you want to do. Requires Apple Intelligence-capable hardware and an available on-device model."
+      },
+      {
+        "title": "Keyboard-first",
+        "body": "Built for power users. The mouse is optional, end to end."
+      },
+      {
+        "title": "Categories & ordering",
+        "body": "Group apps the way you think about them, not how the Finder sorts them."
+      },
+      {
+        "title": "Native and lightweight",
+        "body": "A small Swift app. No Electron, no background bloat."
+      }
+    ],
+    "privacy": true,
+    "install": "brew install --cask everettjf/tap/launchdeck"
+  }
+}
