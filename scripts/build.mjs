@@ -44,7 +44,7 @@ function installBlock(p) {
 }
 function gameFeature() {
   const p=inCollection('games')[0];
-  return `<a class="game-feature" href="/${p.slug}/"><img src="/assets/cinderwick-gameplay.jpg" width="1600" height="900" alt="Cinderwick pixel-art gameplay, with a samurai fighting a boss" loading="lazy"><div class="game-feature-copy"><span class="pill">AVAILABLE ON THE APP STORE</span><h3>Cinderwick</h3><p>Carry the light.<br>Find your next adventure.</p><span class="text-link">Explore the game ${arrow}</span></div></a>`;
+  return `<a class="game-feature" href="/${p.slug}/"><img src="/assets/foxwick-gameplay.jpg" width="1600" height="900" alt="Foxwick pixel-art gameplay, with a samurai fighting a boss" loading="lazy"><div class="game-feature-copy"><span class="pill">AVAILABLE ON THE APP STORE</span><h3>Foxwick</h3><p>Carry the light.<br>Find your next adventure.</p><span class="text-link">Explore the game ${arrow}</span></div></a>`;
 }
 function collectionNav(active) {
   return `<nav class="collection-tabs" aria-label="Product collections">${collections.map(c=>`<a href="/${c.id}/" ${active===c.id?'aria-current="page"':''}>${c.name}<span>${inCollection(c.id).length}</span></a>`).join('')}</nav>`;
@@ -89,10 +89,6 @@ for(const c of collections) {
 }
 write('/founder/',page({title:'About the founder',route:'/founder/',description:'Meet Everett, the developer behind AtomSprout.',body:`<article class="document founder-page wrap"><p class="eyebrow">ABOUT THE FOUNDER</p><h1>Everett<span class="color-dot">.</span></h1><p class="founder-handle">@everettjf / Founder of AtomSprout</p><div class="prose"><p class="large-copy">A developer, a curious mind,<br>and a habit of making things.</p><p>I build apps, developer tools, and games. Many begin with something I want to understand or a task I wish were easier.</p><p>AtomSprout is the home for that work: small ideas, thoughtfully built, with room to grow. The name brings together an atom’s building blocks and a sprout’s sense of possibility.</p><p lang="zh-CN">我也在微信公众号「吃灰思考」记录开发与思考：不要让设备吃灰，也不要让好奇心吃灰。</p></div><div class="founder-links"><a class="button primary" href="https://github.com/everettjf" ${external}>Find me on GitHub ${arrow}</a><a class="text-link" href="/support/">Get in touch ${arrow}</a></div></article>`}));
 write('/privacy/remoboard/',redirect('/remoboard/privacy/'),false);
-// Cinderwick was Foxwick until 1.7; older builds and links still use /foxwick/.
-for (const sub of ['', 'support/', 'privacy/']) write(`/foxwick/${sub}`, redirect(`/cinderwick/${sub}`), false);
-write('/foxwick/support.html', redirect('/cinderwick/support/'), false);
-write('/foxwick/privacy.html', redirect('/cinderwick/privacy/'), false);
 write('/projects/',redirect('/#products'),false);
 write('/404.html',page({title:'Page not found',route:'/404.html',noindex:true,body:'<section class="document wrap"><p class="eyebrow">404 / A SMALL DETOUR</p><h1>A new direction?</h1><p class="document-intro">That page isn’t here. Let’s find something useful.</p><a class="button primary" href="/">Back to AtomSprout →</a></section>'}),false);
 fs.writeFileSync(path.join(out,'.nojekyll'),'');
