@@ -56,3 +56,7 @@ The Homebrew selection is Liney, TypeTide, Hexlora, RiftVM, and ChatComputer. Bo
 ## Mathematical hero
 
 The homepage renders a regular dodecahedron from golden-ratio coordinates, with 20 vertices and 30 equal-length edges. `public/assets/geometry.js` is shared by the static build and animation. `hero-math.js` rotates it once every 90 seconds, supports pausing, honors reduced motion, and suspends work while hidden or outside the viewport. A static SVG remains visible without JavaScript. Header and footer retain the approved brand logo.
+
+## Favicon
+
+The favicon uses the transparent cutout in `public/assets/favicon-source.png`, prepared as a centered `favicon-master.png` plus 16/32/48px PNGs and `public/favicon.ico`. Background extraction used the built-in image generation tool; the exact prompt and preparation notes are in `docs/favicon-prompt.txt`. PNG and ICO references share the build asset version so browsers request the updated transparent version.

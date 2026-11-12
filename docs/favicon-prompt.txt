@@ -1,0 +1,12 @@
+Mode: built-in image_gen.
+Use case: background-extraction.
+Edit target: public/assets/brand-light.png
+Generated source: public/assets/favicon-source.png
+Prepared master: public/assets/favicon-master.png
+
+Prompt:
+Use case: background-extraction. Asset type: transparent website favicon source. Edit target: the referenced AtomSprout logo image. Remove ONLY the warm white background and the soft ground/contact shadow. Preserve the colorful dodecahedron itself: same silhouette, same orientation, same pentagonal facets, same blue/cyan/teal/gold/pink gradient palette and clean edges. Create a clean isolated cutout on a genuinely transparent alpha background. Frame the object tightly in a square canvas, centered, with about 5% transparent margin around the entire object so it remains legible at 16–32 pixels. No tile, no rounded rectangle, no white fringe, no shadow, no text, no new elements, and do not draw a checkerboard pattern. Preserve the established brand appearance.
+
+transparent_background: true
+
+Preparation: centered 900px square crop with macOS sips; 16px, 32px and 48px PNG derivatives preserving alpha; a multi-size ICO container. The original generated cutout is retained. Pixel validation confirmed all four corners are alpha=0, with opaque subject pixels, in the master and each derivative.
