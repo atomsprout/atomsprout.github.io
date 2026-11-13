@@ -83,3 +83,14 @@ Old website publishers generate redirects only after the new destination has bee
 ## Chrome extensions
 
 `extensions` is a distribution collection; `price: "free"` labels the three extensions without mixing price and product type. TabCarry, NotbadBookmark and X Article Export link to their existing product websites and Chrome Web Store listings. Their support and privacy links appear in grouped company directories; product-specific privacy policies remain unchanged.
+
+## ChatComputer and RiftVM website ownership
+
+Both product websites are maintained entirely in `software-sites/chatcomputer/`
+and `software-sites/riftvm/`. Their images, JavaScript, styles, historical benchmark
+`results.json`, legacy `catalog/linux.json`, and RiftVM asset-hash validator are
+kept here. The old `chatcomputer/chatcomputer.github.io` and
+`riftvm/riftvm.github.io` repositories are no longer sources or runtime dependencies.
+Keep their existing redirects until the owner retires the repositories. Removing
+them will remove the old GitHub Pages URLs; current clients and documentation
+use the company URLs. GitHub app repositories, release assets, and taps remain.

@@ -292,8 +292,8 @@
     "tagline": "A Linux world, right on your Mac.",
     "description": "Run Omarchy Linux in a native Mac app, using Apple’s virtualization framework and a signed, verified factory image.",
     "source_url": "https://github.com/riftvm/riftvm",
-    "website_url": "https://atomsprout.com/riftvm",
-    "download_url": "https://github.com/riftvm/riftvm/releases/tag/riftvm-v0.6.9",
+    "website_url": "https://atomsprout.com/riftvm/",
+    "download_url": "https://github.com/riftvm/riftvm/releases/latest",
     "install": "brew install --cask riftvm/tap/riftvm",
     "features": [
       {
@@ -311,7 +311,7 @@
     ],
     "screenshot_alt": "RiftVM’s official Omarchy illustration",
     "collection": "homebrew",
-    "verified_at": "2026-11-11",
+    "verified_at": "2026-11-12",
     "icon": "/assets/riftvm-icon.png",
     "screenshot": "/assets/riftvm-workspace.webp"
   },
@@ -323,7 +323,7 @@
     "tagline": "A second Mac, working while you chat.",
     "description": "An AI-operated macOS virtual machine on your Mac. Describe a task, watch the agent work, and take over when you choose. Bring your own model provider.",
     "source_url": "https://github.com/chatcomputer/chatcomputer",
-    "website_url": "https://atomsprout.com/chatcomputer",
+    "website_url": "https://atomsprout.com/chatcomputer/",
     "download_url": "https://github.com/chatcomputer/chatcomputer/releases/latest",
     "privacy_url": "https://atomsprout.com/chatcomputer/privacy/",
     "install": "brew install --cask chatcomputer/tap/chatcomputer",
@@ -343,7 +343,7 @@
     ],
     "screenshot_alt": "ChatComputer showing a virtual Mac beside a conversation with the agent",
     "collection": "homebrew",
-    "verified_at": "2026-11-11",
+    "verified_at": "2026-11-12",
     "icon": "/assets/chatcomputer-icon.png",
     "screenshot": "/assets/chatcomputer-workspace.jpg"
   },

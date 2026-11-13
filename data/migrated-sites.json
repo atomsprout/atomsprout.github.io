@@ -2,12 +2,18 @@
   {
     "slug": "riftvm",
     "source": "products/org/riftvm/riftvm.github.io",
-    "commit": "a0c869601ff3a31509720acb936daa4f3f1a7df2"
+    "commit": "a0c869601ff3a31509720acb936daa4f3f1a7df2",
+    "maintained_source": "software-sites/riftvm",
+    "canonical_url": "https://atomsprout.com/riftvm/",
+    "original_repository_retired": true
   },
   {
     "slug": "chatcomputer",
     "source": "products/org/chatcomputer/chatcomputer.github.io",
-    "commit": "1eafd1cf34a6821823c5135f2f86e47a70a38b27"
+    "commit": "1eafd1cf34a6821823c5135f2f86e47a70a38b27",
+    "maintained_source": "software-sites/chatcomputer",
+    "canonical_url": "https://atomsprout.com/chatcomputer/",
+    "original_repository_retired": true
   },
   {
     "slug": "hexlora",

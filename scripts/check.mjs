@@ -3,7 +3,7 @@ import path from 'node:path';
 const root=path.resolve('dist');
 const files=fs.readdirSync(root,{recursive:true}).filter(f=>f.endsWith('.html'));
 const failures=[];
-const retiredHosts=new Set(['dustaxiom.github.io','riftvm.com','chatcomputer.github.io','aspt.dev']);
+const retiredHosts=new Set(['dustaxiom.github.io','riftvm.com','riftvm.github.io','chatcomputer.github.io','aspt.dev']);
 const blogHosts=new Set(['xnu.app','www.xnu.app','everettjf.github.io']);
 const isBlogPath=p=>/^\/(?:$|about\/?$|archive\/?$|feed\.xml$|(?:19|20)\d{2}\/)/.test(p);
 for(const f of files){
@@ -16,12 +16,17 @@ for(const f of files){
     try { url = new URL(match[1], `https://atomsprout.com/${f}`); }
     catch { failures.push(`${f}: invalid URL ${match[1]}`); continue; }
     if(retiredHosts.has(url.hostname)||(blogHosts.has(url.hostname)&&!isBlogPath(url.pathname)))failures.push(`${f}: legacy product URL ${match[1]}`);
+    if(url.hostname==='github.com'&&/^\/(?:chatcomputer\/chatcomputer|riftvm\/riftvm)\.github\.io(?:\/|$)/.test(url.pathname))failures.push(`${f}: retired website repository ${match[1]}`);
     if(url.hostname !== 'atomsprout.com') continue;
     const p=path.join(root,decodeURIComponent(url.pathname));
     if(!fs.existsSync(p))failures.push(`${f}: broken local link ${match[1]}`);
   }
 }
 const data=JSON.parse(fs.readFileSync('data/products.json','utf8'));
+for(const f of ['chatcomputer/results.json','riftvm/catalog/linux.json']){
+  try{JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));}
+  catch{failures.push(`${f}: missing or invalid migrated product data`);}
+}
 if(new Set(data.map(p=>p.slug)).size!==data.length)failures.push('Duplicate product slugs');
 for(const p of data){
   if(!['apps','games','extensions','homebrew'].includes(p.collection))failures.push(`${p.slug}: unknown collection`);
