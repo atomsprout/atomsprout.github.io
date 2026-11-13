@@ -1,6 +1,6 @@
 # AtomSprout
 
-Company website for AtomSprout. Publicly released apps and games live here; Everett’s writing and open-source explorations stay at [xnu.app](https://xnu.app).
+Company website for AtomSprout. Product websites live here; Everett’s personal writing stays at [xnu.app](https://xnu.app).
 
 - Website: https://atomsprout.com
 - Source: https://github.com/atomsprout/atomsprout.github.io
@@ -45,13 +45,15 @@ The primary domain is `https://atomsprout.com`. GitHub Pages is configured with 
 
 TTL is Auto. GitHub Pages handles the `www` → apex redirect and HTTPS enforcement after certificate issuance. The tracked `public/CNAME` records the intended domain; the repository Pages setting controls the Actions deployment domain. Canonical links and the sitemap always use HTTPS.
 
-`aspt.dev` is deferred at the owner’s request. No DNS or redirect changes have been made for that domain. When it is connected later, configure an HTTPS redirect that preserves paths and query strings.
+`asp.run` is the active short domain. Cloudflare redirects it to `https://atomsprout.com`, preserving paths and query strings. `www.asp.run` redirects through `asp.run`. `aspt.dev` is deferred at the owner’s request.
 
 ## Migration
 
 Product URLs on the personal blog redirect to their matching company pages. Historical blog articles and the personal RSS feed remain at their original URLs. Embedded old links continue through those redirects. Product repository ownership and App Store Connect marketing/support/privacy settings have not been changed by this website deployment.
 
 The Homebrew selection is Liney, TypeTide, Hexlora, RiftVM, and ChatComputer. Both RiftVM and ChatComputer are published, installable products and use their project-specific taps. LaunchDeck, XcodeFit, and MachOExplorer are omitted at the owner’s request.
+
+When updating download links, verify that each target release and platform asset is public. Do not infer a Windows package from a macOS release or promote a GitHub prerelease as the stable download. The product-specific imported pages under `software-sites/` may contain their own download buttons in addition to `data/products.json`.
 
 ## Mathematical hero
 

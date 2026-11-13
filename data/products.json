@@ -208,7 +208,7 @@
     "icon": "/assets/liney-icon.png",
     "screenshot": "/assets/liney-workspace.png",
     "source_url": "https://github.com/everettjf/liney",
-    "download_url": "https://github.com/everettjf/liney/releases/tag/v1.0.88",
+    "download_url": "https://github.com/everettjf/liney/releases/tag/v1.0.89",
     "install": "brew install --cask everettjf/tap/liney",
     "features": [
       {
@@ -237,7 +237,7 @@
     "icon": "/assets/typetide-icon.png",
     "screenshot": "/assets/typetide-workspace.png",
     "source_url": "https://github.com/everettjf/typetide",
-    "download_url": "https://github.com/everettjf/typetide/releases/tag/v0.1.21",
+    "download_url": "https://github.com/everettjf/typetide/releases/tag/v0.1.22",
     "install": "brew install --cask everettjf/tap/typetide",
     "features": [
       {
@@ -266,7 +266,7 @@
     "icon": "/assets/hexlora-icon.png",
     "screenshot": "/assets/hexlora-workspace.jpg",
     "source_url": "https://github.com/everettjf/hexlora",
-    "download_url": "https://github.com/everettjf/homebrew-tap/releases/tag/hexlora-v1.1.21",
+    "download_url": "https://github.com/everettjf/homebrew-tap/releases/tag/hexlora-v1.1.22",
     "install": "brew install --cask everettjf/tap/hexlora",
     "features": [
       {
@@ -293,7 +293,7 @@
     "description": "Run Omarchy Linux in a native Mac app, using Apple’s virtualization framework and a signed, verified factory image.",
     "source_url": "https://github.com/riftvm/riftvm",
     "website_url": "https://atomsprout.com/riftvm",
-    "download_url": "https://github.com/riftvm/riftvm/releases/tag/riftvm-v0.6.8",
+    "download_url": "https://github.com/riftvm/riftvm/releases/tag/riftvm-v0.6.9",
     "install": "brew install --cask riftvm/tap/riftvm",
     "features": [
       {
