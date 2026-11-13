@@ -1,0 +1,11 @@
+/* Wide-screen editing bench, with an orange action rail. */
+.product-editsmith { --product-accent: #9c471c; }
+.product-editsmith .app-hero { grid-template-columns: .9fr 1.2fr; gap: 35px; }
+.product-editsmith .app-heading h1 { font-size: clamp(38px, 4vw, 56px); }
+.product-editsmith .app-hero-visual { padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.product-editsmith .app-shot img { width: 100%; }
+.product-editsmith .app-feature-grid article { padding-top: 25px; border-top: 3px solid var(--product-accent); }
+.product-editsmith .app-identity { font-family: ui-monospace, SFMono-Regular, monospace; }
+html[data-theme='dark'] .product-editsmith { --product-accent: #e7b18c; }
+@media (prefers-color-scheme: dark) { html:not([data-theme='light']) .product-editsmith { --product-accent: #e7b18c; } }
+@media (max-width: 720px) { .product-editsmith .app-hero { grid-template-columns: 1fr; } }

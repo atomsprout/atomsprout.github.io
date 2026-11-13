@@ -1,0 +1,16 @@
+/* A broad comparison desk, rather than a phone-shaped hero. */
+.product-grapecompare { --product-accent: #7043a0; }
+.product-grapecompare .app-hero { grid-template-columns: 1fr; gap: 25px; }
+.product-grapecompare .app-heading { display: grid; grid-template-columns: 1.2fr 1fr; column-gap: 70px; }
+.product-grapecompare .app-heading .back, .product-grapecompare .app-identity, .product-grapecompare .app-heading .eyebrow { grid-column: 1 / -1; }
+.product-grapecompare .app-heading h1 { grid-row: span 3; }
+.product-grapecompare .app-lead { margin-top: 0; }
+.product-grapecompare .app-actions { margin-top: 8px; }
+.product-grapecompare .app-hero-visual { border-radius: 18px; padding: 32px; background: #e8dff1; }
+.product-grapecompare .app-hero-visual img { max-height: 640px; width: 100%; }
+.product-grapecompare .app-hero-visual figcaption { color: #635270; }
+.product-grapecompare .app-feature-grid article { border-left: 2px solid var(--product-accent); padding-left: 25px; }
+.product-grapecompare .app-gallery-grid { align-items: center; }
+html[data-theme='dark'] .product-grapecompare { --product-accent: #ccb0ee; }
+@media (prefers-color-scheme: dark) { html:not([data-theme='light']) .product-grapecompare { --product-accent: #ccb0ee; } }
+@media (max-width: 720px) { .product-grapecompare .app-heading { display: block; } .product-grapecompare .app-hero-visual { padding: 12px; } }

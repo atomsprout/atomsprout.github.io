@@ -63,7 +63,7 @@
         <p class="micro">macOS Apple silicon · Windows x64 · Linux amd64 · Apache-2.0</p>
       </div>
 
-      <div class="inspector carousel" id="gallery" aria-label="Hexlora screenshots" aria-roledescription="carousel">
+      <div class="inspector carousel" data-slide-label="Show screenshot" id="gallery" aria-label="Hexlora screenshots" aria-roledescription="carousel">
         <div class="slides" aria-live="polite">
           <figure class="slide active"><img src="assets/screenshots/overview.jpg?v=1.1.20" alt="Hexlora overview of Hexlora.app"><figcaption><b>Application overview</b><span>Explore a complete macOS app as a logical artifact tree.</span></figcaption></figure>
           <figure class="slide"><img src="assets/screenshots/executable.jpg?v=1.1.20" alt="Hexlora Mach-O executable overview" loading="lazy"><figcaption><b>Binary inspection</b><span>See architecture, format, entry point, imports, and exports.</span></figcaption></figure>
@@ -195,7 +195,7 @@
   <section class="section shell" id="languages"><h2>11 interface languages</h2><p>English · 简体中文 · 日本語 · 한국어 · Deutsch · Français · Español · Italiano · Português (Brasil) · Русский · Tiếng Việt</p><p>Switch languages instantly from the Language menu. Your choice is remembered across launches.</p></section>
 </main>
 
-  <footer class="shell"><a class="brand" href="#top"><img class="brand-icon" src="assets/icons/apple-touch-icon.png" alt=""><span>Hexlora</span></a><p>Static inspection only. Indicators are not malware verdicts.</p><p><a href="https://discord.gg/eGzEaP6TzR" target="_blank" rel="noopener noreferrer">Discord</a> · © 2026 AtomSprout · Apache-2.0</p></footer>
+  <footer class="shell"><a class="brand" href="#top"><img class="brand-icon" src="assets/icons/apple-touch-icon.png" alt=""><span>Hexlora</span></a><p>Static inspection only. Indicators are not malware verdicts.</p><p><a href="https://discord.gg/eGzEaP6TzR" target="_blank" rel="noopener noreferrer">Discord</a> · © 2026 <a href="https://atomsprout.com/">AtomSprout</a> · Apache-2.0</p></footer>
   <script>
     // Keep the release page as a working fallback when the API is unavailable.
     async function loadLatestDownloads() {
@@ -227,51 +227,7 @@
       });
     });
 
-    const carousel = document.querySelector('.carousel');
-    const slides = [...carousel.querySelectorAll('.slide')];
-    const dots = carousel.querySelector('.carousel-dots');
-    let current = 0;
-    let timer;
-    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-
-    const showSlide = (index) => {
-      current = (index + slides.length) % slides.length;
-      slides.forEach((slide, i) => {
-        const active = i === current;
-        slide.classList.toggle('active', active);
-        slide.setAttribute('aria-hidden', String(!active));
-      });
-      [...dots.children].forEach((dot, i) => {
-        dot.classList.toggle('active', i === current);
-        dot.setAttribute('aria-selected', String(i === current));
-      });
-    };
-    const stop = () => clearInterval(timer);
-    const start = () => {
-      stop();
-      if (!reducedMotion.matches) timer = setInterval(() => showSlide(current + 1), 5200);
-    };
-    slides.forEach((_, i) => {
-      const dot = document.createElement('button');
-      dot.type = 'button';
-      dot.role = 'tab';
-      dot.setAttribute('aria-label', `Show screenshot ${i + 1}`);
-      dot.addEventListener('click', () => { showSlide(i); start(); });
-      dots.append(dot);
-    });
-    carousel.querySelector('[data-previous]').addEventListener('click', () => { showSlide(current - 1); start(); });
-    carousel.querySelector('[data-next]').addEventListener('click', () => { showSlide(current + 1); start(); });
-    carousel.addEventListener('mouseenter', stop);
-    carousel.addEventListener('mouseleave', start);
-    carousel.addEventListener('focusin', stop);
-    carousel.addEventListener('focusout', start);
-    carousel.addEventListener('keydown', (event) => {
-      if (event.key === 'ArrowLeft') showSlide(current - 1);
-      if (event.key === 'ArrowRight') showSlide(current + 1);
-    });
-    reducedMotion.addEventListener('change', start);
-    showSlide(0);
-    start();
   </script>
+<script src="carousel.js" defer></script>
 </body>
 </html>

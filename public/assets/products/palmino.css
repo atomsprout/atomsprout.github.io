@@ -1,0 +1,10 @@
+/* A tool-oriented canvas with compact panels and sea green. */
+.product-palmino { --product-accent: #216b63; }
+.product-palmino .app-heading h1 { font-weight: 600; }
+.product-palmino .app-hero-visual { background: #d5e8df; padding: 28px; border-radius: 24px; }
+.product-palmino .app-hero-visual figcaption { color: #365c50; }
+.product-palmino .app-feature-grid { gap: 14px; }
+.product-palmino .app-feature-grid article { border: 1px solid var(--line); border-radius: 16px; padding: 28px; background: var(--surface); }
+.product-palmino .feature-index { padding: 8px 0; border-bottom: 1px solid var(--line); }
+html[data-theme='dark'] .product-palmino { --product-accent: #8bc8b5; }
+@media (prefers-color-scheme: dark) { html:not([data-theme='light']) .product-palmino { --product-accent: #8bc8b5; } }

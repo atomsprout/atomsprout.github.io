@@ -1,0 +1,11 @@
+/* Two people, two sides: a conversational split composition. */
+.product-babeltable { --product-accent: #296c78; }
+.product-babeltable .app-hero { grid-template-columns: 1fr 1fr; }
+.product-babeltable .app-heading h1 { letter-spacing: -3px; font-weight: 650; }
+.product-babeltable .app-hero-visual { border-radius: 16px 90px 16px 90px; background: linear-gradient(135deg, #cce6e6 50%, #f1d6b8 50%); padding: 30px; }
+.product-babeltable .app-hero-visual figcaption { color: #344d52; }
+.product-babeltable .app-feature-grid { border-top: 2px solid var(--product-accent); padding-top: 30px; }
+.product-babeltable .app-gallery-grid .app-shot { padding: 25px; border-radius: 24px; background: var(--surface); border: 1px solid var(--line); }
+html[data-theme='dark'] .product-babeltable { --product-accent: #8ad1d7; }
+@media (prefers-color-scheme: dark) { html:not([data-theme='light']) .product-babeltable { --product-accent: #8ad1d7; } }
+@media (max-width: 720px) { .product-babeltable .app-hero { grid-template-columns: 1fr; } .product-babeltable .app-hero-visual { padding: 24px; } }

@@ -1,0 +1,14 @@
+/* The game leads: an immersive landscape, warm firelight and bold typography. */
+.product-foxwick { --product-accent: #a64e22; }
+.product-foxwick .app-hero { position: relative; width: 100%; padding: 60px max(48px, calc((100% - 1220px) / 2)); grid-template-columns: 1.2fr .8fr; background: linear-gradient(90deg, #0c1723f5, #0c1723b8), url('/assets/foxwick-gameplay.jpg') center / cover; color: #fff3dc; }
+.product-foxwick .app-heading h1 { font-family: Georgia, serif; font-size: clamp(65px, 7vw, 100px); font-weight: 400; color: #ffda9f; }
+.product-foxwick .app-heading .back, .product-foxwick .app-lead, .product-foxwick .app-platform, .product-foxwick .app-heading .eyebrow, .product-foxwick .app-hero figcaption { color: #e0d1be; }
+.product-foxwick .app-actions .primary { background: #ffda9f; color: #2b1b10; }
+.product-foxwick .app-actions .text-link { color: #fff3dc; }
+.product-foxwick .app-feature-grid article { border-top: 2px solid var(--product-accent); padding-top: 25px; }
+.product-foxwick .app-feature-grid h3, .product-foxwick .app-section-heading h2 { font-family: Georgia, serif; font-weight: 400; }
+.product-foxwick .app-gallery-grid { padding: 30px; background: #152232; border-radius: 14px; }
+.product-foxwick .app-gallery-grid figcaption { color: #e0d1be; }
+html[data-theme='dark'] .product-foxwick { --product-accent: #edba80; }
+@media (prefers-color-scheme: dark) { html:not([data-theme='light']) .product-foxwick { --product-accent: #edba80; } }
+@media (max-width: 720px) { .product-foxwick .app-hero { padding: 25px 20px 35px; grid-template-columns: 1fr; } .product-foxwick .app-heading h1 { font-size: 68px; } }

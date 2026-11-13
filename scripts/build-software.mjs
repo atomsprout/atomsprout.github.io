@@ -2,14 +2,22 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const out = 'dist';
-const origin = 'https://atomsprout.com';
+const origin = (process.env.SITE_URL || 'https://atomsprout.com').replace(/^http:/, 'https:').replace(/\/$/, '');
+const site = JSON.parse(fs.readFileSync('data/site.json', 'utf8'));
+const products = JSON.parse(fs.readFileSync('data/products.json', 'utf8'));
+for (const product of products) {
+  const hasStatic = fs.existsSync(`software-sites/${product.slug}/index.html`);
+  if (!['generated', 'static', 'liney'].includes(product.page_source)) throw new Error(`Unknown page source: ${product.slug}`);
+  if ((product.page_source === 'static') !== hasStatic) throw new Error(`Conflicting product page sources: ${product.slug}`);
+  if (product.page_source === 'liney' && product.slug !== 'liney') throw new Error(`Unknown documentation site: ${product.slug}`);
+}
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function write(route, html) {
   const file = path.join(out, route.replace(/^\//, ''), 'index.html');
   fs.mkdirSync(path.dirname(file), {recursive:true}); fs.writeFileSync(file, html);
 }
 function page(slug, title, body) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} — AtomSprout</title><link rel="canonical" href="${origin}/${slug}/"><link rel="stylesheet" href="/assets/site.css"></head><body><header class="site-header wrap"><a href="/">AtomSprout</a><a href="/support/">Support</a></header><main class="document wrap"><h1>${esc(title)}</h1><div class="prose">${body}</div></main><footer class="footer wrap">© ${new Date().getUTCFullYear()} AtomSprout · <a href="mailto:atomsprout@gmail.com">Contact</a></footer></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} — AtomSprout</title><link rel="canonical" href="${origin}/${slug}/"><link rel="stylesheet" href="/assets/site.css"></head><body><header class="site-header wrap"><a href="/">AtomSprout</a><a href="/support/">Support</a></header><main class="document wrap"><h1>${esc(title)}</h1><div class="prose">${body}</div></main><footer class="footer wrap">© ${new Date().getUTCFullYear()} AtomSprout · <a href="mailto:${esc(site.support_email)}">Contact</a></footer></body></html>`;
 }
 function redirect(route, target) {
   write(route, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Page moved — AtomSprout</title><link rel="canonical" href="${origin}${target}"><meta http-equiv="refresh" content="0;url=${target}"><meta name="robots" content="noindex"></head><body><a href="${target}">Continue to AtomSprout</a><script>location.replace(${JSON.stringify(target)}+location.search+location.hash)</script></body></html>`);
@@ -21,7 +29,7 @@ for (const [slug, product] of Object.entries(JSON.parse(fs.readFileSync('data/le
   const links = (product.links || []).map(l=>`<a href="${esc(l.href)}">${esc(l.label)}</a>`).join(' · ');
   write(slug, page(slug, product.name, `<p>${esc(product.description)}</p><p>${links}</p>${features}<p><a href="/${slug}/privacy/">Privacy policy</a> · <a href="/${slug}/support/">Support</a></p>`));
   if (product.privacy_sections) write(`${slug}/privacy`, page(`${slug}/privacy`, `${product.name} privacy`, product.privacy_sections.map(s=>`<h2>${esc(s.heading)}</h2><p>${esc(s.body)}</p>${s.list?`<ul>${s.list.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}`).join('')));
-  write(`${slug}/support`, page(`${slug}/support`, `${product.name} support`, fs.existsSync(`content/${slug}-support.html`) ? fs.readFileSync(`content/${slug}-support.html`,'utf8') : '<p>Email <a href="mailto:atomsprout@gmail.com">atomsprout@gmail.com</a> with the app version, device, operating system and steps to reproduce. Please leave out private content.</p>'));
+  write(`${slug}/support`, page(`${slug}/support`, `${product.name} support`, fs.existsSync(`content/${slug}-support.html`) ? fs.readFileSync(`content/${slug}-support.html`,'utf8') : '<p>Email <a href="mailto:${esc(site.support_email)}">${esc(site.support_email)}</a> with the app version, device, operating system and steps to reproduce. Please leave out private content.</p>'));
 }
 for (const slug of fs.readdirSync('software-sites')) {
   const source = path.join('software-sites',slug);
@@ -37,10 +45,10 @@ for (const slug of fs.readdirSync('software-sites')) {
       return (!local || fs.existsSync(path.join(source,decodeURI(local)))) ? `${start}/${slug}/${ref}${end}` : match;
     });
     text = text.replace(/url\((["']?)\/(?!\/)([^)'"\s]+)\1\)/g,(match,q,ref)=>fs.existsSync(path.join(source,ref))?`url(${q}/${slug}/${ref}${q})`:match);
-    // Product-site headers consistently link back to the new company home.
+    // Product sites retain their own layouts, assets and navigation.
     fs.writeFileSync(target,text);
   }
-  if (!fs.existsSync(`dist/${slug}/support/index.html`)) write(`${slug}/support`,page(`${slug}/support`,`${slug} support`,'<p>Email <a href="mailto:atomsprout@gmail.com">atomsprout@gmail.com</a>.</p>'));
+  if (!fs.existsSync(`dist/${slug}/support/index.html`)) write(`${slug}/support`,page(`${slug}/support`,`${slug} support`,'<p>Email <a href="mailto:${esc(site.support_email)}">${esc(site.support_email)}</a>.</p>'));
 }
 fs.cpSync('liney-site/build', 'dist/liney', {recursive: true});
 // Docusaurus adds a trailing slash to its HTML 404 URL; keep this file out of search.
@@ -86,3 +94,5 @@ for (const file of fs.readdirSync(out,{recursive:true}).filter(f=>f.endsWith('.h
   if (match && match[1].startsWith(origin+'/')) sitemapURLs.add(match[1]);
 }
 fs.writeFileSync(path.join(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...sitemapURLs].sort().map(url=>`<url><loc>${esc(url)}</loc></url>`).join('')}</urlset>`);
+
+fs.writeFileSync(path.join(out, 'product-routes.json'), JSON.stringify(products.map(p=>({route:`/${p.slug}/`, source:p.page_source})), null, 2)+'\n');

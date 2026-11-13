@@ -55,6 +55,7 @@ const config: Config = {
       },
       items: [
         {to: '/', label: 'Home', position: 'left'},
+        {href: '/', label: 'AtomSprout', position: 'right'},
         {to: '/docs/intro', label: 'Documentation', position: 'left'},
         {
           type: 'dropdown',

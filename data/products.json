@@ -14,8 +14,72 @@
     "icon": "/assets/grapecompare-icon.png",
     "screenshot": "/assets/grapecompare-screen.jpg",
     "store_description": "GrapeCompare is a private, native comparison workspace for macOS. Every comparison runs locally. The app has no account, analytics, advertising, tracking, network entitlement, or cloud upload.\n\nFOLDERS\n• Scan folders recursively without following symbolic links.\n• Filter identical, changed, left-only, and right-only items.\n• Review safe copy, replace, move, and recoverable delete operations before execution.\n• Use preflight checks, progress, cancellation, transaction history, and validated undo.\n\nFILES\n• Compare text line by line and character by character.\n• Navigate differences, search both sides, apply reusable comparison rules, edit an output, and export a unified patch.\n• Compare JSON, property lists, XCStrings, and Xcode project files semantically.\n\nIMAGES AND DEVELOPER FORMATS\n• Inspect images side by side, overlaid, split, blinking, or as a difference heatmap.\n• View metadata and pixel-level difference measurements.\n• Inspect app bundles, code signatures, entitlements, provisioning profiles, Mach-O architectures, and asset catalogs without launching inspected code.\n\nMERGE\n• Resolve user-selected three-way text and image merges.\n• Choose conflict results individually or in bulk and export the completed result.\n\nGrapeCompare requires macOS 15 or later. It uses App Sandbox and accesses only files and folders you explicitly select. Finder Open With, drag and drop, recent comparisons, and a Compare Files Shortcut are supported.",
-    "verified_at": "2026-11-11",
-    "collection": "apps"
+    "verified_at": "2026-11-13",
+    "collection": "apps",
+    "page_source": "generated",
+    "featured": 1,
+    "home_image": "/assets/grapecompare-workspace.webp",
+    "home_image_alt": "GrapeCompare showing a side-by-side file comparison",
+    "presentation": {
+      "eyebrow": "THE MAC COMPARISON WORKSPACE",
+      "headline": "See the difference.\nKeep the context.",
+      "intro": "Compare files, folders, images, and developer formats in a native Mac workspace.",
+      "section_label": "FROM THE BIG PICTURE TO THE LAST DETAIL",
+      "section_title": "A closer look, from every angle.",
+      "gallery_title": "One workspace. Different perspectives."
+    },
+    "highlights": [
+      {
+        "title": "Folders, in focus",
+        "body": "Scan recursively, filter changes, and review file operations before they run."
+      },
+      {
+        "title": "More than lines",
+        "body": "Compare text, JSON, property lists, images, and developer formats."
+      },
+      {
+        "title": "Merge with context",
+        "body": "Resolve three-way text and image conflicts, then export the result."
+      }
+    ],
+    "purchase_note": "Requires macOS 15 or later. See the App Store for current pricing and availability.",
+    "screenshots": [
+      {
+        "src": "/assets/grapecompare-release-1.jpg",
+        "alt": "GrapeCompare: The comparison workspace",
+        "caption": "The comparison workspace",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cf/93/c7/cf93c7ae-5145-779a-ccc6-5b305b50c158/GrapeCompare-AppStore-Home.png/1200x1800bb.jpg",
+        "width": 1200,
+        "height": 750,
+        "thumbnail": "/assets/grapecompare-release-1.webp"
+      },
+      {
+        "src": "/assets/grapecompare-release-2.jpg",
+        "alt": "GrapeCompare: Compare folders side by side",
+        "caption": "Compare folders side by side",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/90/32/53/9032535f-86ce-abee-084f-0fba798ae8e6/GrapeCompare-DualFolder-2560x1600.png/1200x1800bb.jpg",
+        "width": 1200,
+        "height": 750,
+        "thumbnail": "/assets/grapecompare-release-2.webp"
+      },
+      {
+        "src": "/assets/grapecompare-release-3.jpg",
+        "alt": "GrapeCompare: Compare text with context",
+        "caption": "Compare text with context",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/84/d0/6a/84d06ae6-e15d-b38b-58d5-7ee60ebf9dac/GrapeCompare-FileDiff-Final-2560x1600.png/1200x1800bb.jpg",
+        "width": 1200,
+        "height": 750,
+        "thumbnail": "/assets/grapecompare-release-3.webp"
+      }
+    ],
+    "hero_screenshot": {
+      "src": "/assets/grapecompare-workspace.png",
+      "thumbnail": "/assets/grapecompare-workspace.webp",
+      "width": 2560,
+      "height": 1600,
+      "alt": "GrapeCompare showing a side-by-side Swift file comparison",
+      "caption": "The file comparison workspace"
+    }
   },
   {
     "slug": "folucent",
@@ -27,13 +91,69 @@
     "description": "Folucent is a quiet place to read PDFs and keep what you learn.",
     "store_id": 6818737993,
     "store_url": "https://apps.apple.com/app/id6818737993",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "minimum_os": "27.0",
     "icon": "/assets/folucent-icon.png",
     "screenshot": "/assets/folucent-screen.jpg",
     "store_description": "Folucent is a quiet place to read PDFs and keep what you learn.\n\nREAD WITH THE SOURCE CLOSE\nImport PDFs from Files, pick up where you left off, search passages, and keep bookmarks. Choose a grid or list library. Use two-page reading when space allows and keyboard shortcuts with a connected keyboard.\n\nWORK WITH SCANNED PAGES\nRecognize text in page images, review the result, and use it in learning tools. Recognized page text is saved locally and can be found through search. The PDF keeps its original page layout.\n\nUNDERSTAND A PASSAGE\nOpen Understand to explain a selected passage or the current text page. Keep the source collapsed while reading the explanation, expand it when needed, or choose Translate. After an explanation, use Ask about this passage to clarify a specific point. Choose Apple's on-device AI, Apple Private Cloud Compute, or your own OpenAI-compatible service. Custom services require an HTTPS address, model ID, API key and explicit permission to send text to that endpoint. The key stays in this device's Keychain; service availability, privacy and charges depend on the provider. Services never switch automatically. The included guide also offers clearly labelled built-in study examples. Learning actions use selected passages, not an entire book.\n\nKEEP YOUR OWN UNDERSTANDING\nWrite what an idea means to you, save a study note, and return to its source page. Search across PDF text, recognized text, highlights, and notes. Revisit notes through the review queue.\n\nFOLUCENT PRO — ONE-TIME PURCHASE\nOptional Pro adds on-device whole-PDF translation with page-by-page progress and source comparison, cross-book study collections, PDF and Markdown study guides, saved guide templates, PDF reading aloud with sentence and paragraph controls, and a gold icon. Listen in the background on iPhone and iPad. iPhone/iPad can change the Home Screen icon; Mac customizes the running Dock icon only. Reading, annotations, OCR, notes, AI settings and standard exports remain free. Pro includes no AI credits; third-party AI fees are separate.\n\nMAKE THE SPACE YOURS\nStart with a neutral interface or choose an optional color theme. Use light or dark appearance and larger text. On iPad, add handwriting to pages.\n\nNo account is required. Your library and notes are stored locally. Apple AI requires compatible hardware and supported system settings; PCC and custom services require network access. Unsupported or unconfigured AI actions are hidden while reading and notes remain available. App-level CloudKit sync is not configured. The interface supports English, Simplified Chinese, Traditional Chinese, Japanese, Korean, French, German and Spanish. Answer and translation languages can be chosen independently from the same eight options; support depends on the selected model. AI output requires comparison with the source.",
-    "verified_at": "2026-11-11",
-    "collection": "apps"
+    "verified_at": "2026-11-13",
+    "collection": "apps",
+    "page_source": "generated",
+    "featured": 2,
+    "home_image": "/assets/folucent-screen.webp",
+    "home_image_alt": "Folucent passage explanation beside the source",
+    "presentation": {
+      "eyebrow": "A QUIETER PLACE TO LEARN",
+      "headline": "Read deeply.\nKeep what you learn.",
+      "intro": "A PDF, a question, a note in your own words. Make room for understanding, with the source always close.",
+      "section_label": "READ. UNDERSTAND. REMEMBER.",
+      "section_title": "Make the reading your own.",
+      "gallery_title": "Stay close to the source."
+    },
+    "highlights": [
+      {
+        "title": "Begin with the page",
+        "body": "Import PDFs, find passages, keep bookmarks, and recognize text in scanned pages."
+      },
+      {
+        "title": "Stay with a question",
+        "body": "Explain or translate a selected passage with the AI service you choose. Availability depends on your device and configuration."
+      },
+      {
+        "title": "Keep your understanding",
+        "body": "Write study notes, return to the source page, and revisit ideas in the review queue."
+      }
+    ],
+    "purchase_note": "Reading, annotations, OCR, notes, and standard exports are free. Optional Pro is a one-time purchase. Third-party AI charges are separate.",
+    "screenshots": [
+      {
+        "src": "/assets/folucent-release-1.jpg",
+        "alt": "Folucent: Understand a passage",
+        "caption": "Understand a passage",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/87/27/f1/8727f155-9b7c-d849-3265-0f41d48c1db1/01-understand.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/folucent-release-1.webp"
+      },
+      {
+        "src": "/assets/folucent-release-2.jpg",
+        "alt": "Folucent: Recognize text in scanned pages",
+        "caption": "Recognize text in scanned pages",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/98/18/71/981871f2-dcd4-ca14-9083-92d795348a6c/02-scanned.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/folucent-release-2.webp"
+      },
+      {
+        "src": "/assets/folucent-release-3.jpg",
+        "alt": "Folucent: Read with room to think",
+        "caption": "Read with room to think",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d3/ce/fc/d3cefc39-dec2-c969-d22d-8ef73f98e7b4/03-read.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/folucent-release-3.webp"
+      }
+    ]
   },
   {
     "slug": "scriptwidget",
@@ -50,8 +170,9 @@
     "icon": "/assets/scriptwidget-icon.png",
     "screenshot": "/assets/scriptwidget-screen.jpg",
     "store_description": "ScriptWidget - Create Widgets with JavaScript\n\nScriptWidget makes it easy to build beautiful, custom widgets for iOS and macOS — all with JavaScript and a simple, intuitive JSX-style syntax.\n\nStart with a template, then write, preview, and refine your widgets in minutes.\n\n# Key Features:\n- JSX-Style Scripting: Quickly create widgets with familiar JSX-like syntax, making layouts easy and clear.\n- Instant Preview: See your changes live as you code.\n- Multi-Platform Support: Build for both iOS and macOS with a single script.\n- Lightweight and Flexible: No need for heavy frameworks or external libraries.\n- Safe and Secure: Widgets run locally. Network and AI requests are used only for features you configure or permit.\n\n# Who is ScriptWidget for?\n- Developers who want to customize their home screen.\n- Creators who love coding lightweight tools.\n- Anyone looking for a fast and fun way to build personal widgets.\n\nGet started today and bring your ideas to life — one script at a time.",
-    "verified_at": "2026-11-11",
-    "collection": "apps"
+    "verified_at": "2026-11-13",
+    "collection": "apps",
+    "page_source": "static"
   },
   {
     "slug": "remoboard",
@@ -68,8 +189,61 @@
     "icon": "/assets/remoboard-icon.png",
     "screenshot": "/assets/remoboard-screen.jpg",
     "store_description": "Remoboard turns your computer browser into a keyboard for your iPhone or iPad. Type in a text field on your device from a Mac, Windows, or Linux computer on the same Wi-Fi network. No desktop app or account is required.\n\nGetting started\n1. Add the Remoboard keyboard in iOS or iPadOS Settings and allow Full Access for local network access.\n2. Switch to the Remoboard keyboard in any text field. Open the URL shown on the keyboard in your computer browser.\n3. If PIN pairing is enabled (on by default), enter the six-digit code shown on the keyboard, then start typing.\n\nFeatures\n• Smoother Chinese and other composed text input.\n• Automatic reconnection and clear connection status.\n• Reusable phrases for text you type often.\n• Browser controls for text entry and clipboard actions.\n• Light and dark appearance, with support for 10 languages.\n\nBoth devices must be on the same local network. Full Access lets the keyboard serve its local page.\n\nRemoboard Pro (optional one-time purchase) adds snippets, text expansion, trusted computers, image clipboard, split sending, send history and themes. Everything else is free.",
-    "verified_at": "2026-11-11",
-    "collection": "apps"
+    "verified_at": "2026-11-13",
+    "collection": "apps",
+    "page_source": "generated",
+    "presentation": {
+      "eyebrow": "YOUR KEYBOARD, CONNECTED",
+      "headline": "Big keyboard.\nSmall screen.\nEasy connection.",
+      "intro": "Type on your iPhone or iPad from the browser on your computer. Connect on the same Wi-Fi, pair, and keep typing.",
+      "section_label": "A SHORTER PATH FROM THOUGHT TO TEXT",
+      "section_title": "Connect. Pair. Type.",
+      "gallery_title": "From your desk to your phone."
+    },
+    "highlights": [
+      {
+        "title": "Open a browser",
+        "body": "Use your Mac, Windows, or Linux computer. No desktop app or account is required."
+      },
+      {
+        "title": "Pair on your network",
+        "body": "Enable the keyboard and Full Access for local network access. PIN pairing is on by default."
+      },
+      {
+        "title": "Keep the words flowing",
+        "body": "Use clipboard actions, reusable phrases, and automatic reconnection."
+      }
+    ],
+    "purchase_note": "Both devices must be on the same local network. Optional Remoboard Pro is a one-time purchase for additional tools and themes.",
+    "screenshots": [
+      {
+        "src": "/assets/remoboard-release-1.jpg",
+        "alt": "Remoboard: Connect your computer keyboard",
+        "caption": "Connect your computer keyboard",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/87/e3/fa/87e3fae1-4d2a-257a-43b2-73e51c8d0c13/01-hero.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/remoboard-release-1.webp"
+      },
+      {
+        "src": "/assets/remoboard-release-2.jpg",
+        "alt": "Remoboard: Pair on your local network",
+        "caption": "Pair on your local network",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/05/cb/6d05cb2d-4f8f-8540-1ccf-a8201d6c355d/02-pair.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/remoboard-release-2.webp"
+      },
+      {
+        "src": "/assets/remoboard-release-3.jpg",
+        "alt": "Remoboard: Keep reusable phrases close",
+        "caption": "Keep reusable phrases close",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/47/72/b4/4772b46f-7469-954b-3b1b-805c2fec89c0/03-words.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/remoboard-release-3.webp"
+      }
+    ]
   },
   {
     "slug": "bssidscan",
@@ -86,8 +260,52 @@
     "icon": "/assets/bssidscan-icon.png",
     "screenshot": "/assets/bssidscan-screen.jpg",
     "store_description": "BSSIDScan helps you review Wi-Fi network observations made available to the app on your device. It is designed for diagnostics and keeps its event history locally.\n\n• Review recorded SSID, BSSID, signal strength, security status, and timestamps.\n• Search and filter event history.\n• Ignore selected BSSIDs in future captures.\n• Export selected observations as JSON or Markdown for your own analysis.\n\nThe app uses Apple's Hotspot Helper capability. Available observations depend on device, iOS behavior, and granted capabilities. BSSIDScan does not reveal Wi-Fi passwords or change network settings. Exported network identifiers can be sensitive, so review files before sharing them.",
-    "verified_at": "2026-11-11",
-    "collection": "apps"
+    "verified_at": "2026-11-13",
+    "collection": "apps",
+    "page_source": "generated",
+    "presentation": {
+      "eyebrow": "WI-FI OBSERVATIONS, MADE READABLE",
+      "headline": "Less guesswork.\nMore signal.",
+      "intro": "Review the Wi-Fi network observations available on your device. Keep a local history and make sense of what changes.",
+      "section_label": "OBSERVE / REVIEW / EXPORT",
+      "section_title": "Follow the network details.",
+      "gallery_title": "Your observations, in view."
+    },
+    "highlights": [
+      {
+        "title": "Review the details",
+        "body": "See recorded SSID, BSSID, signal strength, security status, and timestamps."
+      },
+      {
+        "title": "Find what matters",
+        "body": "Search and filter event history, or ignore selected BSSIDs in future captures."
+      },
+      {
+        "title": "Take your findings with you",
+        "body": "Export selected observations as JSON or Markdown. Review network identifiers before sharing."
+      }
+    ],
+    "purchase_note": "Available observations depend on your device, iOS behavior, and granted capabilities. BSSIDScan does not reveal Wi-Fi passwords or change network settings.",
+    "screenshots": [
+      {
+        "src": "/assets/bssidscan-release-1.jpg",
+        "alt": "BSSID SCAN: Review network observations",
+        "caption": "Review network observations",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/8e/5c/158e5c70-d6d9-7760-f51e-fef7bad4f0dd/01-hero.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/bssidscan-release-1.webp"
+      },
+      {
+        "src": "/assets/bssidscan-release-2.jpg",
+        "alt": "BSSID SCAN: Inspect signal, security, and BSSID",
+        "caption": "Inspect signal, security, and BSSID",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/1a/00/8f1a0079-0acf-d8ec-75f9-4e353565a998/02-device-bottom.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/bssidscan-release-2.webp"
+      }
+    ]
   },
   {
     "slug": "dayvella",
@@ -99,13 +317,66 @@
     "description": "Dayvella keeps the dates that matter close. Count down to birthdays, trips and goals, or count the days since a meaningful moment.",
     "store_id": 6753280745,
     "store_url": "https://apps.apple.com/app/id6753280745",
-    "version": "1.5",
+    "version": "1.6",
     "minimum_os": "26.0",
     "icon": "/assets/dayvella-icon.png",
     "screenshot": "/assets/dayvella-screen.jpg",
     "store_description": "Dayvella keeps the dates that matter close. Count down to birthdays, trips and goals, or count the days since a meaningful moment.\n\n• Countdowns and days since\n• Repeating dates and flexible reminders\n• Home Screen and Lock Screen widgets\n• Colorful cards, quick templates and image sharing\n• Pin, archive and search your dates\n• iCloud sync, offline storage and JSON backups\n\nPreviously named CountMyDays. Your existing dates stay with you.",
-    "verified_at": "2026-11-11",
-    "collection": "apps"
+    "verified_at": "2026-11-13",
+    "collection": "apps",
+    "page_source": "generated",
+    "presentation": {
+      "eyebrow": "LITTLE DATES. BIG MEANING.",
+      "headline": "Something good\nto look forward to.",
+      "intro": "Birthdays, trips, goals, and the days you want to remember. Keep the dates that matter close.",
+      "section_label": "MAKE EVERY DATE YOURS",
+      "section_title": "For what’s next.\nAnd what stays with you.",
+      "gallery_title": "A little color for your everyday."
+    },
+    "highlights": [
+      {
+        "title": "Count both ways",
+        "body": "Count down to the next moment, or count the days since a meaningful one."
+      },
+      {
+        "title": "Keep it close",
+        "body": "Set repeating dates and reminders, with widgets for your Home Screen and Lock Screen."
+      },
+      {
+        "title": "Make it personal",
+        "body": "Choose colorful cards, use quick templates, and share a date as an image."
+      }
+    ],
+    "purchase_note": "Includes iCloud sync, offline storage, and JSON backups. Previously named CountMyDays; existing dates stay with you.",
+    "screenshots": [
+      {
+        "src": "/assets/dayvella-release-1.jpg",
+        "alt": "Dayvella: Your dates at a glance",
+        "caption": "Your dates at a glance",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/4b/d5/304bd55c-652d-f20f-71f3-8e6dc9054dd3/01-hero.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/dayvella-release-1.webp"
+      },
+      {
+        "src": "/assets/dayvella-release-2.jpg",
+        "alt": "Dayvella: Count up or count down",
+        "caption": "Count up or count down",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/0a/00/300a0055-c903-0312-6824-1e1a17d9f2ff/02-device-top.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/dayvella-release-2.webp"
+      },
+      {
+        "src": "/assets/dayvella-release-3.jpg",
+        "alt": "Dayvella: Your days, in light or dark",
+        "caption": "Your days, in light or dark",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f6/72/74/f67274fb-5b07-d059-8c64-4149f9360cd3/03-device-bottom.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/dayvella-release-3.webp"
+      }
+    ]
   },
   {
     "slug": "babeltable",
@@ -117,13 +388,66 @@
     "description": "BabelTable helps two people speak across a language barrier, right across the table. Speech recognition and translation run on your device using Apple’s Speech and Translation frameworks.",
     "store_id": 6807469213,
     "store_url": "https://apps.apple.com/app/id6807469213",
-    "version": "1.1",
+    "version": "1.2",
     "minimum_os": "27.0",
     "icon": "/assets/babeltable-icon.png",
     "screenshot": "/assets/babeltable-screen.jpg",
     "store_description": "BabelTable helps two people speak across a language barrier, right across the table. Speech recognition and translation run on your device using Apple’s Speech and Translation frameworks.\n\nSPEAK FACE TO FACE\nPlace your iPhone or iPad between you. The opposite-facing panels let each person read from their side of the table. Prefer sitting together? Switch to the chat layout for a shared conversation view.\n\nPREPARE ONCE, TRANSLATE OFFLINE\nDownload the speech and translation models for your chosen languages while connected to the internet. Once prepared, supported language pairs work offline. No OpenAI account, API key, or cloud translation service is required.\n\nTAKE TURNS NATURALLY\nSelect the language of the person speaking, then talk. Read the original captions and the translated text. Switch the speaking language when it is the other person’s turn.\n\nHEAR IT, SHOW IT\nTap the speaker next to any translation to read it aloud with the voices installed on your device. Show a translation full screen in large type, and turn it around for the person across from you.\n\nON IPHONE DUO\nUnfold for two panes: each person's side face to face, or the whole conversation beside the newest translation in large type. Half open, the fold becomes the gap between panes, so no words sit on it. Folded, everything works on the outer display.\n\nKEEP YOUR CONVERSATIONS\nSearch the full text of every saved conversation, star the ones that matter, and share a text transcript when you choose. Conversation archives are stored locally on your device.\n\nFREE EVERY DAY, PRO WHEN YOU NEED MORE\nTranslation is free for 2 hours a day. BabelTable Pro removes the daily limit with a one-time lifetime purchase or a yearly or monthly subscription, and adds tools for travel and work:\n• Auto read-aloud: every finished translation is spoken for the other person\n• Phrasebook: common phrases in all 13 languages, plus your own\n• Bilingual PDF export with what was said and its translation side by side\n• Conversation summaries created on your device by Apple Intelligence\n• Color themes and alternate app icons\nPro still runs entirely on your device.\n\nREQUIREMENTS\nRequires iOS 27 or later and a device and language pair supported by Apple’s on-device speech recognition and translation. Initial model preparation requires an internet connection and available storage. Language availability varies. Speakers take turns and select their language; overlapping speech is not separated. Read-aloud uses voices installed on your device. Summaries require a device with Apple Intelligence turned on.\n\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nPrivacy Policy: https://atomsprout.com/babeltable/privacy/",
-    "verified_at": "2026-11-11",
-    "collection": "apps"
+    "verified_at": "2026-11-13",
+    "collection": "apps",
+    "page_source": "generated",
+    "presentation": {
+      "eyebrow": "ACROSS THE TABLE. ACROSS LANGUAGES.",
+      "headline": "Two languages.\nOne conversation.",
+      "intro": "Put your iPhone or iPad between you. Speak, read, and take turns, with on-device speech recognition and translation.",
+      "section_label": "MAKE ROOM FOR THE OTHER PERSON",
+      "section_title": "A conversation you can share.",
+      "gallery_title": "Face to face, or side by side."
+    },
+    "highlights": [
+      {
+        "title": "Face each other",
+        "body": "Opposite-facing panels let each person read from their own side of the table. A chat layout is also available."
+      },
+      {
+        "title": "Prepare, then go offline",
+        "body": "Download speech and translation models first. Supported device and language pairs then work offline."
+      },
+      {
+        "title": "Take it with you",
+        "body": "Search saved conversations, star important moments, and share a text transcript when you choose."
+      }
+    ],
+    "purchase_note": "Translation is free for two hours a day. Optional Pro removes the daily limit and adds tools. Device and language support vary; initial model preparation needs internet access.",
+    "screenshots": [
+      {
+        "src": "/assets/babeltable-release-1.jpg",
+        "alt": "BabelTable: A shared conversation space",
+        "caption": "A shared conversation space",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/de/10/0d/de100d0d-dd67-22db-9bec-20cc13464a2a/01-hero.png/1200x1800bb.jpg",
+        "width": 832,
+        "height": 1800,
+        "thumbnail": "/assets/babeltable-release-1.webp"
+      },
+      {
+        "src": "/assets/babeltable-release-2.jpg",
+        "alt": "BabelTable: Prepare your translation models",
+        "caption": "Prepare your translation models",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d3/7c/9b/d37c9b6c-e158-c5d6-8c4c-8974c5136183/02-device-top.png/1200x1800bb.jpg",
+        "width": 832,
+        "height": 1800,
+        "thumbnail": "/assets/babeltable-release-2.webp"
+      },
+      {
+        "src": "/assets/babeltable-release-3.jpg",
+        "alt": "BabelTable: Read from either side of the table",
+        "caption": "Read from either side of the table",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bb/7d/45/bb7d45e6-663d-3564-e1bc-728338068798/03-device-bottom.png/1200x1800bb.jpg",
+        "width": 832,
+        "height": 1800,
+        "thumbnail": "/assets/babeltable-release-3.webp"
+      }
+    ]
   },
   {
     "slug": "sixup",
@@ -135,13 +459,66 @@
     "description": "SixUp is a 90-day study plan for the new TOEFL iBT (2026 format, scored 1–6). Open the app and today's tasks are ready — sized to your exam date and the time you have.",
     "store_id": 6830260416,
     "store_url": "https://apps.apple.com/app/id6830260416",
-    "version": "1.1",
+    "version": "1.2",
     "minimum_os": "26.0",
     "icon": "/assets/sixup-icon.png",
     "screenshot": "/assets/sixup-screen.jpg",
     "store_description": "SixUp is a 90-day study plan for the new TOEFL iBT (2026 format, scored 1–6). Open the app and today's tasks are ready — sized to your exam date and the time you have.\n\nDAILY PLAN\n• Foundation, intensive and sprint phases, with review days and full mock tests\n• Tasks fit the minutes you set and lean on your weakest skill\n• Streaks, make-up cards, reminders and home-screen widgets keep you going\n\nALL 12 NEW TASK TYPES — 1,200+ ORIGINAL QUESTIONS\n• Reading: Complete the Words, Read in Daily Life, Read an Academic Passage\n• Listening: Choose a Response, Conversations, Announcements, Academic Talks\n• Writing: Build a Sentence, Write an Email, Academic Discussion\n• Speaking: Listen and Repeat, Take an Interview\n• Every answer has an explanation; missed questions come back for review\n\nCOMMUTE LISTENING\n• A fresh playlist every day: lectures, conversations, announcements, passages read aloud\n• Speaking models: hear a question, think for five seconds, then hear a high-scoring answer\n• Plays with the screen locked, with lock-screen and headphone controls\n\n4,000 TOEFL WORDS\n• American IPA, clear definitions and an example sentence for every word\n• Spaced repetition schedules each review, paced to finish before your exam\n• A 3-minute vocabulary test skips the words you already know\n• Tap any word in any passage for its pronunciation and meaning, and save it to your notebook\n\nINSTANT SCORING\n• Speaking is transcribed and scored on your device\n• Writing and interviews get rubric-based scores and suggestions (enhanced by on-device Apple Intelligence where available)\n• Adaptive two-stage mock tests produce a 1–6 score report\n\nPRIVATE BY DESIGN\n• No account, no ads, no tracking. Recordings and essays never leave your device\n• Progress syncs between your iPhone and iPad through your own iCloud\n\nFREE TO START\n• Your first 30 study days are free, with every feature. A day only counts when you practice\n• Unlock SixUp Pro anytime with a single one-time purchase for the full plan. No subscription\n\nSixUp is an independent study tool and is not affiliated with or endorsed by ETS. TOEFL® and TOEFL iBT® are registered trademarks of ETS.",
-    "verified_at": "2026-11-11",
-    "collection": "apps"
+    "verified_at": "2026-11-13",
+    "collection": "apps",
+    "page_source": "generated",
+    "presentation": {
+      "eyebrow": "ONE DAY CLOSER",
+      "headline": "A clearer plan.\nA little progress.\nEvery day.",
+      "intro": "Your TOEFL study plan, shaped around your exam date and the time you have. Open the app and start today’s tasks.",
+      "section_label": "A RHYTHM YOU CAN RETURN TO",
+      "section_title": "A plan for the work ahead.",
+      "gallery_title": "From today’s tasks to the next review."
+    },
+    "highlights": [
+      {
+        "title": "Know what’s next",
+        "body": "A daily plan with foundation, intensive, and sprint phases, plus review days and mock tests."
+      },
+      {
+        "title": "Practice across skills",
+        "body": "Work through reading, listening, writing, and speaking tasks with answer explanations."
+      },
+      {
+        "title": "Return to what matters",
+        "body": "Review missed questions and practice vocabulary with spaced repetition."
+      }
+    ],
+    "purchase_note": "The first 30 study days are free; a day counts only when you practice. Pro unlocks the full plan with one purchase. SixUp is an independent tool and is not affiliated with or endorsed by ETS.",
+    "screenshots": [
+      {
+        "src": "/assets/sixup-release-1.jpg",
+        "alt": "SixUp: Start with today’s plan",
+        "caption": "Start with today’s plan",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/f6/19/cef619b9-96d7-79d3-3ed5-b815711e7520/01-today.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/sixup-release-1.webp"
+      },
+      {
+        "src": "/assets/sixup-release-2.jpg",
+        "alt": "SixUp: Practice listening on your commute",
+        "caption": "Practice listening on your commute",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f8/79/6c/f8796cb0-a78d-0100-1892-9eb6cdc4437c/02-commute.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/sixup-release-2.webp"
+      },
+      {
+        "src": "/assets/sixup-release-3.jpg",
+        "alt": "SixUp: Review vocabulary with spaced repetition",
+        "caption": "Review vocabulary with spaced repetition",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c4/0d/56/c40d568c-f0f8-5163-b3fc-d84636c4ed0e/03-vocab.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/sixup-release-3.webp"
+      }
+    ]
   },
   {
     "slug": "palmino",
@@ -153,13 +530,57 @@
     "description": "Palmino brings AI conversations and practical tools together in a native workspace for iPhone and iPad.",
     "store_id": 6816719602,
     "store_url": "https://apps.apple.com/app/id6816719602",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "minimum_os": "17.0",
     "icon": "/assets/palmino-icon.png",
     "screenshot": "/assets/palmino-screen.jpg",
     "store_description": "Palmino brings AI conversations and practical tools together in a native workspace for iPhone and iPad.\n\nCONNECT YOUR OWN MODEL\nConfigure a compatible model provider with your own API key, choose a model, and stream responses in a focused conversation view. A compatible third-party model service is required for AI responses; provider usage charges may apply.\n\nKEEP YOUR WORK ORGANIZED\nManage conversations, attach files, and return to previous sessions. Use your workspace to keep task files and outputs together.\n\nTOOLS WITH YOU IN CONTROL\nConnect MCP servers and use supported device capabilities through explicit permissions and action confirmations. Review tool activity as you work. An on-demand Linux environment supports approved shell and file tasks.\n\nBUILT FOR IPHONE AND IPAD\nWork in a native interface with Markdown responses, conversation history, and local conversation storage. iCloud conversation sync is unavailable to protect health information.\n\nOPTIONAL APPLE HEALTH TOOLS\nReview activity, heart rate, sleep, and workouts, or record user-confirmed nutrition, hydration, and body measurements in Apple Health. HealthKit access and separate confirmation for sharing requested health data with your configured model service are required.\n\nYour API credentials are stored in the device Keychain. Requests and the content needed to answer them are sent to the model provider or connected services you configure.",
-    "verified_at": "2026-11-11",
-    "collection": "apps"
+    "verified_at": "2026-11-13",
+    "collection": "apps",
+    "page_source": "generated",
+    "presentation": {
+      "eyebrow": "BRING YOUR OWN CURIOSITY",
+      "headline": "Your models.\nYour tools.\nYour workspace.",
+      "intro": "AI conversations and practical tools, together in a native workspace for iPhone and iPad.",
+      "section_label": "A WORKSPACE THAT STAYS WITH YOU",
+      "section_title": "From a question to the next step.",
+      "gallery_title": "Conversations with room to work."
+    },
+    "highlights": [
+      {
+        "title": "Choose your model",
+        "body": "Connect a compatible provider with your own API key, choose a model, and stream responses."
+      },
+      {
+        "title": "Keep the context",
+        "body": "Organize conversations, attach files, and keep task files and outputs together."
+      },
+      {
+        "title": "Control the tools",
+        "body": "Connect MCP servers and review tool activity with explicit permissions and action confirmations."
+      }
+    ],
+    "purchase_note": "AI responses require a compatible third-party service; provider charges may apply. Requests and necessary content go to the services you configure. Read the product privacy policy for details.",
+    "screenshots": [
+      {
+        "src": "/assets/palmino-release-1.jpg",
+        "alt": "Palmino: Your conversation workspace",
+        "caption": "Your conversation workspace",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/b5/88/91b5883f-1f65-783f-84c9-fdeff8e2b106/01-hero.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/palmino-release-1.webp"
+      },
+      {
+        "src": "/assets/palmino-release-2.jpg",
+        "alt": "Palmino: Choose your model provider",
+        "caption": "Choose your model provider",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d8/5c/4d/d85c4d2c-043e-bfae-b33a-0aa2c349fd02/02-device-bottom.png/1200x1800bb.jpg",
+        "width": 828,
+        "height": 1800,
+        "thumbnail": "/assets/palmino-release-2.webp"
+      }
+    ]
   },
   {
     "slug": "foxwick",
@@ -176,8 +597,64 @@
     "icon": "/assets/foxwick-icon.png",
     "screenshot": "/assets/foxwick-screen.jpg",
     "store_description": "Carry the light.\n\nFoxwick is a bright, hand-crafted pixel action adventure for your phone. Pick a class, roll through danger, strike at the right moment and light the way, one campfire at a time.\n\nTWENTY STAGES, TWENTY BOSSES\nTravel from the Glimmer Fields to the Bell Tower Summit, then on past the wonders of the Earth to the Moon, Mars, Venus, Mercury and the surface of the Sun. Every stage ends with a boss that has its own look, its own rhythm and its own weak moment. Learn the pattern, then beat it.\n\nThe first ten stages, through the Bell Tower Summit, are free. One purchase, the Full Journey, opens stages 11 to 20, and with them the twenty-boss Rush, New Journey+ and the deepest Ember Trial bosses.\n\nTHREE CLASSES, ONE SET OF CONTROLS\n- Samurai: steady steps and clean cuts.\n- Mage: keep your distance and send the fire.\n- Assassin: quick feet. Never be where it lands.\nSame simple touch controls for all three: a stick on the left to move and jump, and Attack, Roll, Mending Vial and your skills on the right.\n\nSKILLS AND ULTIMATES\nSkill tomes wait along the road: rising cuts, meteors, smoke bombs, chain lightning and more, ten for each class. Equip three and swap them from the pause menu or the stage map. Fight to fill the gauge, then unleash an ultimate that takes over the whole screen: Hundred Blades, Meteor Storm, Shadow Massacre and six more to win from bosses.\n\nMORE ROADS TO RUN\nRaise skills to rank III, win charms and stage medals, shop at the fox's camp, and take on the Boss Rush, the Ember Trial, the Daily Trial and New Journey+.\n\nHITS THAT FEEL GOOD\nEvery strike has a short pause, a flash, a push back and a spray of sparks. Heavy hits and boss hits land even harder. Haptic feedback on supported iPhones.\n\nMANAGE YOUR STAMINA\nAttacking and rolling cost stamina. Roll through an attack at the right moment to take no damage. Run out, and you have to step back.\n\nREST AT THE CAMPFIRE\nCampfires save your progress and refill your Mending Vials. Resting brings the monsters back, so choose when to stop.\n\nFALL, RECOVER, TRY AGAIN\nWhen you fall, you drop your Embers where it happened. Get back to them and take them back. Fall again first, and they are gone.\n\nMADE TO PLAY ANYWHERE\n- Plays fully offline.\n- No account needed. Game Center achievements and leaderboards are there if you want them.\n- No ads and no subscriptions. Stages 1 to 10 are free; the Full Journey is a single one-time purchase.\n- Your progress is saved on your device.\n\nLight the fire. Carry the light.",
-    "verified_at": "2026-11-11",
-    "collection": "games"
+    "verified_at": "2026-11-13",
+    "collection": "games",
+    "page_source": "generated",
+    "featured": 3,
+    "home_image": "/assets/foxwick-gameplay.webp",
+    "home_image_alt": "Foxwick pixel-art gameplay",
+    "presentation": {
+      "eyebrow": "A HAND-CRAFTED PIXEL ADVENTURE",
+      "headline": "Carry the light.",
+      "intro": "Pick a class. Learn the rhythm. Strike at the right moment. An adventure from one campfire to the next.",
+      "section_label": "YOUR NEXT ADVENTURE STARTS HERE",
+      "section_title": "A little courage.\nA world to explore.",
+      "gallery_title": "Find your own way through."
+    },
+    "highlights": [
+      {
+        "title": "Choose your way",
+        "body": "Play as a Samurai, Mage, or Assassin, each with a different rhythm and the same simple touch controls."
+      },
+      {
+        "title": "Learn the fight",
+        "body": "Manage your stamina, roll through danger, and find each boss’s weak moment."
+      },
+      {
+        "title": "Rest. Recover. Return.",
+        "body": "Campfires save your progress and refill your Mending Vials. Resting also brings the monsters back."
+      }
+    ],
+    "purchase_note": "Stages 1–10 are free. The Full Journey is a single purchase for stages 11–20 and additional modes. Plays offline, with no ads or subscriptions.",
+    "screenshots": [
+      {
+        "src": "/assets/foxwick-release-1.jpg",
+        "alt": "Foxwick: Carry the light",
+        "caption": "Carry the light",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7f/d3/55/7fd355c7-20c8-19fd-bc59-7e88c0826b1e/01_cold_6.1.jpg/1200x1800bb.jpg",
+        "width": 1200,
+        "height": 552,
+        "thumbnail": "/assets/foxwick-release-1.webp"
+      },
+      {
+        "src": "/assets/foxwick-release-2.jpg",
+        "alt": "Foxwick: Find your combat rhythm",
+        "caption": "Find your combat rhythm",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1d/a6/5a/1da65afc-ef67-72f8-b17b-09dd20ea6a12/02_sam_11.2.jpg/1200x1800bb.jpg",
+        "width": 1200,
+        "height": 552,
+        "thumbnail": "/assets/foxwick-release-2.webp"
+      },
+      {
+        "src": "/assets/foxwick-release-3.jpg",
+        "alt": "Foxwick: Choose your class",
+        "caption": "Choose your class",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1e/1c/42/1e1c428f-a24d-22a7-8fc9-2bd99a151d6e/03_asn_10.6.jpg/1200x1800bb.jpg",
+        "width": 1200,
+        "height": 552,
+        "thumbnail": "/assets/foxwick-release-3.webp"
+      }
+    ]
   },
   {
     "slug": "editsmith",
@@ -194,8 +671,52 @@
     "icon": "/assets/editsmith-icon.png",
     "screenshot": "/assets/editsmith-screen.jpg",
     "store_description": "EditSmith adds testable text actions to Xcode's Editor menu. Create a JavaScript action, try it against fixtures in the Workbench, inspect the diff and diagnostics, then enable it for editing.\n\n• Work with a whole buffer or selected ranges.\n• Start from built-in actions for sorting, duplicate removal, JSON formatting, comments, case conversion, and more.\n• Preview edits with Dry Run and restore the last buffer with rollback.\n• Export and import user actions as JSON; imported actions start disabled.\n• Optionally configure Apple On-Device, Private Cloud Compute on eligible systems, or a local Ollama endpoint for model actions.\n\nJavaScript actions run locally with limits on input, output, code size, and execution time. Model actions send text only when you invoke an action configured for that provider. EditSmith requires macOS 15 or later and Xcode with Source Editor Extension support. Some model features require newer macOS versions, eligibility, or a configured local server.",
-    "verified_at": "2026-11-11",
-    "collection": "apps"
+    "verified_at": "2026-11-13",
+    "collection": "apps",
+    "page_source": "generated",
+    "presentation": {
+      "eyebrow": "SMALL ACTIONS. BETTER EDITING.",
+      "headline": "Write an action.\nTest the change.\nMake it yours.",
+      "intro": "Bring testable JavaScript text actions into Xcode’s Editor menu. Work through a fixture, inspect the diff, and enable it when you’re ready.",
+      "section_label": "BUILD / TEST / APPLY",
+      "section_title": "A workbench for your next edit.",
+      "gallery_title": "See the change before you use it."
+    },
+    "highlights": [
+      {
+        "title": "Start with an action",
+        "body": "Use built-in actions for sorting, duplicate removal, JSON formatting, and case conversion, or write your own."
+      },
+      {
+        "title": "Test before editing",
+        "body": "Try fixtures in the Workbench, inspect the diff and diagnostics, and preview edits with Dry Run."
+      },
+      {
+        "title": "Keep actions portable",
+        "body": "Export and import user actions as JSON. Imported actions begin disabled."
+      }
+    ],
+    "purchase_note": "Requires macOS 15 or later and Xcode with Source Editor Extension support. Optional model features have additional system or provider requirements.",
+    "screenshots": [
+      {
+        "src": "/assets/editsmith-release-1.jpg",
+        "alt": "EditSmith: The action workbench",
+        "caption": "The action workbench",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/42/cf/2e42cf3a-7ef8-d50a-ba38-cff099963c2b/01-split-landscape.png/1200x1800bb.jpg",
+        "width": 1200,
+        "height": 750,
+        "thumbnail": "/assets/editsmith-release-1.webp"
+      },
+      {
+        "src": "/assets/editsmith-release-2.jpg",
+        "alt": "EditSmith: Review your Xcode actions",
+        "caption": "Review your Xcode actions",
+        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bc/95/26/bc9526c0-a5c1-2d27-d75f-2105d6dd06a0/02-device-top.png/1200x1800bb.jpg",
+        "width": 1200,
+        "height": 750,
+        "thumbnail": "/assets/editsmith-release-2.webp"
+      }
+    ]
   },
   {
     "slug": "liney",
@@ -224,7 +745,8 @@
         "body": "Keyboard-focused navigation in a native macOS app."
       }
     ],
-    "verified_at": "2026-11-11"
+    "verified_at": "2026-11-11",
+    "page_source": "liney"
   },
   {
     "slug": "typetide",
@@ -253,7 +775,8 @@
         "body": "Use global shortcuts or the optional floating translation button."
       }
     ],
-    "verified_at": "2026-11-11"
+    "verified_at": "2026-11-11",
+    "page_source": "static"
   },
   {
     "slug": "hexlora",
@@ -282,7 +805,8 @@
         "body": "Use the separately distributed command-line tool for scripted inspection."
       }
     ],
-    "verified_at": "2026-11-11"
+    "verified_at": "2026-11-11",
+    "page_source": "static"
   },
   {
     "slug": "riftvm",
@@ -313,7 +837,8 @@
     "collection": "homebrew",
     "verified_at": "2026-11-12",
     "icon": "/assets/riftvm-icon.png",
-    "screenshot": "/assets/riftvm-workspace.webp"
+    "screenshot": "/assets/riftvm-workspace.webp",
+    "page_source": "static"
   },
   {
     "slug": "chatcomputer",
@@ -345,7 +870,8 @@
     "collection": "homebrew",
     "verified_at": "2026-11-12",
     "icon": "/assets/chatcomputer-icon.png",
-    "screenshot": "/assets/chatcomputer-workspace.jpg"
+    "screenshot": "/assets/chatcomputer-workspace.jpg",
+    "page_source": "static"
   },
   {
     "slug": "tabcarry",
@@ -376,7 +902,8 @@
     "store_url": "https://chromewebstore.google.com/detail/eemmceflpbemalamboiahniolcgalpfl",
     "website_url": "https://atomsprout.com/tabcarry/",
     "privacy_url": "https://atomsprout.com/tabcarry/privacy/",
-    "icon": "/assets/tabcarry-icon.png"
+    "icon": "/assets/tabcarry-icon.png",
+    "page_source": "static"
   },
   {
     "slug": "notbadbookmark",
@@ -407,7 +934,8 @@
     "store_url": "https://chromewebstore.google.com/detail/mablekconlhfomebomdjbohbjmgceana",
     "website_url": "https://atomsprout.com/notbadbookmark/",
     "privacy_url": "https://atomsprout.com/notbadbookmark/privacy/",
-    "icon": "/assets/notbadbookmark-icon.png"
+    "icon": "/assets/notbadbookmark-icon.png",
+    "page_source": "static"
   },
   {
     "slug": "x-article-export-pdf",
@@ -438,6 +966,7 @@
     "store_url": "https://chromewebstore.google.com/detail/kgkjmkldolapbhbbolonloponfaemheg",
     "website_url": "https://atomsprout.com/x-article-export-pdf/",
     "privacy_url": "https://atomsprout.com/x-article-export-pdf/privacy/",
-    "icon": "/assets/x-article-export-pdf-icon.png"
+    "icon": "/assets/x-article-export-pdf-icon.png",
+    "page_source": "static"
   }
 ]

@@ -1,0 +1,12 @@
+/* Diagnostic instrument: precise type, rules and a red signal. */
+.product-bssidscan { --product-accent: #a73636; }
+.product-bssidscan .app-heading .eyebrow, .product-bssidscan .app-identity, .product-bssidscan .feature-index { font-family: ui-monospace, SFMono-Regular, monospace; }
+.product-bssidscan .app-heading h1 { font-weight: 650; letter-spacing: -3px; }
+.product-bssidscan .app-hero-visual { border-block: 1px solid var(--line); padding-block: 25px; }
+.product-bssidscan .app-feature-grid { gap: 0; border: 1px solid var(--line); }
+.product-bssidscan .app-feature-grid article { padding: 28px; border-right: 1px solid var(--line); }
+.product-bssidscan .app-feature-grid article:last-child { border-right: 0; }
+.product-bssidscan .feature-index { color: var(--product-accent); border-bottom: 1px solid var(--line); padding-bottom: 20px; }
+html[data-theme='dark'] .product-bssidscan { --product-accent: #f0aaaa; }
+@media (prefers-color-scheme: dark) { html:not([data-theme='light']) .product-bssidscan { --product-accent: #f0aaaa; } }
+@media (max-width: 720px) { .product-bssidscan .app-feature-grid article { border-right: 0; } }

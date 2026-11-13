@@ -65,6 +65,7 @@ summary:focus-visible {
 }
 .header nav,
 .footer nav {
+  flex-wrap: wrap;
   display: flex;
   gap: 26px;
   align-items: center;
@@ -607,6 +608,7 @@ code {
     gap: 15px;
   }
   .footer nav {
+  flex-wrap: wrap;
     width: 100%;
     gap: 22px;
     font-size: 12px;

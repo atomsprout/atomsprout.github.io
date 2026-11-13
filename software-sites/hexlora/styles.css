@@ -83,3 +83,12 @@ footer { min-height:150px;display:grid;grid-template-columns:1fr auto auto;gap:4
 
 ::selection { color:var(--text); background:var(--selection); }
 :focus-visible { outline:2px solid var(--teal); outline-offset:4px; }
+
+/* Screenshot controls remain usable with touch and keyboard. */
+.carousel-dots { bottom: 8px; gap: 0; }
+.carousel-dots button { display: grid; place-items: center; width: 30px; height: 44px; border-radius: 0; background: transparent; }
+.carousel-dots button::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: #8baba6; }
+.carousel-dots button.active { width: 30px; border-radius: 0; background: transparent; }
+.carousel-dots button.active::before { width: 20px; border-radius: 5px; background: var(--teal); }
+.carousel-arrow { width: 44px; height: 44px; margin-top: -22px; opacity: 1; }
+@media (max-width: 620px) { .carousel-dots { right: 8px; bottom: 0; } .slide figcaption { right: 175px; } }

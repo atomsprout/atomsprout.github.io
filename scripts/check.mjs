@@ -36,5 +36,31 @@ for(const p of data){
     if(p.privacy_url!==`https://atomsprout.com/${p.slug}/privacy/`)failures.push(`${p.slug}: privacy URL must use the company site`);
   }
 }
+// Product page ownership is explicit: copying a product site must never silently
+// replace a generated landing page. Validate the final assembled output as well.
+let routeManifest = [];
+try { routeManifest = JSON.parse(fs.readFileSync(path.join(root, 'product-routes.json'), 'utf8')); }
+catch { failures.push('Missing product route manifest'); }
+for (const product of data) {
+  const landing = path.join(root, product.slug, 'index.html');
+  if (!fs.existsSync(landing)) { failures.push(`${product.slug}: missing landing page`); continue; }
+  const entry = routeManifest.find(r => r.route === `/${product.slug}/`);
+  if (!entry || entry.source !== product.page_source) failures.push(`${product.slug}: page source mismatch`);
+  if (!['generated','static','liney'].includes(product.page_source)) failures.push(`${product.slug}: invalid page source`);
+  if (product.page_source !== 'generated') continue;
+  const html = fs.readFileSync(landing, 'utf8');
+  if (!html.includes(`product-${product.slug}`)) failures.push(`${product.slug}: generated page was replaced`);
+  if (!product.presentation || product.highlights?.length !== 3 || !product.purchase_note) failures.push(`${product.slug}: incomplete presentation`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(product.verified_at)) failures.push(`${product.slug}: missing release verification date`);
+  for (const shot of [...(product.screenshots || []), ...(product.hero_screenshot ? [product.hero_screenshot] : [])]) {
+    if (!(shot.width > 0 && shot.height > 0) || !shot.alt || !shot.caption) failures.push(`${product.slug}: incomplete screenshot metadata`);
+    for (const asset of [shot.src, shot.thumbnail]) {
+      if (!asset?.startsWith('/assets/') || !fs.existsSync(path.join(root, asset))) failures.push(`${product.slug}: missing screenshot ${asset}`);
+    }
+  }
+  if (!html.includes(`datetime="${product.verified_at}"`)) failures.push(`${product.slug}: stale verification date in page`);
+}
+if (new Set(data.filter(p=>p.featured).map(p=>p.featured)).size !== data.filter(p=>p.featured).length) failures.push('Duplicate homepage feature order');
+
 if(failures.length){console.error(failures.join('\n'));process.exit(1)}
-console.log(`Checked ${files.length} HTML pages: internal links, assets, titles, and template rendering passed.`);
+console.log(`Checked ${files.length} HTML pages: internal links, assets, titles, product routing, and presentation metadata passed.`);

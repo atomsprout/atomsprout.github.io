@@ -12,12 +12,12 @@ type OSKey = 'mac' | 'win';
 
 const heroShots: Record<OSKey, {src: string; alt: string; label: string}> = {
   mac: {
-    src: '/liney/screenshot.png',
+    src: '/liney/screenshot.webp',
     alt: 'Liney on macOS showing repositories, worktrees, and terminal panes',
     label: 'macOS',
   },
   win: {
-    src: '/liney/screenshot-win.png',
+    src: '/liney/screenshot-win.webp',
     alt: 'Liney on Windows (beta) showing repositories, worktrees, and terminal panes',
     label: 'Windows (Beta)',
   },
@@ -188,6 +188,7 @@ function HomePage(): JSX.Element {
     }
 
     const previousOverflow = document.body.style.overflow;
+    const previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         setLightboxImage(null);
@@ -200,10 +201,12 @@ function HomePage(): JSX.Element {
     return () => {
       document.body.style.overflow = previousOverflow;
       window.removeEventListener('keydown', handleKeyDown);
+      previousFocus?.focus();
     };
   }, [lightboxImage]);
 
   const handlePointerMove = (event: MouseEvent<HTMLElement>) => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const rect = event.currentTarget.getBoundingClientRect();
     const x = (event.clientX - rect.left) / rect.width - 0.5;
     const y = (event.clientY - rect.top) / rect.height - 0.5;
@@ -254,6 +257,11 @@ function HomePage(): JSX.Element {
     }
   };
 
+  const previewRef = useRef<HTMLDialogElement>(null);
+  useEffect(() => {
+    if (lightboxImage) previewRef.current?.showModal();
+  }, [lightboxImage]);
+
   const openLightbox = (src: string, alt: string) => setLightboxImage({src, alt});
 
   const visualStyle = {
@@ -282,8 +290,8 @@ function HomePage(): JSX.Element {
             <div className={styles.heroCopy}>
               <div className={styles.badge}>Cosmic native workspace</div>
               <h1 className={styles.heroTitle}>
-                <span className={styles.heroTitleBrand}>"Liney"</span>{' '}
-                <span className={styles.heroTitleAccent}>parallel orbit.</span>
+                <span className={styles.heroTitleBrand}>Parallel work.</span>{' '}
+                <span className={styles.heroTitleAccent}>In view.</span>
               </h1>
               <p className={styles.heroLead}>
                 Liney brings repos, worktrees, and terminal sessions into one native workspace for macOS and Windows (Beta).
@@ -291,14 +299,14 @@ function HomePage(): JSX.Element {
               </p>
 
               <div className={styles.heroActions}>
-                <Link className={styles.btnPrimary} to="/docs/intro">
-                  Read the docs
+                <a className={styles.btnPrimary} href={releaseUrl}>
+                  Download for macOS
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                   </svg>
-                </Link>
-                <Link className={styles.btnSecondary} to="/docs/guides/getting-started">
-                  Download Liney
+                </a>
+                <Link className={styles.btnSecondary} to="/docs/intro">
+                  Read the docs
                 </Link>
               </div>
             </div>
@@ -379,8 +387,8 @@ function HomePage(): JSX.Element {
                 <button
                   type="button"
                   className={styles.showcaseImgBtn}
-                  onClick={() => openLightbox('/screenshot1.png', 'Liney repository and workspace view')}>
-                  <img src="/liney/screenshot1.png" alt="Liney repository and workspace view" loading="lazy" />
+                  onClick={() => openLightbox('/liney/screenshot1.png', 'Liney repository and workspace view')}>
+                  <img src="/liney/screenshot1.webp" alt="Liney repository and workspace view" loading="lazy" />
                 </button>
               </div>
             </div>
@@ -418,7 +426,7 @@ function HomePage(): JSX.Element {
 
             <div className={styles.faqList}>
               {faqs.map((faq) => (
-                <details className={styles.faqItem} key={faq.question} open>
+                <details className={styles.faqItem} key={faq.question}>
                   <summary>{faq.question}</summary>
                   <p>{faq.answer}</p>
                 </details>
@@ -430,6 +438,7 @@ function HomePage(): JSX.Element {
           <footer className={styles.siteFooter}>
             <div className={styles.footerInner}>
               <p>Built for native repository work on macOS and Windows (Beta).</p>
+              <a href="/">By AtomSprout</a>
               <a href={githubUrl}>GitHub</a>
               <a href={windowsUrl}>Windows (beta)</a>
             </div>
@@ -437,7 +446,7 @@ function HomePage(): JSX.Element {
         </main>
 
         {lightboxImage ? (
-          <div className={styles.lightbox} role="dialog" aria-modal="true" aria-label="Image preview" onClick={() => setLightboxImage(null)}>
+          <dialog ref={previewRef} className={styles.lightbox} aria-label="Image preview" onClose={() => setLightboxImage(null)} onClick={() => setLightboxImage(null)}>
             <button className={styles.lightboxClose} type="button" onClick={() => setLightboxImage(null)} aria-label="Close image preview">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 5l10 10M15 5L5 15" />
@@ -446,7 +455,7 @@ function HomePage(): JSX.Element {
             <div className={styles.lightboxPanel} onClick={(event) => event.stopPropagation()}>
               <img className={styles.lightboxImage} src={lightboxImage.src} alt={lightboxImage.alt} />
             </div>
-          </div>
+          </dialog>
         ) : null}
       </div>
     </Layout>

@@ -4,11 +4,13 @@ Company website for AtomSprout. Product websites live here; Everett’s personal
 
 - Website: https://atomsprout.com
 - Source: https://github.com/atomsprout/atomsprout.github.io
-- Runtime: Node.js 22 or newer. No third-party runtime or build dependencies.
+- Runtime: Node.js 22 or newer. The company generator uses Node built-ins; retained product sites use Next.js and Docusaurus builders. The deployed output is static.
 
 ## Develop and deploy
 
 ```sh
+npm ci --prefix game-site
+npm ci --prefix liney-site
 npm run dev       # http://127.0.0.1:4173
 npm run build     # Generate dist/
 npm run check     # Validate generated local links and assets
@@ -21,8 +23,8 @@ GitHub Actions builds, checks, and publishes `dist/` to GitHub Pages on every pu
 
 - `data/products.json`: product catalog, organized into `apps`, `games`, `extensions`, and `homebrew`. App Store releases were checked against Apple’s public US lookup API, and the five Homebrew tools against live casks and published release assets, on November 11, 2026. Storefront availability can vary. Recheck store metadata before making release or pricing claims.
 - `content/`: product-specific support and privacy content migrated from the existing product sites. Privacy JSON files are the source of truth for their policies; HTML files preserve existing policies and help articles. Do not replace a product’s actual policy with a blanket claim about all apps.
-- `public/assets/`: self-hosted brand assets, product icons, official App Store screenshots, and the Inter font copied from the existing site. There are no analytics or remote font dependencies.
-- `scripts/build.mjs`: shared layouts and static page generation.
+- `public/assets/`: self-hosted brand assets, product icons, official App Store screenshots, and the Inter font copied from the existing site. The company pages use no analytics or remote fonts; independent product sites retain their own assets and implementation.
+- `scripts/build.mjs`: build orchestration; `scripts/site/` contains the catalog helpers, company shell, components, homepage, and generated product pages.
 - `public/assets/site.css` and `site.js`: responsive styles, saved light/dark preference, and copyable Homebrew installation commands.
 
 The catalog contains 10 App Store apps, one released game, three free Chrome extensions, and five Homebrew tools. Games have their own collection even when distributed through the App Store. The `/apps/`, `/games/`, `/extensions/`, and `/homebrew/` pages work without JavaScript. Unreleased products and company registration/trademark claims are not presented as established facts.
@@ -70,7 +72,7 @@ Header/footer marks use the transparent cutout with a small horizontal optical c
 
 Software pages are maintained here. `software-sites/` contains the relocated static websites, including the privacy-reviewed iOS Atlas public data export. `game-site/` contains the former game website's authored Next source and media. Its development/archive pages are not part of the released-product catalog and are marked noindex. Update these sources rather than the retired websites.
 
-`npm ci --prefix game-site` installs the game builder; `npm run build` builds both sites and merges the software routes. `npm run check` checks the complete export. The only public support email is `atomsprout@gmail.com`; product-specific privacy promises and effective dates are preserved. Contact addresses are authored directly, with no post-build email substitution.
+`npm ci --prefix game-site` and `npm ci --prefix liney-site` install the product builders; `npm run build` builds the company, game, and Liney sites, then assembles the software routes. `npm run check` checks the complete export. The only public support email is `atomsprout@gmail.com`; product-specific privacy promises and effective dates are preserved. Contact addresses are authored directly, with no post-build email substitution.
 
 The personal blog and RSS remain on xnu.app. rea.tools, microclaw.org, liney.dev and e7lang.github.io retain their domains. Source repositories, App Store URLs, Homebrew identities and application storage identifiers remain service-specific.
 
@@ -94,3 +96,44 @@ kept here. The old `chatcomputer/chatcomputer.github.io` and
 Keep their existing redirects until the owner retires the repositories. Removing
 them will remove the old GitHub Pages URLs; current clients and documentation
 use the company URLs. GitHub app repositories, release assets, and taps remain.
+
+## Source ownership
+
+- `data/products.json`: released catalog, public release descriptions, verification
+  dates, screenshot sources, and short editorial introductions. Each product has
+  one primary collection; distribution and price are separate metadata.
+- `data/site.json`: company contact details.
+- `scripts/site/`: catalog helpers, company document shell, cards, homepage, and
+  generated product landing pages. `scripts/build.mjs` assembles the main site.
+- `public/assets/site.css`: company navigation, directory, support, and document
+  styles. `home.css` styles the homepage. Each generated product owns a separate
+  stylesheet in `public/assets/products/`; `product.css` supplies functional page
+  and image-preview behavior without imposing a single product art direction.
+- `software-sites/<slug>/`: independent, retained product sites.
+- `liney-site/`: Liney's Docusaurus product site and documentation.
+- `game-site/`: retained game pages, built as static exports.
+- `content/`: product-specific policies and support content. Preserve policy
+  commitments and effective dates when changing presentation.
+
+`page_source` in the product catalog declares `generated`, `static`, or `liney`.
+The main build emits only generated product landing pages. The final assembly
+validates ownership before copying independent sites, writes a product route
+manifest, and builds the combined sitemap. This prevents silent page overwrites.
+
+## Product content and images
+
+Verify feature and availability changes against public releases. Keep the full
+release description and its actual `verified_at` date; use short `highlights` for
+browsing. Do not advance verification dates merely because a page was rebuilt.
+The App Store lookup API can supply published descriptions, versions, and screenshot
+URLs. `source_url` on screenshot entries records the public source.
+
+Retain full-size screenshots for zoom, with smaller WebP thumbnails for page load.
+Record image dimensions and descriptive alternative text in the catalog. The
+navigation logo is a small derivative of the approved brand asset; original brand
+masters remain in `public/assets/`. Preserve an original asset if recompression
+would increase its size.
+
+Company navigation, search/filtering, and native screenshot dialogs progressively
+enhance static HTML. Without JavaScript the complete catalog, download links,
+release details, and full-size screenshots remain available.

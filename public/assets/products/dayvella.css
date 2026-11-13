@@ -1,0 +1,13 @@
+/* Warm, playful calendar cards with a large illustrated date canvas. */
+.product-dayvella { --product-accent: #a94420; }
+.product-dayvella .app-heading h1 { font-family: Georgia, serif; font-weight: 400; line-height: 1.06; }
+.product-dayvella .app-hero-visual { background: #f5d7b7; padding: 28px; border-radius: 38px; transform: rotate(2deg); }
+.product-dayvella .app-hero-visual img { border-radius: 24px; }
+.product-dayvella .app-shot figcaption { color: #725134; }
+.product-dayvella .app-feature-grid { gap: 18px; }
+.product-dayvella .app-feature-grid article { padding: 30px; border-radius: 24px; background: var(--surface); border: 1px solid var(--line); }
+.product-dayvella .feature-index { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: #f5d7b7; color: #7b3d24; font-size: 18px; }
+.product-dayvella .app-gallery-grid { background: #f5d7b7; padding: 32px; border-radius: 32px; }
+html[data-theme='dark'] .product-dayvella { --product-accent: #f2b38d; }
+@media (prefers-color-scheme: dark) { html:not([data-theme='light']) .product-dayvella { --product-accent: #f2b38d; } }
+@media (max-width: 720px) { .product-dayvella .app-hero-visual { transform: none; padding: 22px; } .product-dayvella .app-gallery-grid { padding: 22px; } }

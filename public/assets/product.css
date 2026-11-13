@@ -1,0 +1,69 @@
+/* Functional foundations for generated product pages; each product owns its art direction. */
+.product-page { --product-accent: #35674c; --accent: var(--product-accent); }
+.product-page .primary { background: var(--product-accent); color: var(--bg); }
+.product-page .primary:hover { background: var(--ink); }
+.app-hero { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 70px; padding-block: 32px 65px; }
+.app-heading { min-width: 0; }
+.app-heading .back { margin-bottom: 20px; }
+.app-identity { display: flex; align-items: center; gap: 14px; font-size: 20px; font-weight: 600; margin-bottom: 30px; }
+.app-identity img { border-radius: 15px; }
+.app-heading .eyebrow { color: var(--product-accent); }
+.app-heading h1 { font-size: clamp(40px, 4.7vw, 66px); font-weight: 550; line-height: 1.08; letter-spacing: -2.5px; white-space: pre-line; margin: 0 0 25px; overflow-wrap: anywhere; }
+.app-lead { font-size: 17px; line-height: 1.8; max-width: 490px; color: var(--muted); }
+.app-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 28px; }
+.app-platform { font-size: 12px; color: var(--muted); margin-top: 16px; }
+.app-hero-visual { min-width: 0; }
+.app-shot { margin: 0; }
+.app-shot > a { display: block; position: relative; width: fit-content; max-width: 100%; margin-inline: auto; }
+.app-shot img { max-height: 580px; width: auto; object-fit: contain; border-radius: 14px; }
+.app-shot figcaption { font-size: 12px; color: var(--muted); text-align: center; margin-top: 16px; }
+.enlarge { position: absolute; bottom: 10px; right: 10px; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--surface); color: var(--ink); box-shadow: 0 1px 10px #0002; }
+.app-features, .app-gallery { padding-block: 65px; border-top: 1px solid var(--line); }
+.app-section-heading { margin-bottom: 35px; }
+.app-section-heading h2 { white-space: pre-line; }
+.app-feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 35px; }
+.app-feature-grid article { min-width: 0; }
+.feature-index { display: block; font: 12px ui-monospace, monospace; color: var(--product-accent); margin-bottom: 25px; }
+.app-feature-grid h3 { font-size: 22px; line-height: 1.3; margin: 0 0 13px; font-weight: 550; letter-spacing: -.5px; }
+.app-feature-grid p { font-size: 16px; color: var(--muted); margin: 0; line-height: 1.8; }
+.app-gallery-grid { display: flex; justify-content: center; gap: 35px; }
+.app-gallery-grid .app-shot { flex: 1; min-width: 0; max-width: 500px; }
+.app-gallery-grid .app-shot img { max-height: 620px; }
+.app-information { display: grid; grid-template-columns: 1fr 1.3fr; gap: 70px; padding-block: 65px 80px; border-top: 1px solid var(--line); }
+.app-information h2 { font-size: 32px; }
+.app-information p { font-size: 15px; color: var(--muted); }
+.app-links { display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; margin-top: 20px; }
+.app-links a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; text-decoration: underline; text-underline-offset: 4px; }
+.release-details { border-block: 1px solid var(--line); }
+.release-details summary { cursor: pointer; padding: 22px 0; font-size: 16px; font-weight: 550; }
+.release-details .prose { padding-block: 10px 25px; }
+.app-final-action { margin-top: 28px; }
+.image-preview { width: fit-content; max-width: 95vw; max-height: 95dvh; padding: 60px 18px 15px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg); color: var(--ink); }
+.image-preview::backdrop { background: #05090ce0; }
+.image-preview img { max-height: calc(95dvh - 125px); width: auto; margin: auto; }
+.image-preview p { text-align: center; font-size: 14px; }
+.preview-close { position: absolute; right: 14px; top: 10px; border: 1px solid var(--line); background: var(--surface); border-radius: 24px; padding: 10px 16px; min-height: 44px; }
+@media (max-width: 1000px) {
+  .app-hero { gap: 35px; }
+  .app-heading h1 { font-size: 46px; }
+  .app-feature-grid { gap: 25px; }
+}
+@media (max-width: 720px) {
+  .app-hero { grid-template-columns: 1fr; padding-block: 20px 40px; gap: 30px; }
+  .app-heading .back { margin-bottom: 12px; }
+  .app-identity { margin-bottom: 20px; font-size: 18px; }
+  .app-identity img { width: 44px; height: 44px; border-radius: 11px; }
+  .app-heading h1 { font-size: clamp(38px, 10vw, 50px); letter-spacing: -1.8px; margin-bottom: 20px; }
+  .app-lead { font-size: 16px; line-height: 1.75; }
+  .app-actions { margin-top: 22px; gap: 8px 20px; }
+  .app-hero-visual .app-shot img { max-height: 540px; }
+  .app-features, .app-gallery { padding-block: 40px; }
+  .app-feature-grid { grid-template-columns: 1fr; gap: 28px; }
+  .feature-index { margin-bottom: 12px; }
+  .app-feature-grid article { padding-top: 20px; border-top: 1px solid var(--line); }
+  .app-feature-grid h3 { font-size: 23px; }
+  .app-gallery-grid { flex-direction: column; gap: 30px; align-items: center; }
+  .app-gallery-grid .app-shot { width: 100%; }
+  .app-gallery-grid .app-shot img { max-height: 560px; }
+  .app-information { grid-template-columns: 1fr; padding-block: 40px 55px; gap: 30px; }
+}

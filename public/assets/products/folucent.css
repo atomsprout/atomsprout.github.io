@@ -1,0 +1,14 @@
+/* A bookish reading room: paper, generous margins and a quiet violet. */
+.product-folucent { --product-accent: #76518e; }
+.product-folucent .app-heading h1, .product-folucent .app-section-heading h2 { font-family: Georgia, serif; font-weight: 400; letter-spacing: -2px; }
+.product-folucent .app-hero { grid-template-columns: 1.1fr .9fr; }
+.product-folucent .app-hero-visual { padding: 28px; background: #f3e4d8; border-radius: 180px 180px 18px 18px; }
+.product-folucent .app-shot img { box-shadow: 0 16px 40px #38221b18; }
+.product-folucent .app-feature-grid { counter-reset: chapter; }
+.product-folucent .feature-index { font-family: Georgia, serif; font-style: italic; font-size: 24px; }
+.product-folucent .app-feature-grid h3 { font-family: Georgia, serif; font-weight: 400; font-size: 26px; }
+.product-folucent .app-gallery-grid { padding: 35px; background: #f3e4d8; border-radius: 18px; }
+.product-folucent .app-gallery-grid figcaption, .product-folucent .app-hero-visual figcaption { color: #67594e; }
+html[data-theme='dark'] .product-folucent { --product-accent: #d2b4e4; }
+@media (prefers-color-scheme: dark) { html:not([data-theme='light']) .product-folucent { --product-accent: #d2b4e4; } }
+@media (max-width: 720px) { .product-folucent .app-hero { grid-template-columns: 1fr; } .product-folucent .app-hero-visual { padding: 22px; } .product-folucent .app-gallery-grid { padding: 22px; } }

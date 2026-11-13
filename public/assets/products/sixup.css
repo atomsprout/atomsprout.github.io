@@ -1,0 +1,12 @@
+/* A structured study journal, with a violet progress rail. */
+.product-sixup { --product-accent: #6342a4; }
+.product-sixup .app-heading h1 { font-weight: 650; }
+.product-sixup .app-hero-visual { border-radius: 24px; background: #e5ddf4; padding: 28px; }
+.product-sixup .app-hero-visual figcaption { color: #5f5278; }
+.product-sixup .app-feature-grid { grid-template-columns: 1fr; gap: 0; max-width: 900px; margin-left: auto; border-left: 2px solid var(--product-accent); }
+.product-sixup .app-feature-grid article { display: grid; grid-template-columns: 65px 1fr 1.5fr; gap: 20px; padding: 28px; border-bottom: 1px solid var(--line); }
+.product-sixup .feature-index { margin: 0; font-size: 24px; }
+.product-sixup .app-gallery-grid .app-shot { background: var(--surface); border-radius: 20px; padding: 24px; }
+html[data-theme='dark'] .product-sixup { --product-accent: #bfa3ef; }
+@media (prefers-color-scheme: dark) { html:not([data-theme='light']) .product-sixup { --product-accent: #bfa3ef; } }
+@media (max-width: 720px) { .product-sixup .app-feature-grid article { grid-template-columns: 40px 1fr; padding: 22px; } .product-sixup .app-feature-grid p { grid-column: 2; } }
