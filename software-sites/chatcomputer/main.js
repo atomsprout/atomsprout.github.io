@@ -110,7 +110,7 @@
     "hero.pill": "开源 · macOS 27 · Apple 芯片",
     "hero.h1a": "多一台 Mac，", "hero.h1b": "你聊天，它干活。",
     "hero.lead": "Chat Computer 在你的 Mac 上运行一台私有的 macOS 虚拟机。说出你要做的事，AI agent 看着虚拟机的屏幕点鼠标、打字；每个文件交到你手上之前，都由宿主检查过。",
-    "hero.download": "下载 Mac 版 0.9.12", "hero.source": "查看源码",
+    "hero.download": "查看最新版本", "hero.source": "查看源码",
     "hero.fine": "免费 · Apache 2.0 · 自带模型 Key：Claude、DeepSeek、OpenAI、Gemini 等",
     "hud.control": "Agent 正在操作", "hud.thinking": "思考中…", "hud.verified": "已校验：report.pdf",
     "num.pass": "个固定任务三轮全部通过（内置 agent）", "num.save": "保存文件类任务减少的轮数",

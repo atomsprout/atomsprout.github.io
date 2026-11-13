@@ -324,7 +324,7 @@
     "description": "An AI-operated macOS virtual machine on your Mac. Describe a task, watch the agent work, and take over when you choose. Bring your own model provider.",
     "source_url": "https://github.com/chatcomputer/chatcomputer",
     "website_url": "https://atomsprout.com/chatcomputer",
-    "download_url": "https://github.com/chatcomputer/chatcomputer/releases/tag/v0.9.12",
+    "download_url": "https://github.com/chatcomputer/chatcomputer/releases/latest",
     "privacy_url": "https://github.com/chatcomputer/chatcomputer/blob/main/PRIVACY.md",
     "install": "brew install --cask chatcomputer/tap/chatcomputer",
     "features": [
