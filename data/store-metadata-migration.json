@@ -2,7 +2,7 @@
   "status": "app_store_metadata_updated",
   "public_email": "atomsprout@gmail.com",
   "copyright": "2026 AtomSprout",
-  "note": "App Store product, support, privacy and copyright fields have been updated in editable candidate versions. Review submissions are changed only when explicitly authorized. Historical reviewer and tester account records are retained. Chrome Web Store values remain prepared only. Detailed release preparation evidence is kept outside the public website repository.",
+  "note": "App Store product, support, privacy and copyright fields have been updated in editable candidate versions. Review submissions are changed only when explicitly authorized. Historical reviewer and tester account records are retained. All three Chrome Web Store items have had their homepage, support and privacy URLs submitted for review; automatic publication is enabled after approval. Detailed release preparation evidence is kept outside the public website repository.",
   "app_store": [
     {
       "name": "GrapeCompare",
@@ -86,17 +86,26 @@
     {
       "name": "TabCarry",
       "homepage": "https://atomsprout.com/tabcarry/",
-      "privacy_url": "https://atomsprout.com/tabcarry/privacy/"
+      "privacy_url": "https://atomsprout.com/tabcarry/privacy/",
+      "support_url": "https://atomsprout.com/tabcarry/support/",
+      "submission_status": "pending_review",
+      "publish_automatically_after_review": true
     },
     {
       "name": "NotBadBookmark",
       "homepage": "https://atomsprout.com/notbadbookmark/",
-      "privacy_url": "https://atomsprout.com/notbadbookmark/privacy/"
+      "privacy_url": "https://atomsprout.com/notbadbookmark/privacy/",
+      "support_url": "https://atomsprout.com/notbadbookmark/support/",
+      "submission_status": "pending_review",
+      "publish_automatically_after_review": true
     },
     {
       "name": "X Article Export",
       "homepage": "https://atomsprout.com/x-article-export-pdf/",
-      "privacy_url": "https://atomsprout.com/x-article-export-pdf/privacy/"
+      "privacy_url": "https://atomsprout.com/x-article-export-pdf/privacy/",
+      "support_url": "https://atomsprout.com/x-article-export-pdf/support/",
+      "submission_status": "pending_review",
+      "publish_automatically_after_review": true
     }
   ]
 }

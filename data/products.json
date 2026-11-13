@@ -325,7 +325,7 @@
     "source_url": "https://github.com/chatcomputer/chatcomputer",
     "website_url": "https://atomsprout.com/chatcomputer",
     "download_url": "https://github.com/chatcomputer/chatcomputer/releases/latest",
-    "privacy_url": "https://github.com/chatcomputer/chatcomputer/blob/main/PRIVACY.md",
+    "privacy_url": "https://atomsprout.com/chatcomputer/privacy/",
     "install": "brew install --cask chatcomputer/tap/chatcomputer",
     "features": [
       {
@@ -346,5 +346,98 @@
     "verified_at": "2026-11-11",
     "icon": "/assets/chatcomputer-icon.png",
     "screenshot": "/assets/chatcomputer-workspace.jpg"
+  },
+  {
+    "slug": "tabcarry",
+    "name": "TabCarry",
+    "category": "Tabs & sessions",
+    "platform": "Chrome · Desktop",
+    "tagline": "Save your tabs. Come back ready.",
+    "description": "Save and restore Chrome windows, tabs and groups. Search saved sessions, keep local backups, and continue where you left off.",
+    "store_id": "eemmceflpbemalamboiahniolcgalpfl",
+    "source_url": "https://github.com/everettjf/tabcarry",
+    "features": [
+      {
+        "title": "Keep your place",
+        "body": "Save named sessions with window structure, tab order, pinned tabs and Chrome groups."
+      },
+      {
+        "title": "Find it again",
+        "body": "Search saved sessions and restore a full workspace or selected tabs."
+      },
+      {
+        "title": "Local backups",
+        "body": "Export and import JSON backups. No account or cloud service is required."
+      }
+    ],
+    "collection": "extensions",
+    "price": "free",
+    "verified_at": "2026-11-12",
+    "store_url": "https://chromewebstore.google.com/detail/eemmceflpbemalamboiahniolcgalpfl",
+    "website_url": "https://atomsprout.com/tabcarry/",
+    "privacy_url": "https://atomsprout.com/tabcarry/privacy/",
+    "icon": "/assets/tabcarry-icon.png"
+  },
+  {
+    "slug": "notbadbookmark",
+    "name": "NotbadBookmark",
+    "category": "Bookmarks",
+    "platform": "Chrome · Desktop",
+    "tagline": "Find your links. Keep them organized.",
+    "description": "A free bookmark manager with folders, tags, search, import and export. Organize bookmarks and keep your own backups.",
+    "store_id": "mablekconlhfomebomdjbohbjmgceana",
+    "source_url": "https://github.com/everettjf/notbadbookmark",
+    "features": [
+      {
+        "title": "Search and filter",
+        "body": "Find bookmarks by title, URL, folder, domain or tag."
+      },
+      {
+        "title": "Organize your library",
+        "body": "Work with folders and tags, switch between list and grid views, and manage selected bookmarks together."
+      },
+      {
+        "title": "Back up and recover",
+        "body": "Import and export bookmarks, and use local recovery snapshots for deletion recovery."
+      }
+    ],
+    "collection": "extensions",
+    "price": "free",
+    "verified_at": "2026-11-12",
+    "store_url": "https://chromewebstore.google.com/detail/mablekconlhfomebomdjbohbjmgceana",
+    "website_url": "https://atomsprout.com/notbadbookmark/",
+    "privacy_url": "https://atomsprout.com/notbadbookmark/privacy/",
+    "icon": "/assets/notbadbookmark-icon.png"
+  },
+  {
+    "slug": "x-article-export-pdf",
+    "name": "X Article Export",
+    "category": "Reading & export",
+    "platform": "Chrome · Desktop",
+    "tagline": "Keep the article. Choose your format.",
+    "description": "Export X Articles to readable PDFs or Markdown, preserving headings, code, images, links and math where available.",
+    "store_id": "kgkjmkldolapbhbbolonloponfaemheg",
+    "source_url": "https://github.com/everettjf/x-article-export-pdf",
+    "features": [
+      {
+        "title": "PDF and Markdown",
+        "body": "Create a printable document or a Markdown file from the article you choose."
+      },
+      {
+        "title": "Preserve structure",
+        "body": "Keep headings, code, quotes, links and images instead of taking screenshots."
+      },
+      {
+        "title": "Export on demand",
+        "body": "Runs when you invoke the extension on the current tab. No developer-operated backend."
+      }
+    ],
+    "collection": "extensions",
+    "price": "free",
+    "verified_at": "2026-11-12",
+    "store_url": "https://chromewebstore.google.com/detail/kgkjmkldolapbhbbolonloponfaemheg",
+    "website_url": "https://atomsprout.com/x-article-export-pdf/",
+    "privacy_url": "https://atomsprout.com/x-article-export-pdf/privacy/",
+    "icon": "/assets/x-article-export-pdf-icon.png"
   }
 ]

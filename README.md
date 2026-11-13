@@ -19,13 +19,13 @@ GitHub Actions builds, checks, and publishes `dist/` to GitHub Pages on every pu
 
 ## Content
 
-- `data/products.json`: product catalog, organized into `apps`, `games`, and `homebrew`. App Store releases were checked against Apple’s public US lookup API, and the five Homebrew tools against live casks and published release assets, on November 11, 2026. Storefront availability can vary. Recheck store metadata before making release or pricing claims.
+- `data/products.json`: product catalog, organized into `apps`, `games`, `extensions`, and `homebrew`. App Store releases were checked against Apple’s public US lookup API, and the five Homebrew tools against live casks and published release assets, on November 11, 2026. Storefront availability can vary. Recheck store metadata before making release or pricing claims.
 - `content/`: product-specific support and privacy content migrated from the existing product sites. Privacy JSON files are the source of truth for their policies; HTML files preserve existing policies and help articles. Do not replace a product’s actual policy with a blanket claim about all apps.
 - `public/assets/`: self-hosted brand assets, product icons, official App Store screenshots, and the Inter font copied from the existing site. There are no analytics or remote font dependencies.
 - `scripts/build.mjs`: shared layouts and static page generation.
 - `public/assets/site.css` and `site.js`: responsive styles, saved light/dark preference, and copyable Homebrew installation commands.
 
-The catalog contains 10 App Store apps, one released game, and five Homebrew tools. Games have their own collection even when distributed through the App Store. The `/apps/`, `/games/`, and `/homebrew/` pages work without JavaScript. Unreleased products and company registration/trademark claims are not presented as established facts. ScriptWidget’s privacy link points to its App Store privacy information until a dedicated company-hosted policy is supplied.
+The catalog contains 10 App Store apps, one released game, three free Chrome extensions, and five Homebrew tools. Games have their own collection even when distributed through the App Store. The `/apps/`, `/games/`, `/extensions/`, and `/homebrew/` pages work without JavaScript. Unreleased products and company registration/trademark claims are not presented as established facts.
 
 ## Support and founder
 
@@ -79,3 +79,7 @@ Old website publishers generate redirects only after the new destination has bee
 ## Liney product website
 
 `liney-site/` contains the Docusaurus source imported from `everettjf/web-liney` at `6a096c5333ce67f09b3f9799e4c4d73481433e7e`. Its landing page and documentation are published at `https://atomsprout.com/liney/`. Docusaurus builds assets and client-side routes with `/liney/` as the base URL. Run `npm ci --prefix liney-site` before building. Existing product-specific support and privacy pages are retained.
+
+## Chrome extensions
+
+`extensions` is a distribution collection; `price: "free"` labels the three extensions without mixing price and product type. TabCarry, NotbadBookmark and X Article Export link to their existing product websites and Chrome Web Store listings. Their support and privacy links appear in grouped company directories; product-specific privacy policies remain unchanged.

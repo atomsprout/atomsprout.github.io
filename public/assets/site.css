@@ -15,3 +15,18 @@ html[data-theme=dark]{color-scheme:dark;--bg:#10141e;--surface:#171d29;--ink:#f0
 
 /* Give the cutout a square visual footprint; its source silhouette is 6.8% taller. */
 .brand-image{display:block;overflow:visible;flex-shrink:0}.brand-image>img{position:static;display:block;width:100%;height:100%;max-width:none;object-fit:contain;transform:translateY(.5px) scaleX(1.068)}
+
+/* Four product collections; price is a label within a collection. */
+.collection-paths{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card-number{display:flex;align-items:center;gap:10px}
+.free-label{border:1px solid var(--line);border-radius:20px;background:var(--soft);color:var(--accent);font-size:10px;letter-spacing:.2px;padding:4px 9px}
+.support-collection,.policy-collection{margin-top:45px}
+.support-collection>h2,.policy-collection>h2{font-size:22px;font-weight:500;letter-spacing:-.5px;margin-bottom:18px}
+.support-collection>h2>span{font-size:11px;color:var(--muted);font-weight:400;margin-left:12px}
+.support-collection .support-grid{margin-top:0}
+.collection-tabs{flex-wrap:wrap}
+@media(max-width:1000px){.site-header nav{gap:20px}}
+@media(max-width:720px){.site-header nav{gap:10px;font-size:11px}.collection-paths{grid-template-columns:1fr}.collection-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.collection-tabs>a{justify-content:space-between}.catalog-section .section-heading .text-link{max-width:105px}.support-collection,.policy-collection{margin-top:30px}}
+
+.card-number .free-label{font-size:10px}
+@media(max-width:720px){.collection-page[data-collection=extensions] .product-grid,#extensions .product-grid{grid-template-columns:1fr}.collection-page[data-collection=extensions] .product-card,#extensions .product-card{min-height:270px}}

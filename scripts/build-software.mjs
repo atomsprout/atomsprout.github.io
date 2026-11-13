@@ -26,7 +26,7 @@ for (const [slug, product] of Object.entries(JSON.parse(fs.readFileSync('data/le
 for (const slug of fs.readdirSync('software-sites')) {
   const source = path.join('software-sites',slug);
   fs.cpSync(source, path.join(out,slug), {recursive:true});
-  for (const file of fs.readdirSync(path.join(out,slug),{recursive:true})) {
+  for (const file of fs.readdirSync(source,{recursive:true})) {
     if (!/\.(html|css|js|mjs|json)$/.test(file)) continue;
     const target = path.join(out,slug,file);
     let text = fs.readFileSync(target,'utf8');
