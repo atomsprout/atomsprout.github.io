@@ -1015,5 +1015,21 @@
     "icon": "/games/aether-hero.jpg",
     "page_source": "game",
     "verified_at": "2026-11-13"
+  },
+  {
+    "slug": "fivefold-front",
+    "name": "Fivefold Front",
+    "collection": "games",
+    "category": "Card strategy",
+    "platform": "Windows",
+    "tagline": "Build your deck. Master the five elements.",
+    "description": "An offline card auto-battler with 50 units and spells, six-slot formations, elemental counters, Quick Matches and an eight-stage Gauntlet. Play in English or Simplified Chinese.",
+    "store_id": "9P1XSK7BLZHT",
+    "store_url": "https://apps.microsoft.com/detail/9P1XSK7BLZHT",
+    "privacy_url": "https://atomsprout.com/fivefold-front/privacy/",
+    "store": "microsoft",
+    "icon": "/assets/fivefold-front-icon.png",
+    "page_source": "game",
+    "verified_at": "2026-11-13"
   }
 ]
