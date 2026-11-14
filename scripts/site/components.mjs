@@ -12,7 +12,7 @@ export function installBlock(p) {
 }
 export function gameFeature() {
   const p=inCollection('games')[0];
-  return `<a class="game-feature" href="/${p.slug}/"><img src="${p.home_image || p.screenshot}" width="1600" height="900" alt="${esc(p.home_image_alt || p.name)}" loading="lazy"><div class="game-feature-copy"><span class="pill">AVAILABLE ON THE APP STORE</span><h3>${esc(p.name)}</h3><p>Carry the light.<br>Find your next adventure.</p><span class="text-link">Explore the game ${arrow}</span></div></a>`;
+  return `<a class="game-feature" href="/${p.slug}/"><img src="${p.home_image || p.screenshot}" width="1600" height="900" alt="${esc(p.home_image_alt || p.name)}" loading="lazy"><div class="game-feature-copy"><span class="pill">AVAILABLE ON THE APP STORE</span><h3>${esc(p.name)}</h3><p>Carry the light.<br>Find your next adventure.</p><span class="text-link">Explore the game ${arrow}</span></div></a><div class="product-grid">${inCollection('games').slice(1).map(card).join('')}</div>`;
 }
 export function collectionNav(active) {
   return `<nav class="collection-tabs" aria-label="Product collections">${collections.map(c=>`<a href="/${c.id}/" ${active===c.id?'aria-current="page"':''}>${c.navName || c.name}<span>${inCollection(c.id).length}</span></a>`).join('')}</nav>`;

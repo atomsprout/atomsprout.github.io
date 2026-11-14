@@ -7,7 +7,7 @@ const site = JSON.parse(fs.readFileSync('data/site.json', 'utf8'));
 const products = JSON.parse(fs.readFileSync('data/products.json', 'utf8'));
 for (const product of products) {
   const hasStatic = fs.existsSync(`software-sites/${product.slug}/index.html`);
-  if (!['generated', 'static', 'liney'].includes(product.page_source)) throw new Error(`Unknown page source: ${product.slug}`);
+  if (!['generated', 'static', 'liney', 'game'].includes(product.page_source)) throw new Error(`Unknown page source: ${product.slug}`);
   if ((product.page_source === 'static') !== hasStatic) throw new Error(`Conflicting product page sources: ${product.slug}`);
   if (product.page_source === 'liney' && product.slug !== 'liney') throw new Error(`Unknown documentation site: ${product.slug}`);
 }

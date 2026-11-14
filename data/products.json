@@ -968,5 +968,52 @@
     "privacy_url": "https://atomsprout.com/x-article-export-pdf/privacy/",
     "icon": "/assets/x-article-export-pdf-icon.png",
     "page_source": "static"
+  },
+  {
+    "slug": "rhopdf",
+    "name": "Rho PDF",
+    "collection": "apps",
+    "category": "Productivity",
+    "platform": "Windows 10 / 11 · x64",
+    "tagline": "PDF tools that respect your documents.",
+    "description": "Read, search, organize, and transform PDFs locally on Windows. Optional Ask Rho assistance runs on your PC.",
+    "store_id": "9PPNXKC1RJGD",
+    "store_url": "https://apps.microsoft.com/detail/9PPNXKC1RJGD",
+    "store": "microsoft",
+    "icon": "/assets/rhopdf-icon.ico",
+    "page_source": "static",
+    "verified_at": "2026-11-13"
+  },
+  {
+    "slug": "wedge-storm-chaser",
+    "name": "Wedge Storm Chaser",
+    "collection": "games",
+    "category": "Storm chasing",
+    "platform": "Windows",
+    "tagline": "Read the storm. Bring the data home.",
+    "description": "Read the storm. Bring the data home.",
+    "store_id": "9P9T9NKKZPBK",
+    "store_url": "https://apps.microsoft.com/detail/9P9T9NKKZPBK",
+    "privacy_url": "https://atomsprout.com/wedge-storm-chaser/privacy/",
+    "store": "microsoft",
+    "icon": "/games/wedge-hero.jpg",
+    "page_source": "game",
+    "verified_at": "2026-11-13"
+  },
+  {
+    "slug": "aether-barrage-omega",
+    "name": "Aether Barrage: Omega",
+    "collection": "games",
+    "category": "Arcade shooter",
+    "platform": "Windows",
+    "tagline": "Find your path through the barrage.",
+    "description": "Find your path through the barrage.",
+    "store_id": "9NXSMTLM2H4L",
+    "store_url": "https://apps.microsoft.com/detail/9NXSMTLM2H4L",
+    "privacy_url": "https://atomsprout.com/aether-barrage-omega/privacy/",
+    "store": "microsoft",
+    "icon": "/games/aether-hero.jpg",
+    "page_source": "game",
+    "verified_at": "2026-11-13"
   }
 ]

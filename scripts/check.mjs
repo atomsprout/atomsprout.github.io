@@ -46,7 +46,7 @@ for (const product of data) {
   if (!fs.existsSync(landing)) { failures.push(`${product.slug}: missing landing page`); continue; }
   const entry = routeManifest.find(r => r.route === `/${product.slug}/`);
   if (!entry || entry.source !== product.page_source) failures.push(`${product.slug}: page source mismatch`);
-  if (!['generated','static','liney'].includes(product.page_source)) failures.push(`${product.slug}: invalid page source`);
+  if (!['generated','static','liney','game'].includes(product.page_source)) failures.push(`${product.slug}: invalid page source`);
   if (product.page_source !== 'generated') continue;
   const html = fs.readFileSync(landing, 'utf8');
   if (!html.includes(`product-${product.slug}`)) failures.push(`${product.slug}: generated page was replaced`);
