@@ -11,6 +11,15 @@ for(const f of files){
   if(!/<title\b[^>]*>.+<\/title>/.test(html))failures.push(`${f}: missing title`);
   if(/\{%|\{\{/.test(html))failures.push(`${f}: unrendered template`);
   if (/(?:xnuapp@gmail\.com|everettjf@live\.com)/.test(html)) failures.push(`${f}: legacy public email`);
+  for (const match of html.matchAll(/srcset="([^"]+)"/gi)) {
+    for (const candidate of match[1].split(',')) {
+      const source = candidate.trim().split(/\s+/)[0];
+      const url = new URL(source, `https://atomsprout.com/${f}`);
+      if (url.hostname === 'atomsprout.com' && !fs.existsSync(path.join(root, decodeURIComponent(url.pathname)))) {
+        failures.push(`${f}: missing responsive image ${source}`);
+      }
+    }
+  }
   for(const match of html.matchAll(/(?:href|src|poster)="([^"]+)"/g)){
     let url;
     try { url = new URL(match[1], `https://atomsprout.com/${f}`); }

@@ -792,7 +792,7 @@
     "store_url": "https://apps.microsoft.com/detail/9P9T9NKKZPBK",
     "privacy_url": "https://atomsprout.com/wedge-storm-chaser/privacy/",
     "store": "microsoft",
-    "icon": "/games/wedge-hero.jpg",
+    "icon": "/games/optimized/wedge-hero-128.webp",
     "page_source": "game",
     "verified_at": "2026-11-13"
   },
@@ -808,7 +808,7 @@
     "store_url": "https://apps.microsoft.com/detail/9NXSMTLM2H4L",
     "privacy_url": "https://atomsprout.com/aether-barrage-omega/privacy/",
     "store": "microsoft",
-    "icon": "/games/aether-hero.jpg",
+    "icon": "/games/optimized/aether-hero-128.webp",
     "page_source": "game",
     "verified_at": "2026-11-13"
   },

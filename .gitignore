@@ -6,6 +6,7 @@ verification/
 
 game-site/.next/
 game-site/out/
+game-site/public/games/optimized/
 game-site/node_modules
 
 liney-site/build/
