@@ -781,6 +781,21 @@
     "page_source": "static"
   },
   {
+    "slug": "rhopdf",
+    "name": "Rho PDF",
+    "collection": "apps",
+    "category": "Productivity",
+    "platform": "Windows 10 / 11 · x64",
+    "tagline": "PDF tools that respect your documents.",
+    "description": "Read, search, organize, and transform PDFs locally on Windows. Optional Ask Rho assistance runs on your PC.",
+    "store_id": "9PPNXKC1RJGD",
+    "store_url": "https://apps.microsoft.com/detail/9PPNXKC1RJGD",
+    "store": "microsoft",
+    "icon": "/assets/rhopdf-icon.ico",
+    "page_source": "static",
+    "verified_at": "2026-11-13"
+  },
+  {
     "slug": "wedge-storm-chaser",
     "name": "Wedge Storm Chaser",
     "collection": "games",
