@@ -33,7 +33,7 @@
   {
     "slug": "machoexplorer",
     "source": "products/brew/machoexplorer/site",
-    "commit": "cd612d774369475efeb437377d91502c2b9602a5"
+    "commit": "b90f74a00e72f40c1ee5964ccf229a795c2dd884"
   },
   {
     "slug": "xcodefit",
