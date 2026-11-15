@@ -38,7 +38,7 @@ AppleTrace, BeanBao, Copy APP, Crab Stick, ezjev, iOS Atlas, ipatool-rs, MachOEx
 
 ChatComputer and RiftVM are independently maintained outside Company. ChatComputer uses https://chatcomputer.github.io/; RiftVM uses https://riftvm.com/ with https://riftvm.github.io/ as its GitHub Pages alias. Neither is in the Company directory or retained software sites. Their historical Company HTML routes redirect through `data/external-site-redirects.json`; support and ChatComputer’s original privacy policy are hosted by their own website repositories.
 
-Titled, JSONCompare and VoiceDraft are retained legacy product/support pages generated from `data/legacy-products.json`, outside the released directory. Their future classification is pending. EditSmith and LaunchDeck are retired and removed.
+All retained product pages are listed in the released directory. Titled, JSON Compare, VoiceDraft, EditSmith and LaunchDeck have been removed, including their product, support and privacy pages. `data/legacy-products.json` retains only the existing NotbadBookmark fallback metadata; it does not add a separate product outside the directory.
 
 The existing rea.tools, microclaw.org, liney.dev and e7lang.github.io domains are not changed by this migration.
 

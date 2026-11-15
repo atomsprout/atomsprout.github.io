@@ -67,7 +67,7 @@ for (const suffix of ['', 'support/', 'privacy/']) {
   redirect(`cinderwick/${suffix}`,`/foxwick/${suffix}`);
   redirect(`games/foxwick/${suffix}`,`/foxwick/${suffix}`);
 }
-for (const [old, current] of [['countmydays','dayvella'],['jsondiff','jsoncompare']]) redirect(old,`/${current}/`);
+redirect('countmydays','/dayvella/');
 // Compatibility URLs used by existing App Store metadata and older app builds.
 for (const slug of fs.readdirSync(out)) {
   if (!fs.statSync(path.join(out,slug)).isDirectory()) continue;
