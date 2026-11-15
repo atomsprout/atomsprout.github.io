@@ -79,29 +79,11 @@ for (const slug of fs.readdirSync(out)) {
     }
   }
 }
-// Personal project websites publish from their own repositories under asp.run.
-// Keep historical Company HTML entry points without retaining a second runtime.
-const personalRedirects = JSON.parse(fs.readFileSync('data/personal-site-redirects.json', 'utf8'));
-for (const [slug, routes] of Object.entries(personalRedirects)) {
-  for (const suffix of routes) {
-    const route = `${slug}/${suffix}`;
-    const target = `https://asp.run/${route.replace(/\/(support|privacy)\.html$/, '/$1/')}`;
-    if (suffix.endsWith('.html')) {
-      const file = path.join(out, route);
-      fs.mkdirSync(path.dirname(file), {recursive: true});
-      fs.writeFileSync(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Page moved</title><meta name="robots" content="noindex"><link rel="canonical" href="${target}"><meta http-equiv="refresh" content="0;url=${target}"></head><body><a href="${target}">Continue</a><script>location.replace(${JSON.stringify(target)}+location.search+location.hash)</script></body></html>`);
-    } else redirect(route, target);
-  }
+// Web Studio is a functional part of ScriptWidget, published by its own repository.
+for (const suffix of ['', 'sandbox.html']) {
+  redirect(`scriptwidget/studio/${suffix}`, `https://asp.run/scriptwidget/studio/${suffix}`);
 }
-// Independently hosted projects retain only compatibility entry points here.
-const externalRedirects = JSON.parse(fs.readFileSync('data/external-site-redirects.json', 'utf8'));
-for (const [slug, {origin: targetOrigin, routes}] of Object.entries(externalRedirects)) {
-  for (const suffix of routes) {
-    const targetPath = suffix.replace(/^(support|privacy)\.html$/, '$1/');
-    redirect(`${slug}/${suffix}`, `${targetOrigin}/${targetPath}`);
-  }
-}
-console.log('Migrated software pages, legacy game pages and compatibility routes built.');
+console.log('Company product sites, internal aliases and Web Studio links built.');
 
 const sitemapURLs = new Set();
 for (const file of fs.readdirSync(out,{recursive:true}).filter(f=>f.endsWith('.html'))) {

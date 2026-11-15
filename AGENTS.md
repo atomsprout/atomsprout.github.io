@@ -1,6 +1,7 @@
 # Company website
 
 - This is AtomSprout’s company site, deployed to GitHub Pages. Keep the personal entry page, blog and personal project sites at asp.run. Company keeps commercial product pages plus explicitly selected free products. ScriptWidget Web Studio is maintained and deployed only by everettjf/scriptwidget at asp.run/scriptwidget/studio/.
+- Do not publish redirect-only routes for personal or external project sites. Link to the personal blog from Founder. ScriptWidget Web Studio is the functional cross-domain exception.
 - Maintain the released product catalog in `data/products.json`. Assign one primary collection (`apps`, `games`, `extensions`, or `homebrew`); App Store games belong to `games`. Free Chrome extensions belong to `extensions`, with price recorded separately. Keep contact details in `data/site.json`. Verify availability and feature claims against actual public releases.
 - Keep privacy policies product-specific, preserving their commitments and effective dates. Do not infer data handling from branding.
 - Do not publish unreleased features, invented metrics, testimonials, legal company names, or trademark-registration claims.

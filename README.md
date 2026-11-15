@@ -34,9 +34,9 @@ ScriptWidget and the three extensions remain Company products despite being free
 
 `everettjf/everettjf.github.io` uses `asp.run` for the personal entry page, `/blog/`, `/projects/`, dated articles and RSS feeds. Individual personal repositories publish their own sites under `asp.run/<repository>/`; they do not need website copies in Company or the blog repository. Cloudflare forwards `xnu.app` to asp.run, preserving paths and query strings. `www.asp.run` resolves to the same GitHub user site.
 
-AppleTrace, BeanBao, Copy APP, Crab Stick, ezjev, iOS Atlas, ipatool-rs, MachOExplorer, Pixel6iOS and XcodeFit are independently maintained personal sites. Palmino and Rho PDF landing, support and original privacy content are maintained by the personal site. Their historical Company HTML entry points redirect to asp.run using `data/personal-site-redirects.json`. Compatibility redirects are not Company product entries and are excluded from the sitemap.
+Personal project pages are maintained by their own publishers. Company does not retain per-project redirect pages to personal sites. The Founder page links to the personal blog; ScriptWidget links to its separately deployed Web Studio as a functional part of that product.
 
-ChatComputer and RiftVM are independently maintained outside Company. ChatComputer uses https://chatcomputer.github.io/; RiftVM uses https://riftvm.com/ with https://riftvm.github.io/ as its GitHub Pages alias. Neither is in the Company directory or retained software sites. Their historical Company HTML routes redirect through `data/external-site-redirects.json`; support and ChatComputer’s original privacy policy are hosted by their own website repositories.
+ChatComputer and RiftVM are independently maintained outside Company. Neither has a product page or compatibility redirect here. Their websites, support and privacy content are maintained in their own website repositories.
 
 All retained product pages are listed in the released directory. Titled, JSON Compare, VoiceDraft, EditSmith and LaunchDeck have been removed, including their product, support and privacy pages. `data/legacy-products.json` retains only the existing NotbadBookmark fallback metadata; it does not add a separate product outside the directory.
 
@@ -52,8 +52,6 @@ The Studio, sandbox runtime, templates and Gallery are built from `everettjf/scr
 
 - `data/products.json`: the released Company directory, descriptions, verification dates, screenshot sources and product page ownership (`generated`, `static`, `liney` or `game`).
 - `data/site.json`: shared contact details.
-- `data/personal-site-redirects.json`: HTML compatibility paths for relocated personal sites.
-- `data/external-site-redirects.json`: compatibility paths for independently hosted external project sites.
 - `scripts/site/`: catalog helpers, company shell, navigation, homepage and generated product landing pages.
 - `scripts/build.mjs`: builds the Company shell and generated product pages.
 - `scripts/build-software.mjs`: assembles retained sites, compatibility redirects, route manifest and sitemap.

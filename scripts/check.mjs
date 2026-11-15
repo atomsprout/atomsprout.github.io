@@ -16,6 +16,11 @@ for(const f of files){
     try { url = new URL(match[1], `https://atomsprout.com/${f}`); }
     catch { failures.push(`${f}: invalid URL ${match[1]}`); continue; }
     if(retiredHosts.has(url.hostname)||(blogHosts.has(url.hostname)&&!isBlogPath(url.pathname)))failures.push(`${f}: legacy product URL ${match[1]}`);
+    if (['asp.run','www.asp.run'].includes(url.hostname)) {
+      const founderBlog = f === 'founder/index.html' && url.pathname === '/blog/';
+      const webStudio = url.pathname.startsWith('/scriptwidget/studio/');
+      if (!founderBlog && !webStudio) failures.push(`${f}: unrelated personal-site link ${match[1]}`);
+    }
     if(url.hostname !== 'atomsprout.com') continue;
     const p=path.join(root,decodeURIComponent(url.pathname));
     if(!fs.existsSync(p))failures.push(`${f}: broken local link ${match[1]}`);
