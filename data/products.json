@@ -657,68 +657,6 @@
     ]
   },
   {
-    "slug": "editsmith",
-    "name": "EditSmith",
-    "store_name": "EditSmith",
-    "category": "Developer tools",
-    "platform": "macOS",
-    "tagline": "Your next text action, inside Xcode.",
-    "description": "EditSmith adds testable text actions to Xcode's Editor menu. Create a JavaScript action, try it against fixtures in the Workbench, inspect the diff and diagnostics, then enable it for editing.",
-    "store_id": 6804507667,
-    "store_url": "https://apps.apple.com/app/id6804507667",
-    "version": "1.0",
-    "minimum_os": "15.0",
-    "icon": "/assets/editsmith-icon.png",
-    "screenshot": "/assets/editsmith-screen.jpg",
-    "store_description": "EditSmith adds testable text actions to Xcode's Editor menu. Create a JavaScript action, try it against fixtures in the Workbench, inspect the diff and diagnostics, then enable it for editing.\n\n• Work with a whole buffer or selected ranges.\n• Start from built-in actions for sorting, duplicate removal, JSON formatting, comments, case conversion, and more.\n• Preview edits with Dry Run and restore the last buffer with rollback.\n• Export and import user actions as JSON; imported actions start disabled.\n• Optionally configure Apple On-Device, Private Cloud Compute on eligible systems, or a local Ollama endpoint for model actions.\n\nJavaScript actions run locally with limits on input, output, code size, and execution time. Model actions send text only when you invoke an action configured for that provider. EditSmith requires macOS 15 or later and Xcode with Source Editor Extension support. Some model features require newer macOS versions, eligibility, or a configured local server.",
-    "verified_at": "2026-11-13",
-    "collection": "apps",
-    "page_source": "generated",
-    "presentation": {
-      "eyebrow": "SMALL ACTIONS. BETTER EDITING.",
-      "headline": "Write an action.\nTest the change.\nMake it yours.",
-      "intro": "Bring testable JavaScript text actions into Xcode’s Editor menu. Work through a fixture, inspect the diff, and enable it when you’re ready.",
-      "section_label": "BUILD / TEST / APPLY",
-      "section_title": "A workbench for your next edit.",
-      "gallery_title": "See the change before you use it."
-    },
-    "highlights": [
-      {
-        "title": "Start with an action",
-        "body": "Use built-in actions for sorting, duplicate removal, JSON formatting, and case conversion, or write your own."
-      },
-      {
-        "title": "Test before editing",
-        "body": "Try fixtures in the Workbench, inspect the diff and diagnostics, and preview edits with Dry Run."
-      },
-      {
-        "title": "Keep actions portable",
-        "body": "Export and import user actions as JSON. Imported actions begin disabled."
-      }
-    ],
-    "purchase_note": "Requires macOS 15 or later and Xcode with Source Editor Extension support. Optional model features have additional system or provider requirements.",
-    "screenshots": [
-      {
-        "src": "/assets/editsmith-release-1.jpg",
-        "alt": "EditSmith: The action workbench",
-        "caption": "The action workbench",
-        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/42/cf/2e42cf3a-7ef8-d50a-ba38-cff099963c2b/01-split-landscape.png/1200x1800bb.jpg",
-        "width": 1200,
-        "height": 750,
-        "thumbnail": "/assets/editsmith-release-1.webp"
-      },
-      {
-        "src": "/assets/editsmith-release-2.jpg",
-        "alt": "EditSmith: Review your Xcode actions",
-        "caption": "Review your Xcode actions",
-        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bc/95/26/bc9526c0-a5c1-2d27-d75f-2105d6dd06a0/02-device-top.png/1200x1800bb.jpg",
-        "width": 1200,
-        "height": 750,
-        "thumbnail": "/assets/editsmith-release-2.webp"
-      }
-    ]
-  },
-  {
     "slug": "liney",
     "name": "Liney",
     "collection": "homebrew",

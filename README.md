@@ -27,7 +27,7 @@ GitHub Actions builds, checks, and publishes `dist/` to GitHub Pages on every pu
 - `scripts/build.mjs`: build orchestration; `scripts/site/` contains the catalog helpers, company shell, components, homepage, and generated product pages.
 - `public/assets/site.css` and `site.js`: responsive styles, saved light/dark preference, and copyable Homebrew installation commands.
 
-The catalog contains 10 App Store apps, one released game, three free Chrome extensions, and five Homebrew tools. Games have their own collection even when distributed through the App Store. The `/apps/`, `/games/`, `/extensions/`, and `/homebrew/` pages work without JavaScript. Unreleased products and company registration/trademark claims are not presented as established facts.
+The catalog contains 9 App Store apps, one released game, three free Chrome extensions, and five Homebrew tools. Games have their own collection even when distributed through the App Store. The `/apps/`, `/games/`, `/extensions/`, and `/homebrew/` pages work without JavaScript. Unreleased products and company registration/trademark claims are not presented as established facts.
 
 ## Support and founder
 
