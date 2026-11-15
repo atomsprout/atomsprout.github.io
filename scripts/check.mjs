@@ -23,7 +23,7 @@ for(const f of files){
   }
 }
 const data=JSON.parse(fs.readFileSync('data/products.json','utf8'));
-for(const f of ['chatcomputer/results.json','riftvm/catalog/linux.json']){
+for(const f of ['chatcomputer/results.json']){
   try{JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));}
   catch{failures.push(`${f}: missing or invalid migrated product data`);}
 }
@@ -64,3 +64,12 @@ if (new Set(data.filter(p=>p.featured).map(p=>p.featured)).size !== data.filter(
 
 if(failures.length){console.error(failures.join('\n'));process.exit(1)}
 console.log(`Checked ${files.length} HTML pages: internal links, assets, titles, product routing, and presentation metadata passed.`);
+
+// Functional Studio files must come from the ScriptWidget publisher, not a stale copy.
+if (fs.existsSync(path.join(root, 'scriptwidget/studio/assets'))) {
+  throw new Error('Company must link to the independently deployed Web Studio');
+}
+const studioRedirect = fs.readFileSync(path.join(root, 'scriptwidget/studio/index.html'), 'utf8');
+if (!studioRedirect.includes('https://asp.run/scriptwidget/studio/')) {
+  throw new Error('Missing compatibility redirect to the personal Web Studio');
+}

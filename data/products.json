@@ -521,68 +521,6 @@
     ]
   },
   {
-    "slug": "palmino",
-    "name": "Palmino",
-    "store_name": "Palmino",
-    "category": "Productivity",
-    "platform": "iPhone · iPad",
-    "tagline": "Your models. Your tools. Your workspace.",
-    "description": "Palmino brings AI conversations and practical tools together in a native workspace for iPhone and iPad.",
-    "store_id": 6816719602,
-    "store_url": "https://apps.apple.com/app/id6816719602",
-    "version": "1.1.1",
-    "minimum_os": "17.0",
-    "icon": "/assets/palmino-icon.png",
-    "screenshot": "/assets/palmino-screen.jpg",
-    "store_description": "Palmino brings AI conversations and practical tools together in a native workspace for iPhone and iPad.\n\nCONNECT YOUR OWN MODEL\nConfigure a compatible model provider with your own API key, choose a model, and stream responses in a focused conversation view. A compatible third-party model service is required for AI responses; provider usage charges may apply.\n\nKEEP YOUR WORK ORGANIZED\nManage conversations, attach files, and return to previous sessions. Use your workspace to keep task files and outputs together.\n\nTOOLS WITH YOU IN CONTROL\nConnect MCP servers and use supported device capabilities through explicit permissions and action confirmations. Review tool activity as you work. An on-demand Linux environment supports approved shell and file tasks.\n\nBUILT FOR IPHONE AND IPAD\nWork in a native interface with Markdown responses, conversation history, and local conversation storage. iCloud conversation sync is unavailable to protect health information.\n\nOPTIONAL APPLE HEALTH TOOLS\nReview activity, heart rate, sleep, and workouts, or record user-confirmed nutrition, hydration, and body measurements in Apple Health. HealthKit access and separate confirmation for sharing requested health data with your configured model service are required.\n\nYour API credentials are stored in the device Keychain. Requests and the content needed to answer them are sent to the model provider or connected services you configure.",
-    "verified_at": "2026-11-13",
-    "collection": "apps",
-    "page_source": "generated",
-    "presentation": {
-      "eyebrow": "BRING YOUR OWN CURIOSITY",
-      "headline": "Your models.\nYour tools.\nYour workspace.",
-      "intro": "AI conversations and practical tools, together in a native workspace for iPhone and iPad.",
-      "section_label": "A WORKSPACE THAT STAYS WITH YOU",
-      "section_title": "From a question to the next step.",
-      "gallery_title": "Conversations with room to work."
-    },
-    "highlights": [
-      {
-        "title": "Choose your model",
-        "body": "Connect a compatible provider with your own API key, choose a model, and stream responses."
-      },
-      {
-        "title": "Keep the context",
-        "body": "Organize conversations, attach files, and keep task files and outputs together."
-      },
-      {
-        "title": "Control the tools",
-        "body": "Connect MCP servers and review tool activity with explicit permissions and action confirmations."
-      }
-    ],
-    "purchase_note": "AI responses require a compatible third-party service; provider charges may apply. Requests and necessary content go to the services you configure. Read the product privacy policy for details.",
-    "screenshots": [
-      {
-        "src": "/assets/palmino-release-1.jpg",
-        "alt": "Palmino: Your conversation workspace",
-        "caption": "Your conversation workspace",
-        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/b5/88/91b5883f-1f65-783f-84c9-fdeff8e2b106/01-hero.png/1200x1800bb.jpg",
-        "width": 828,
-        "height": 1800,
-        "thumbnail": "/assets/palmino-release-1.webp"
-      },
-      {
-        "src": "/assets/palmino-release-2.jpg",
-        "alt": "Palmino: Choose your model provider",
-        "caption": "Choose your model provider",
-        "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d8/5c/4d/d85c4d2c-043e-bfae-b33a-0aa2c349fd02/02-device-bottom.png/1200x1800bb.jpg",
-        "width": 828,
-        "height": 1800,
-        "thumbnail": "/assets/palmino-release-2.webp"
-      }
-    ]
-  },
-  {
     "slug": "foxwick",
     "name": "Foxwick",
     "store_name": "Foxwick",
@@ -747,38 +685,6 @@
     "page_source": "static"
   },
   {
-    "slug": "riftvm",
-    "name": "RiftVM",
-    "category": "Virtual machines",
-    "platform": "macOS 27+ · Apple silicon",
-    "tagline": "A Linux world, right on your Mac.",
-    "description": "Run Omarchy Linux in a native Mac app, using Apple’s virtualization framework and a signed, verified factory image.",
-    "source_url": "https://github.com/riftvm/riftvm",
-    "website_url": "https://atomsprout.com/riftvm/",
-    "download_url": "https://github.com/riftvm/riftvm/releases/latest",
-    "install": "brew install --cask riftvm/tap/riftvm",
-    "features": [
-      {
-        "title": "Prepare Omarchy",
-        "body": "Create a local Linux virtual machine from a signed and verified factory image."
-      },
-      {
-        "title": "Native integration",
-        "body": "Use supported keyboard, clipboard, and shared-folder integration between Mac and guest."
-      },
-      {
-        "title": "Know the requirements",
-        "body": "Requires macOS 27 or later and Apple silicon. See the project documentation for current graphics and hardware limits."
-      }
-    ],
-    "screenshot_alt": "RiftVM’s official Omarchy illustration",
-    "collection": "homebrew",
-    "verified_at": "2026-11-12",
-    "icon": "/assets/riftvm-icon.png",
-    "screenshot": "/assets/riftvm-workspace.webp",
-    "page_source": "static"
-  },
-  {
     "slug": "chatcomputer",
     "name": "ChatComputer",
     "category": "AI workspace",
@@ -906,21 +812,6 @@
     "privacy_url": "https://atomsprout.com/x-article-export-pdf/privacy/",
     "icon": "/assets/x-article-export-pdf-icon.png",
     "page_source": "static"
-  },
-  {
-    "slug": "rhopdf",
-    "name": "Rho PDF",
-    "collection": "apps",
-    "category": "Productivity",
-    "platform": "Windows 10 / 11 · x64",
-    "tagline": "PDF tools that respect your documents.",
-    "description": "Read, search, organize, and transform PDFs locally on Windows. Optional Ask Rho assistance runs on your PC.",
-    "store_id": "9PPNXKC1RJGD",
-    "store_url": "https://apps.microsoft.com/detail/9PPNXKC1RJGD",
-    "store": "microsoft",
-    "icon": "/assets/rhopdf-icon.ico",
-    "page_source": "static",
-    "verified_at": "2026-11-13"
   },
   {
     "slug": "wedge-storm-chaser",

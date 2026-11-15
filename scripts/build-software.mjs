@@ -20,7 +20,7 @@ function page(slug, title, body) {
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} — AtomSprout</title><link rel="canonical" href="${origin}/${slug}/"><link rel="stylesheet" href="/assets/site.css"></head><body><header class="site-header wrap"><a href="/">AtomSprout</a><a href="/support/">Support</a></header><main class="document wrap"><h1>${esc(title)}</h1><div class="prose">${body}</div></main><footer class="footer wrap">© ${new Date().getUTCFullYear()} AtomSprout · <a href="mailto:${esc(site.support_email)}">Contact</a></footer></body></html>`;
 }
 function redirect(route, target) {
-  write(route, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Page moved — AtomSprout</title><link rel="canonical" href="${origin}${target}"><meta http-equiv="refresh" content="0;url=${target}"><meta name="robots" content="noindex"></head><body><a href="${target}">Continue to AtomSprout</a><script>location.replace(${JSON.stringify(target)}+location.search+location.hash)</script></body></html>`);
+  write(route, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Page moved — AtomSprout</title><link rel="canonical" href="${target.startsWith('https://') ? target : origin + target}"><meta http-equiv="refresh" content="0;url=${target}"><meta name="robots" content="noindex"></head><body><a href="${target}">Continue to AtomSprout</a><script>location.replace(${JSON.stringify(target)}+location.search+location.hash)</script></body></html>`);
 }
 // These retained products are not additions to the released-product catalog.
 for (const [slug, product] of Object.entries(JSON.parse(fs.readFileSync('data/legacy-products.json','utf8')))) {
@@ -66,7 +66,7 @@ for (const suffix of ['', 'support/', 'privacy/']) {
   redirect(`cinderwick/${suffix}`,`/foxwick/${suffix}`);
   redirect(`games/foxwick/${suffix}`,`/foxwick/${suffix}`);
 }
-for (const [old, current] of [['countmydays','dayvella'],['jsondiff','jsoncompare'],['startmyapp','launchdeck']]) redirect(old,`/${current}/`);
+for (const [old, current] of [['countmydays','dayvella'],['jsondiff','jsoncompare']]) redirect(old,`/${current}/`);
 // Compatibility URLs used by existing App Store metadata and older app builds.
 for (const slug of fs.readdirSync(out)) {
   if (!fs.statSync(path.join(out,slug)).isDirectory()) continue;
@@ -76,6 +76,20 @@ for (const slug of fs.readdirSync(out)) {
       const html = `<!doctype html><html><head><meta charset="utf-8"><title>Page moved — AtomSprout</title><meta http-equiv="refresh" content="0;url=/${route}/"><link rel="canonical" href="${origin}/${route}/"></head><body><a href="/${route}/">Continue</a></body></html>`;
       fs.writeFileSync(`dist/${slug}/${sub}.html`,html);
     }
+  }
+}
+// Personal project websites publish from their own repositories under asp.run.
+// Keep historical Company HTML entry points without retaining a second runtime.
+const personalRedirects = JSON.parse(fs.readFileSync('data/personal-site-redirects.json', 'utf8'));
+for (const [slug, routes] of Object.entries(personalRedirects)) {
+  for (const suffix of routes) {
+    const route = `${slug}/${suffix}`;
+    const target = `https://asp.run/${route.replace(/\/(support|privacy)\.html$/, '/$1/')}`;
+    if (suffix.endsWith('.html')) {
+      const file = path.join(out, route);
+      fs.mkdirSync(path.dirname(file), {recursive: true});
+      fs.writeFileSync(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Page moved</title><meta name="robots" content="noindex"><link rel="canonical" href="${target}"><meta http-equiv="refresh" content="0;url=${target}"></head><body><a href="${target}">Continue</a><script>location.replace(${JSON.stringify(target)}+location.search+location.hash)</script></body></html>`);
+    } else redirect(route, target);
   }
 }
 console.log('Migrated software pages, legacy game pages and compatibility routes built.');

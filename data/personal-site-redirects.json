@@ -1,0 +1,72 @@
+{
+  "appletrace": [
+    "",
+    "support.html",
+    "support/",
+    "zh.html"
+  ],
+  "beanbao": [
+    "",
+    "support.html",
+    "support/",
+    "zh-CN/"
+  ],
+  "copyapp": [
+    "",
+    "support.html",
+    "support/"
+  ],
+  "crab-stick": [
+    "",
+    "support.html",
+    "support/"
+  ],
+  "ezjev": [
+    "",
+    "support.html",
+    "support/"
+  ],
+  "ios-atlas": [
+    "",
+    "support.html",
+    "support/"
+  ],
+  "ipatool-rs": [
+    "",
+    "support.html",
+    "support/"
+  ],
+  "machoexplorer": [
+    "",
+    "support.html",
+    "support/"
+  ],
+  "pixel6ios": [
+    "",
+    "support.html",
+    "support/"
+  ],
+  "xcodefit": [
+    "",
+    "support.html",
+    "support/"
+  ],
+  "rhopdf": [
+    "",
+    "privacy.html",
+    "privacy/",
+    "support.html",
+    "support/"
+  ],
+  "palmino": [
+    "",
+    "privacy.html",
+    "privacy/",
+    "support.html",
+    "support/"
+  ],
+  "scriptwidget/studio": [
+    "",
+    "sandbox.html"
+  ]
+}

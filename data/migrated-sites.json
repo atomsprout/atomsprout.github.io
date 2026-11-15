@@ -5,7 +5,9 @@
     "commit": "a0c869601ff3a31509720acb936daa4f3f1a7df2",
     "maintained_source": "software-sites/riftvm",
     "canonical_url": "https://atomsprout.com/riftvm/",
-    "original_repository_retired": true
+    "original_repository_retired": true,
+    "ownership": "personal",
+    "migration_status": "deferred_by_owner"
   },
   {
     "slug": "chatcomputer",
@@ -26,21 +28,6 @@
     "commit": "bb1a070b66df58f67117b39fd6161781aab2a20a"
   },
   {
-    "slug": "launchdeck",
-    "source": "products/brew/launchdeck/site",
-    "commit": "6fefdb66c3c460ade282ea95d683ffb86f59a07e"
-  },
-  {
-    "slug": "machoexplorer",
-    "source": "products/brew/machoexplorer/site",
-    "commit": "b90f74a00e72f40c1ee5964ccf229a795c2dd884"
-  },
-  {
-    "slug": "xcodefit",
-    "source": "products/brew/xcodefit/web",
-    "commit": "19420d38a86bdf1bc78dfd535927dfe78114f52f"
-  },
-  {
     "slug": "tabcarry",
     "source": "products/chrome-extension/tabcarry/docs/site",
     "commit": "79d8a44e00ee423d36a0e76539d2b1eea7a65ffb"
@@ -56,48 +43,8 @@
     "commit": "f9a54e6be2ef265246273d01bcb68012e9fae9a6"
   },
   {
-    "slug": "beanbao",
-    "source": "sec/beanbao/web",
-    "commit": "31ad1d3520d03e714609954fb298862d80e3a21d"
-  },
-  {
-    "slug": "copyapp",
-    "source": "sec/jailbreak/copyapp/web",
-    "commit": "69838a5f74676e7128aa7b2566cc7c68e986efea"
-  },
-  {
-    "slug": "pixel6ios",
-    "source": "sec/pixel6ios/web",
-    "commit": "a461b34d16f97e721a9685e62d6ade000198187b"
-  },
-  {
     "slug": "scriptwidget",
     "source": "products/appstore/scriptwidget/site",
     "commit": "0d504c27f8050fa678601755d9a2bccffd56fb27"
-  },
-  {
-    "slug": "ios-atlas",
-    "source": "sec/jailbreak/ios-atlas",
-    "commit": "e1039a748eed6eea412e44f7f0b8be885c050138"
-  },
-  {
-    "slug": "appletrace",
-    "source": "products/jailbreak/appletrace/Tutorial",
-    "commit": "4897518b2c65a28f6f7c2e3bf08f85db28537db2"
-  },
-  {
-    "slug": "ezjev",
-    "source": "github/ezjev/site",
-    "commit": "8b3d88957c0795bea160c8fbc9c6d2a54b051136"
-  },
-  {
-    "slug": "crab-stick",
-    "source": "github/muse/crab-stick/web",
-    "commit": "d17f7592f063f79f088236c5655d004d41048cad"
-  },
-  {
-    "slug": "ipatool-rs",
-    "source": "sec/ipatool-rs/web",
-    "commit": "f23e2fa2a7d2f5f408b0d803c20f8cf7b27cd7b5"
   }
 ]
