@@ -13,7 +13,8 @@ for (const product of products) {
 }
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function write(route, html) {
-  const file = path.join(out, route.replace(/^\//, ''), 'index.html');
+  const relative = route.replace(/^\//, '');
+  const file = path.join(out, relative.endsWith('.html') ? relative : path.join(relative, 'index.html'));
   fs.mkdirSync(path.dirname(file), {recursive:true}); fs.writeFileSync(file, html);
 }
 function page(slug, title, body) {
@@ -90,6 +91,14 @@ for (const [slug, routes] of Object.entries(personalRedirects)) {
       fs.mkdirSync(path.dirname(file), {recursive: true});
       fs.writeFileSync(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Page moved</title><meta name="robots" content="noindex"><link rel="canonical" href="${target}"><meta http-equiv="refresh" content="0;url=${target}"></head><body><a href="${target}">Continue</a><script>location.replace(${JSON.stringify(target)}+location.search+location.hash)</script></body></html>`);
     } else redirect(route, target);
+  }
+}
+// Independently hosted projects retain only compatibility entry points here.
+const externalRedirects = JSON.parse(fs.readFileSync('data/external-site-redirects.json', 'utf8'));
+for (const [slug, {origin: targetOrigin, routes}] of Object.entries(externalRedirects)) {
+  for (const suffix of routes) {
+    const targetPath = suffix.replace(/^(support|privacy)\.html$/, '$1/');
+    redirect(`${slug}/${suffix}`, `${targetOrigin}/${targetPath}`);
   }
 }
 console.log('Migrated software pages, legacy game pages and compatibility routes built.');

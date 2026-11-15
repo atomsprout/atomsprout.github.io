@@ -685,39 +685,6 @@
     "page_source": "static"
   },
   {
-    "slug": "chatcomputer",
-    "name": "ChatComputer",
-    "category": "AI workspace",
-    "platform": "macOS 27 · Apple silicon",
-    "tagline": "A second Mac, working while you chat.",
-    "description": "An AI-operated macOS virtual machine on your Mac. Describe a task, watch the agent work, and take over when you choose. Bring your own model provider.",
-    "source_url": "https://github.com/chatcomputer/chatcomputer",
-    "website_url": "https://atomsprout.com/chatcomputer/",
-    "download_url": "https://github.com/chatcomputer/chatcomputer/releases/latest",
-    "privacy_url": "https://atomsprout.com/chatcomputer/privacy/",
-    "install": "brew install --cask chatcomputer/tap/chatcomputer",
-    "features": [
-      {
-        "title": "A separate workspace",
-        "body": "The agent works inside a macOS virtual machine, with files you explicitly attach or share."
-      },
-      {
-        "title": "You stay in control",
-        "body": "Pause, cancel, or take over the virtual Mac. Review the project documentation for current limitations."
-      },
-      {
-        "title": "Built for Apple silicon",
-        "body": "Requires macOS 27, Apple silicon, an API key, at least 16 GB RAM, and about 70 GB free storage. See the project documentation for setup and current requirements."
-      }
-    ],
-    "screenshot_alt": "ChatComputer showing a virtual Mac beside a conversation with the agent",
-    "collection": "homebrew",
-    "verified_at": "2026-11-12",
-    "icon": "/assets/chatcomputer-icon.png",
-    "screenshot": "/assets/chatcomputer-workspace.jpg",
-    "page_source": "static"
-  },
-  {
     "slug": "tabcarry",
     "name": "TabCarry",
     "category": "Tabs & sessions",

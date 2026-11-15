@@ -21,11 +21,11 @@ GitHub Actions builds, checks and publishes `dist/` on pushes to `main` using `.
 
 ## Product directory
 
-`data/products.json` owns the released Company directory. It currently contains 19 products:
+`data/products.json` owns the released Company directory. It currently contains 18 products:
 
 - Apps: GrapeCompare, Folucent, ScriptWidget, Remoboard, BSSID SCAN, Dayvella, BabelTable and SixUp.
 - Games: Foxwick, Wedge Storm Chaser, Aether Barrage: Omega and Fivefold Front. Existing Windows game entries are retained until the owner explicitly changes their classification.
-- Homebrew: Liney, TypeTide, Hexlora and ChatComputer.
+- Homebrew: Liney, TypeTide and Hexlora.
 - Free Chrome extensions: TabCarry, NotbadBookmark and X Article Export.
 
 ScriptWidget and the three extensions remain Company products despite being free. Each product has one primary collection; pricing and distribution are separate metadata. Keep published release descriptions, feature claims, screenshot provenance and actual verification dates intact. Do not infer release availability or pricing from source code alone.
@@ -36,7 +36,7 @@ ScriptWidget and the three extensions remain Company products despite being free
 
 AppleTrace, BeanBao, Copy APP, Crab Stick, ezjev, iOS Atlas, ipatool-rs, MachOExplorer, Pixel6iOS and XcodeFit are independently maintained personal sites. Palmino and Rho PDF landing, support and original privacy content are maintained by the personal site. Their historical Company HTML entry points redirect to asp.run using `data/personal-site-redirects.json`. Compatibility redirects are not Company product entries and are excluded from the sitemap.
 
-RiftVM is classified as personal. Its existing site is temporarily retained in `software-sites/riftvm/`, outside the Company directory, so old links and clients keep working. The owner will arrange its publisher migration; do not create a new publisher repository or remove the retained site before that handoff.
+ChatComputer and RiftVM are independently maintained outside Company. ChatComputer uses https://chatcomputer.github.io/; RiftVM uses https://riftvm.com/ with https://riftvm.github.io/ as its GitHub Pages alias. Neither is in the Company directory or retained software sites. Their historical Company HTML routes redirect through `data/external-site-redirects.json`; support and ChatComputer’s original privacy policy are hosted by their own website repositories.
 
 Titled, JSONCompare and VoiceDraft are retained legacy product/support pages generated from `data/legacy-products.json`, outside the released directory. Their future classification is pending. EditSmith and LaunchDeck are retired and removed.
 
@@ -53,10 +53,11 @@ The Studio, sandbox runtime, templates and Gallery are built from `everettjf/scr
 - `data/products.json`: the released Company directory, descriptions, verification dates, screenshot sources and product page ownership (`generated`, `static`, `liney` or `game`).
 - `data/site.json`: shared contact details.
 - `data/personal-site-redirects.json`: HTML compatibility paths for relocated personal sites.
+- `data/external-site-redirects.json`: compatibility paths for independently hosted external project sites.
 - `scripts/site/`: catalog helpers, company shell, navigation, homepage and generated product landing pages.
 - `scripts/build.mjs`: builds the Company shell and generated product pages.
 - `scripts/build-software.mjs`: assembles retained sites, compatibility redirects, route manifest and sitemap.
-- `software-sites/<slug>/`: authored retained Company product sites; RiftVM is the temporary exception described above.
+- `software-sites/<slug>/`: authored retained Company product sites.
 - `liney-site/`: Liney's Docusaurus landing page and documentation, published under `/liney/`.
 - `game-site/`: retained game pages built as static exports. Development/archive pages are noindex.
 - `content/`: original product-specific privacy and support content. Preserve policy commitments and effective dates.
