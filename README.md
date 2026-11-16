@@ -21,16 +21,31 @@ GitHub Actions builds, checks and publishes `dist/` on pushes to `main` using `.
 
 ## Product directory
 
-`data/products.json` owns the released Company directory. It currently contains 18 products:
+`data/products.json` owns the released Company directory. It currently contains 19 products:
 
-- Apps: GrapeCompare, Folucent, ScriptWidget, Remoboard, BSSID SCAN, Dayvella, BabelTable and SixUp.
+- Apps: GrapeCompare, Folucent, ScriptWidget, Remoboard, BSSID SCAN, Dayvella, BabelTable, SixUp and Rho PDF.
 - Games: Foxwick, Wedge Storm Chaser, Aether Barrage: Omega and Fivefold Front. Existing Windows game entries are retained until the owner explicitly changes their classification.
 - Homebrew: Liney, TypeTide and Hexlora.
 - Free Chrome extensions: TabCarry, NotbadBookmark and X Article Export.
 
 ScriptWidget and the three extensions remain Company products despite being free. Each product has one primary collection; pricing and distribution are separate metadata. Keep published release descriptions, feature claims, screenshot provenance and actual verification dates intact. Do not infer release availability or pricing from source code alone.
 
-## Personal website split
+## Domain and project ownership
+
+The two domains have complementary roles:
+
+| Domain | Projects and content |
+| --- | --- |
+| `atomsprout.com` | Formal products intended for long-term operation, including paid products and explicitly selected free products. Company owns their product information, downloads, support, documentation and privacy pages. |
+| `asp.run` | The personal entry page and blog, experimental projects, temporary tools and short-term projects. Individual project sites are normally published by their own repositories using GitHub Pages. |
+
+Give each project one primary website owner. Avoid duplicate product sites and redirect-only project routes between the two domains. The personal homepage's **The works** card links to Company, and Company's Founder page links to the personal blog. Other cross-domain links should serve a real product function.
+
+ScriptWidget demonstrates that functional split: its official website and app downloads belong to Company, while Web Studio is maintained and deployed by its own repository at `asp.run/scriptwidget/studio/`. The two sites can link to each other where needed; Company must not host a compiled Studio copy.
+
+Apply this policy to new projects and explicitly requested migrations. Existing project locations and independently maintained domains remain until the owner requests a change.
+
+### Personal publishing
 
 `everettjf/everettjf.github.io` uses `asp.run` for the personal entry page, `/blog/`, `/projects/`, dated articles and RSS feeds. Individual personal repositories publish their own sites under `asp.run/<repository>/`; they do not need website copies in Company or the blog repository. Cloudflare forwards `xnu.app` to asp.run, preserving paths and query strings. `www.asp.run` resolves to the same GitHub user site.
 
