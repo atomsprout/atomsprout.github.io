@@ -165,7 +165,7 @@
     "description": "Build custom widgets for iPhone, iPad, Mac, and Android with JavaScript and JSX, with previews for Windows and Linux (Omarchy). Create and preview widget packages in Web Studio.",
     "store_id": 1555600758,
     "store_url": "https://apps.apple.com/app/id1555600758",
-    "version": "27.2.5",
+    "version": "27.2.6",
     "minimum_os": "16.0",
     "icon": "/assets/scriptwidget-icon.png",
     "screenshot": "/assets/scriptwidget-screen.jpg",
