@@ -1,5 +1,5 @@
 // Hero sequence: the code appears line by line, the widget it describes is
-// assembled beside it, then the same widget lands on four platforms.
+// assembled beside it, then the same widget lands on six platforms.
 // Without this script every part is already visible.
 (() => {
   const root = document.querySelector('[data-flow]');
