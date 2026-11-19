@@ -6,6 +6,9 @@
   if (root) {
     const parts = [...document.querySelectorAll('[data-at]')];
     const lines = parts.filter(node => node.classList.contains('ln'));
+    // The parts outside the hero figure: the row of six devices. On a phone it
+    // is a screen below the hero, so it must not depend on the hero being in view.
+    const landing = new Set(parts.filter(node => !root.contains(node)));
     const last = Math.max(...parts.map(node => Number(node.dataset.at)));
     const toggle = document.querySelector('[data-flow-toggle]');
     const still = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -16,10 +19,13 @@
     let timer = 0;
     let paused = false;
     let visible = false;
+    let landed = false;
 
     const show = value => {
       step = value;
-      for (const node of parts) node.classList.toggle('on', Number(node.dataset.at) <= step);
+      // Once the devices have appeared they stay; only the hero plays again.
+      if (step >= last) landed = true;
+      for (const node of parts) node.classList.toggle('on', Number(node.dataset.at) <= step || (landed && landing.has(node)));
       for (const line of lines) line.classList.toggle('now', Number(line.dataset.at) === step && step < last);
     };
     const tick = () => {
@@ -50,7 +56,9 @@
       new IntersectionObserver(entries => {
         observed = true;
         visible = entries.some(entry => entry.isIntersecting);
-        if (visible) tick(); else clearTimeout(timer);
+        // Scrolled past the hero: show the finished picture instead of
+        // stopping half way, where the devices below would stay invisible.
+        if (visible) tick(); else { clearTimeout(timer); show(last); }
       }, {threshold: 0.25}).observe(root);
       // If the observer never reports (a background tab, an old browser), play anyway.
       setTimeout(() => { if (!observed) { visible = true; tick(); } }, 1500);
