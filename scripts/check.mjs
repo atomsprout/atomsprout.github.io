@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 const root=path.resolve('dist');
-const files=fs.readdirSync(root,{recursive:true}).filter(f=>f.endsWith('.html'));
+const files=fs.readdirSync(root,{recursive:true}).filter(f=>f.endsWith('.html')).map(f=>f.split(path.sep).join('/'));
 const failures=[];
 const retiredHosts=new Set(['dustaxiom.github.io','aspt.dev']);
 const blogHosts=new Set(['xnu.app','www.xnu.app','everettjf.github.io']);
