@@ -5,7 +5,7 @@ function selection(p) {
   const image = p.home_image || p.screenshot;
   return `<a class="selection selection-${p.slug}" href="/${p.slug}/">
     <div class="selection-image"><img src="${image}" alt="${esc(p.home_image_alt || `${p.name} interface`)}" loading="lazy" width="1200" height="750"></div>
-    <div class="selection-copy"><img src="${p.icon}" width="40" height="40" alt="" loading="lazy"><div><span class="eyebrow">${esc(p.category)}</span><h3>${esc(p.name)}</h3></div>${arrow}</div>
+    <div class="selection-copy"><img src="${p.icon}" width="40" height="40" alt="" loading="lazy"><div><span class="eyebrow">${esc(p.home_label || p.category)}</span><h3>${esc(p.name)}</h3></div>${arrow}</div>
     <p>${esc(p.tagline)}</p><span class="selection-platform">${esc(p.platform)}</span>
   </a>`;
 }
@@ -26,7 +26,7 @@ export function homePage() {
     </div>
   </section>
   <section class="home-products wrap" id="products">
-    <div class="section-heading"><div><p class="eyebrow">A FEW THINGS WE MAKE</p><h2>Different ideas.<br>Made to be used.</h2></div><p>A reading companion, a clearer comparison,<br>and a little room for adventure.</p></div>
+    <div class="section-heading"><div><p class="eyebrow">A FEW THINGS WE MAKE</p><h2>Different ideas.<br>Made to be used.</h2></div><p>Build your own widgets, compare files, read deeply, or head out on an adventure.</p></div>
     <div class="selections">${featured.map(selection).join('')}</div>
   </section>
   <section class="browse wrap" aria-labelledby="browse-title">
