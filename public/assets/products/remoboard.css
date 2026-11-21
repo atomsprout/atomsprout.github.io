@@ -1,7 +1,8 @@
 /* An uncomplicated connection guide, in keyboard blue. */
 .product-remoboard { --product-accent: #285b9a; }
 .product-remoboard .app-heading h1 { font-weight: 650; }
-.product-remoboard .app-hero-visual { border: 1px solid var(--line); border-radius: 18px; padding: 28px; background: var(--surface); box-shadow: 8px 8px 0 var(--soft); }
+.product-remoboard .app-hero-visual .app-shot img { border-radius: 22px; box-shadow: 0 24px 60px #1a124d33; }
+.product-remoboard .app-hero-visual figcaption { display: none; }
 .product-remoboard .feature-index { font-size: 28px; font-weight: 700; }
 .product-remoboard .app-feature-grid article { border-top: 1px solid var(--line); padding-top: 22px; }
 .product-remoboard .app-gallery-grid { align-items: start; }
