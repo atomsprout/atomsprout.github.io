@@ -64,17 +64,6 @@ write('/d-weave/', page({
   noindex: true,
   body: fs.readFileSync('content/d-weave.html', 'utf8').replaceAll('{{support_email}}', esc(site.support_email)),
 }), false);
-// Nestvane is in private testing: its page is reachable by its address only. It is in no product
-// list, no navigation and no sitemap, and asks search engines not to index it.
-write('/nestvane/', page({
-  title: 'Nestvane',
-  description: 'Nestvane runs Android inside an app on your iPhone.',
-  route: '/nestvane/',
-  noindex: true,
-  // The demonstration video's YouTube id goes into data/site.json as nestvane_video; until there is one the page has no video.
-  body: fs.readFileSync('content/nestvane.html', 'utf8').replaceAll('{{support_email}}', esc(site.support_email)).replaceAll('{{channels}}', supportChannels({name: 'Nestvane'}))
-    .replaceAll('{{video}}', /^[\w-]{11}$/.test(site.nestvane_video || '') ? `<div class="nestvane-video"><iframe src="https://www.youtube-nocookie.com/embed/${site.nestvane_video}" title="Nestvane demonstration video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>` : ''),
-}), false);
 write('/privacy/remoboard/',redirect('/remoboard/privacy/'),false);
 write('/projects/',redirect('/#products'),false);
 write('/404.html',page({title:'Page not found',route:'/404.html',noindex:true,body:'<section class="document wrap"><p class="eyebrow">404 / A SMALL DETOUR</p><h1>A new direction?</h1><p class="document-intro">That page isn’t here. Let’s find something useful.</p><a class="button primary" href="/">Back to AtomSprout →</a></section>'}),false);
