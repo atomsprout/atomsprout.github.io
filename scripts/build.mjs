@@ -71,7 +71,9 @@ write('/nestvane/', page({
   description: 'Nestvane runs Android inside an app on your iPhone.',
   route: '/nestvane/',
   noindex: true,
-  body: fs.readFileSync('content/nestvane.html', 'utf8').replaceAll('{{support_email}}', esc(site.support_email)).replaceAll('{{channels}}', supportChannels({name: 'Nestvane'})),
+  // The demonstration video's YouTube id goes into data/site.json as nestvane_video; until there is one the page has no video.
+  body: fs.readFileSync('content/nestvane.html', 'utf8').replaceAll('{{support_email}}', esc(site.support_email)).replaceAll('{{channels}}', supportChannels({name: 'Nestvane'}))
+    .replaceAll('{{video}}', /^[\w-]{11}$/.test(site.nestvane_video || '') ? `<div class="nestvane-video"><iframe src="https://www.youtube-nocookie.com/embed/${site.nestvane_video}" title="Nestvane demonstration video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>` : ''),
 }), false);
 write('/privacy/remoboard/',redirect('/remoboard/privacy/'),false);
 write('/projects/',redirect('/#products'),false);

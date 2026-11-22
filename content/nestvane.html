@@ -4,6 +4,21 @@
   <h1>Nestvane</h1>
   <p class="document-intro">Android, running inside an app on your iPhone.</p>
   <p>Nestvane starts a full Android 17 system in an iPhone app and shows it on your screen. Install Android apps from APK files, use them with touch, and keep their data between launches.</p>
+  {{video}}
+  <style>
+    .nestvane-shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 28px 0 8px; padding: 0; }
+    .nestvane-shots figure { margin: 0; }
+    .nestvane-shots img { display: block; width: 100%; height: auto; aspect-ratio: 506 / 1100; object-fit: cover; border-radius: 18px; border: 1px solid var(--line); background: #000; }
+    .nestvane-shots figcaption { margin-top: 10px; font-size: 13px; color: var(--muted); text-align: center; }
+    .nestvane-video { position: relative; aspect-ratio: 16 / 9; margin: 28px 0 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+    .nestvane-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    @media (max-width: 560px) { .nestvane-shots { grid-template-columns: repeat(3, 62%); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; } .nestvane-shots figure { scroll-snap-align: start; } }
+  </style>
+  <div class="nestvane-shots" role="group" aria-label="Screenshots of Nestvane on iPhone 17 Pro" tabindex="0">
+    <figure><img src="/assets/nestvane-start.jpg" width="506" height="1100" alt="Nestvane’s start screen: the app icon above the words Starting Android." loading="lazy"><figcaption>Starting Android</figcaption></figure>
+    <figure><img src="/assets/nestvane-home.jpg" width="580" height="1060" alt="The Android home screen in Nestvane, with a clock, the date, Files and Settings." loading="lazy"><figcaption>The Android home screen</figcaption></figure>
+    <figure><img src="/assets/nestvane-settings.jpg" width="506" height="1100" alt="Nestvane’s settings: version, Android version, display rate, shared files and community links." loading="lazy"><figcaption>Nestvane’s settings</figcaption></figure>
+  </div>
   <p><a href="#works">What works</a> · <a href="#limits">Limits</a> · <a href="#community">Community</a> · <a href="#privacy">Privacy policy</a></p>
 
   <div class="prose">
