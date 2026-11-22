@@ -1,0 +1,52 @@
+<article class="document wrap">
+  <p><img src="/assets/nestvane-icon.png" width="96" height="96" alt="" style="border-radius:22px"></p>
+  <p class="eyebrow">IN PRIVATE TESTING</p>
+  <h1>Nestvane</h1>
+  <p class="document-intro">Android, running inside an app on your iPhone.</p>
+  <p>Nestvane starts a full Android 17 system in an iPhone app and shows it on your screen. Install Android apps from APK files, use them with touch, and keep their data between launches.</p>
+  <p><a href="#works">What works</a> · <a href="#limits">Limits</a> · <a href="#community">Community</a> · <a href="#privacy">Privacy policy</a></p>
+
+  <div class="prose">
+    <section id="works" aria-labelledby="nestvane-works">
+      <h2 id="nestvane-works">What works today</h2>
+      <ul>
+        <li><strong>Android 17.</strong> The home screen, Settings and Files, built from the Android Open Source Project.</li>
+        <li><strong>APK files.</strong> Open an APK with Nestvane from another app, or choose Install APK in Nestvane.</li>
+        <li><strong>Network.</strong> Android apps use your iPhone’s Wi-Fi or cellular connection.</li>
+        <li><strong>Shared files.</strong> Android’s shared storage is a folder in the Files app: On My iPhone → Nestvane → Android. Files you put there appear in Android the next time it starts.</li>
+        <li><strong>Home screen widgets.</strong> Add widgets from installed apps to the Android home screen.</li>
+        <li><strong>Your iPhone’s clock and battery.</strong> Android shows your time zone and battery level.</li>
+      </ul>
+    </section>
+    <section id="limits" aria-labelledby="nestvane-limits">
+      <h2 id="nestvane-limits">Limits</h2>
+      <ul>
+        <li>Nestvane is in private testing and is not available to download yet.</li>
+        <li>Video and audio playback are not available yet.</li>
+        <li>There are no Google apps or Google Play services. Apps that require them will not run.</li>
+        <li>Apps that bring their own native code run noticeably slower than on an Android phone.</li>
+        <li>Some apps do not start. Tell us which ones matter to you.</li>
+      </ul>
+      <h3>Requirements</h3>
+      <p>iOS 26 or later. Nestvane has been tested on iPhone 15 Pro and iPhone 17 Pro.</p>
+    </section>
+    <section id="community" aria-labelledby="nestvane-community">
+      <h2 id="nestvane-community">Community and support</h2>
+      <p>Follow progress, ask for access to the test version, and report what works and what does not.</p>
+      {{channels}}
+    </section>
+    <section id="privacy" aria-labelledby="nestvane-privacy">
+      <h2 id="nestvane-privacy">Privacy policy</h2>
+      <p>Effective November 21, 2026.</p>
+      <h3>What Nestvane collects</h3>
+      <p>Nothing. Nestvane has no account, no advertising and no analytics, and it does not send your files, your installed apps or your activity to AtomSprout.</p>
+      <h3>Network</h3>
+      <p>When Nestvane starts, it makes one request to Apple’s connectivity check at captive.apple.com so that iOS can ask whether Nestvane may use the network. Android itself checks its connection the way Android devices do, by contacting Google’s connectivity check servers. Everything else on the network is traffic of the Android apps you install, which handle your data under their own privacy policies.</p>
+      <h3>Your data</h3>
+      <p>Android’s apps and their data are stored inside Nestvane on your iPhone. Shared files are in the Nestvane folder of the Files app. Deleting Nestvane removes all of it.</p>
+      <h3>Contact</h3>
+      <p>If you email us, we receive your email address and the information you choose to share so we can respond. For privacy questions, email <a href="mailto:{{support_email}}?subject=Nestvane%20privacy">{{support_email}}</a>.</p>
+    </section>
+    <p><small>Android is a trademark of Google LLC. Nestvane is not affiliated with or endorsed by Google.</small></p>
+  </div>
+</article>
