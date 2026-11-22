@@ -5,7 +5,7 @@ const dark = () => root.dataset.theme ? root.dataset.theme === 'dark' : media.ma
 function updateThemeLabel() {
   toggle?.setAttribute('aria-label', `Switch to ${dark() ? 'light' : 'dark'} mode`);
   const color = document.querySelector('meta[name="theme-color"]');
-  if (color) color.content = dark() ? '#10141e' : '#f8f7f3';
+  if (color) color.content = dark() ? '#121412' : '#f8f7f3';
 }
 toggle?.addEventListener('click', () => {
   root.dataset.theme = dark() ? 'light' : 'dark';
