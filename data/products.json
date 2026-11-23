@@ -191,12 +191,12 @@
     "description": "Remoboard turns your computer browser into a keyboard for your iPhone or iPad. Type in a text field on your device from a Mac, Windows, or Linux computer on the same Wi-Fi network. No desktop app or account is required.",
     "store_id": 1474458879,
     "store_url": "https://apps.apple.com/app/id1474458879",
-    "version": "8.2",
+    "version": "8.3",
     "minimum_os": "17.0",
     "icon": "/assets/remoboard-icon.png",
     "screenshot": "/assets/remoboard-screen.jpg",
     "store_description": "Remoboard turns your computer browser into a keyboard for your iPhone or iPad. Type in a text field on your device from a Mac, Windows, or Linux computer on the same Wi-Fi network. No desktop app or account is required.\n\nGetting started\n1. Add the Remoboard keyboard in iOS or iPadOS Settings and allow Full Access for local network access.\n2. Switch to the Remoboard keyboard in any text field. Open the URL shown on the keyboard in your computer browser.\n3. If PIN pairing is enabled (on by default), enter the six-digit code shown on the keyboard, then start typing.\n\nFeatures\n• Smoother Chinese and other composed text input.\n• Automatic reconnection and clear connection status.\n• Reusable phrases for text you type often.\n• Browser controls for text entry and clipboard actions.\n• Light and dark appearance, with support for 10 languages.\n\nBoth devices must be on the same local network. Full Access lets the keyboard serve its local page.\n\nRemoboard Pro (optional one-time purchase) adds snippets, text expansion, trusted computers, image clipboard, split sending, send history and themes. Everything else is free.",
-    "verified_at": "2026-11-20",
+    "verified_at": "2026-11-23",
     "hero_screenshot": {
      "src": "/assets/remoboard-hero.jpg",
      "thumbnail": "/assets/remoboard-hero.webp",
@@ -234,7 +234,7 @@
         "body": "Use clipboard actions, reusable phrases, and automatic reconnection."
       }
     ],
-    "purchase_note": "In Wi-Fi mode both devices must be on the same local network. The free Remoboard for Mac app (macOS 11 or later) adds a Bluetooth connection that needs no shared network; Bluetooth needs Remoboard 8.3 or later on the phone and is part of Remoboard Pro. With 8.2 the Mac app opens the keyboard's Wi-Fi address. Optional Remoboard Pro is a one-time purchase for additional tools and themes.",
+    "purchase_note": "In Wi-Fi mode both devices must be on the same local network. The free Remoboard for Mac app (macOS 11 or later) adds a Bluetooth connection that needs no shared network; Bluetooth is part of Remoboard Pro. Optional Remoboard Pro is a one-time purchase for additional tools and themes.",
  "companion": {
   "label": "Remoboard for Mac",
   "url": "https://github.com/atomsprout/remoboard-release"
