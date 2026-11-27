@@ -6,6 +6,7 @@ import {supportChannels, installBlock, collectionNav, card, gameFeature} from '.
 import {createPageRenderer} from './site/shell.mjs';
 import {homePage} from './site/home.mjs';
 import {productPage} from './site/product.mjs';
+import {folucentChinesePage, folucentLanguages} from './site/folucent.mjs';
 
 const out = 'dist';
 fs.rmSync(out, { recursive: true, force: true });
@@ -29,7 +30,16 @@ for (const p of products) {
   const hasPolicy = fs.existsSync(privacyFile+'.json') || fs.existsSync(privacyFile+'.html');
   const isBrew=p.collection==='homebrew';
   const isExtension=p.collection==='extensions';
-  if (p.page_source === 'generated') write(`/${p.slug}/`, page({title:p.name, description:p.tagline, route:`/${p.slug}/`, product:p, body:productPage(p), bodyClass:`product-page product-${p.slug}`, styles:['/assets/product.css', `/assets/products/${p.slug}.css`]}));
+  if (p.page_source === 'generated') {
+    const styles = ['/assets/product.css', `/assets/products/${p.slug}.css`];
+    if (p.slug === 'folucent') {
+      const languageLink = `<a class="back" href="${folucentLanguages['zh-CN']}" hreflang="zh-CN" lang="zh-CN">简体中文 ${arrow}</a>`;
+      write(folucentLanguages.en, page({title:p.name, description:p.tagline, route:folucentLanguages.en, product:p, body:productPage(p, languageLink), bodyClass:'product-page product-folucent', styles, alternateLanguages:folucentLanguages}));
+      write(folucentLanguages['zh-CN'], page(folucentChinesePage(p, styles)));
+    } else {
+      write(`/${p.slug}/`, page({title:p.name, description:p.tagline, route:`/${p.slug}/`, product:p, body:productPage(p), bodyClass:`product-page product-${p.slug}`, styles}));
+    }
+  }
   if (hasPolicy) {
     let body;
     if(fs.existsSync(privacyFile+'.json')) {

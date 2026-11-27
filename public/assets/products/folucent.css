@@ -12,3 +12,19 @@
 html[data-theme='dark'] .product-folucent { --product-accent: #d2b4e4; }
 @media (prefers-color-scheme: dark) { html:not([data-theme='light']) .product-folucent { --product-accent: #d2b4e4; } }
 @media (max-width: 720px) { .product-folucent .app-hero { grid-template-columns: 1fr; } .product-folucent .app-hero-visual { padding: 22px; } .product-folucent .app-gallery-grid { padding: 22px; } }
+
+.folucent-cn .app-heading h1, .folucent-cn .app-section-heading h2, .folucent-cn .app-feature-grid h3 {
+  font-family: "Songti SC", "Noto Serif CJK SC", serif;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.folucent-cn .app-heading h1 { font-size: clamp(38px, 5vw, 62px); line-height: 1.2; }
+.folucent-cn .app-hero-visual { padding: clamp(12px, 2vw, 24px); background: #e9efe9; border-radius: 24px; }
+.folucent-cn .app-hero-visual img { width: 100%; height: auto; }
+.folucent-cn .app-hero-visual .enlarge { width: 44px; height: 44px; }
+.folucent-cn .app-hero-visual figcaption { color: #40554a; }
+@media (min-width: 721px) { .folucent-cn .app-hero { grid-template-columns: .9fr 1.1fr; } }
+.folucent-cn-info h3 { margin: 26px 0 8px; }
+.folucent-cn-info .release-details + .release-details { border-top: 0; }
+.folucent-cn-info .folucent-cn-price { line-height: 1.8; }
+.folucent-cn-price strong { color: var(--ink); font-size: 20px; }

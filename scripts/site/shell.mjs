@@ -8,6 +8,7 @@ export function createPageRenderer(assetVersion) {
     title = 'Small ideas. Remarkable possibilities.',
     description = 'AtomSprout builds thoughtful apps, useful tools, and playful worlds. Explore our apps for iPhone, iPad, and Mac.',
     route = '/', body, product, noindex = false, styles = [], bodyClass = '',
+    lang = 'en', alternateLanguages = {},
   }) {
     const structured = product ? {
       '@context': 'https://schema.org', '@type': 'SoftwareApplication',
@@ -20,7 +21,7 @@ export function createPageRenderer(assetVersion) {
       sameAs: ['https://github.com/atomsprout'],
     };
     return `<!doctype html>
-<html lang="en">
+<html lang="${esc(lang)}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -29,7 +30,7 @@ export function createPageRenderer(assetVersion) {
   <meta name="theme-color" content="#f8f7f3">
   <meta name="color-scheme" content="light dark">
   ${noindex ? '<meta name="robots" content="noindex">' : ''}
-  <link rel="canonical" href="${origin}${route}">
+  <link rel="canonical" href="${origin}${route}">${Object.entries(alternateLanguages).map(([language, path]) => `\n  <link rel="alternate" hreflang="${esc(language)}" href="${esc(origin + path)}">`).join('')}
   <meta property="og:type" content="website">
   <meta property="og:title" content="${esc(title)} — AtomSprout">
   <meta property="og:description" content="${esc(description)}">
@@ -49,14 +50,14 @@ export function createPageRenderer(assetVersion) {
   ${route === '/' ? `<script type="module" src="/assets/hero-math.js?v=${assetVersion}"></script>` : ''}
 </head>
 <body class="${esc(bodyClass)}">
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header wrap">
+  <a class="skip" href="#main">${lang === 'zh-CN' ? '跳到正文' : 'Skip to content'}</a>
+  <header class="site-header wrap"${lang === 'en' ? '' : ' lang="en"'}>
     <a class="brand" href="/" aria-label="AtomSprout home">${logo}<span>AtomSprout<span class="brand-dot">.</span></span></a>
     ${mainNav(route, product)}
     <button class="theme-toggle" aria-label="Switch color theme" title="Switch color theme"><span aria-hidden="true">◐</span></button>
   </header>
   <main id="main">${body}</main>
-  <footer class="footer wrap">
+  <footer class="footer wrap"${lang === 'en' ? '' : ' lang="en"'}>
     <div class="footer-top"><a class="brand" href="/">${logo}<span>AtomSprout.</span></a><p>Small ideas. Remarkable possibilities.</p></div>
     <div class="footer-bottom">
       <p>© ${new Date().getUTCFullYear()} AtomSprout</p>
